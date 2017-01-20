@@ -272,7 +272,7 @@ public partial class Dbg : MonoBehaviour
 
         if ( OutputStream != null )
         {
-            OutputStream.WriteLine( string.Format( "[{0:H:mm:ss}; {2:00000}] {3}\n", System.DateTime.Now, frameCount, message ) );
+            OutputStream.WriteLine( string.Format( "[{0:H:mm:ss}; {1:00000}] {2}\n", System.DateTime.Now, frameCount, message ) );
             OutputStream.Flush();
         }
 
