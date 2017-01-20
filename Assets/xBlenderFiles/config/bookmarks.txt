@@ -1,0 +1,16 @@
+[Bookmarks]
+D:\_Projects\_Looterkings\_UnityProject\Assets\_Import\
+D:\_Projects\_Looterkings\
+D:\_Projects\_Looterkings\_UnityProject\Assets\xLocalTesting\
+D:\_Projects\_Looterkings\Blender\
+[Recent]
+D:\_Projects\_GGJ177\Unity\Assets\xBlenderFiles\
+D:\_Projects\_GGJ177\Unity\Assets\_Art\Enemies\ModelData\
+D:\Fabian\Daten\OneDrive\Looterkings\
+D:\_Projects\_Looterkings\_UnityProject\Assets\_Art\Environment\Level 05 Forge\Wall Ground Ceiling\Textures\
+D:\_Projects\_Looterkings\_UnityProject\Assets\_Art\Environment\Level 05 Forge\Deco\models\
+D:\_Projects\_Looterkings\_UnityProject\Assets\_Art\Environment\Level 01 Mines\Walls & Ground & Ceiling\models\
+D:\_Projects\_Looterkings\_UnityProject\Assets\_Import\Prototype\
+D:\Fabian\Daten\OneDrive\Streaming\_PrivateProjects\Space\Models\
+D:\_Projects\_Looterkings\_UnityProject\Assets\_Import\Armor\Hats\SgtRumpel\
+D:\_Projects\_Looterkings\_UnityProject\Assets\_Art\Armor\Models\

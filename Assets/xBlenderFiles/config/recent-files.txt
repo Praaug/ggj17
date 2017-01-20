@@ -1,0 +1,10 @@
+D:\_Projects\_GGJ177\Unity\Assets\_Art\Enemies\ModelData\Enemy_Fire.blend
+D:\_Projects\_Looterkings\_UnityProject\Assets\_Art\Enemies\ElvenGhost_King\ElvenGhostKing.blend
+D:\_Projects\_Looterkings\_UnityProject\Assets\_Art\Environment\Level 01 Mines\Bridges\Models\M_WoodenBridge_02.blend
+D:\_Projects\_Looterkings\_UnityProject\Assets\_Art\Environment\Level 01 Mines\Bridges\Models\M_WoodenBridge_01.blend
+D:\_Projects\_Looterkings\_UnityProject\Assets\_Art\Environment\Level 05 Forge\Wall Ground Ceiling\models\ArenaForge.blend
+D:\_Projects\_Looterkings\_UnityProject\Assets\_Art\Environment\Level 05 Forge\Wall Ground Ceiling\models\SandGround.blend
+D:\_Projects\_Looterkings\_UnityProject\Assets\_Art\Environment\Level 05 Forge\Deco\models\TunnelEntry.blend
+D:\_Projects\_Looterkings\_UnityProject\Assets\_Art\Environment\Level 01 Mines\Walls & Ground & Ceiling\models\MinesLavaGround02.blend
+D:\_Projects\_Looterkings\_UnityProject\Assets\_Art\Environment\Level 03 Sewers\Ground Wall Ceiling\models\WallCollection.blend
+D:\_Projects\_Looterkings\_UnityProject\Assets\_Art\Environment\Level 03 Sewers\Ground Wall Ceiling\models\SewersCeilingCollection.blend
