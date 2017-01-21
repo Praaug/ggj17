@@ -39,6 +39,10 @@ public class UIWaveInfo : MonoBehaviour
     {
         foreach ( GameObject _go in m_selector )
             _go.SetActive( false );
+
+        m_wave.Points[ PART_01_INDEX ] = new Vector2( PART_01_X, 0.0f );
+        m_wave.Points[ PART_02_INDEX ] = new Vector2( PART_02_X, 0.0f );
+        m_wave.Points[ PART_03_INDEX ] = new Vector2( PART_03_X, 0.0f );
     }
 
     public void Init( Player p_player )
