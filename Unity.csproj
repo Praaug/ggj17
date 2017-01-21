@@ -97,7 +97,6 @@
     <Compile Include="Assets\_Scripts\Misc\NewMonoBehaviour.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerMotor.cs" />
     <Compile Include="Assets\_Scripts\UI\CursorManager.cs" />
-    <Compile Include="Assets\_Scripts\testScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
