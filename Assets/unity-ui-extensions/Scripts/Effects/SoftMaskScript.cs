@@ -54,7 +54,7 @@ namespace UnityEngine.UI.Extensions
 
         bool MaterialNotSupported = false; // UI items like toggles, we can stil lcascade down to them though :)
         Rect maskRect;
-        Rect contentRect = new Rect();
+        Rect contentRect;
 
         Vector2 centre;
 
@@ -155,7 +155,7 @@ namespace UnityEngine.UI.Extensions
 
         void SetMask()
         {
-            if ( MaterialNotSupported || mat == null )
+            if ( MaterialNotSupported || mat == null)
             {
                 return;
             }

@@ -14,8 +14,6 @@ public class PlayerMotor : MonoBehaviour
 
     #region Fields
     [SerializeField, Category( "References" )]
-    private Animator m_animator = null;
-    [SerializeField, Category( "References" )]
     private CharacterController m_cc = null;
     [SerializeField, Category( "Movement" )]
     private float m_movementSpeed = 0.0f;
@@ -23,13 +21,12 @@ public class PlayerMotor : MonoBehaviour
     private float m_rotationSpeed = 0.0f;
 
     private float m_currentGravityForce = 0.0f;
-    private Player m_player;
     #endregion
 
     #region Methods
     void Start()
     {
-        m_player = Player.GetPlayer( gameObject );
+
     }
 
     private void FixedUpdate()
@@ -43,20 +40,18 @@ public class PlayerMotor : MonoBehaviour
         _deltaTotal += UpdateGravitiy();
 
         ExecuteMove( _deltaTotal );
-
-        UpdateAnimator();
     }
 
     private void UpdateRotation()
     {
-        float _hor = InputUtility.GetAxis( Axis.Horizontal, m_player.inputSource );
+        float _hor = InputUtility.GetAxis( Axis.Horizontal );
 
         transform.rotation *= Quaternion.AngleAxis( _hor * m_rotationSpeed * Time.deltaTime, Vector3.up );
     }
 
     private Vector3 UpdateMovement()
     {
-        float _ver = InputUtility.GetAxis( Axis.Vertical, m_player.inputSource );
+        float _ver = InputUtility.GetAxis( Axis.Vertical );
 
         Vector3 _deltaTotal = Vector3.zero;
 
@@ -81,15 +76,9 @@ public class PlayerMotor : MonoBehaviour
     private void ExecuteMove( Vector3 p_deltaTotal )
     {
         isGrounded = m_cc.Move( p_deltaTotal ) == CollisionFlags.Below;
-        isGrounded |= Physics.CheckSphere( CCSphereCenterLower, m_cc.radius, 1 << LayerMask.NameToLayer( "Ground" ), QueryTriggerInteraction.Ignore );
+        isGrounded |= Physics.CheckSphere( CCSphereCenterLower, m_cc.radius, -1, QueryTriggerInteraction.Ignore );
 
         isGrounded = m_cc.isGrounded;
     }
-
-    private void UpdateAnimator()
-    {
-        m_animator.SetFloat( "Speed", m_cc.velocity.magnitude );
-    }
-
     #endregion
 }

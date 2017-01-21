@@ -15,15 +15,13 @@ public class EnemySpawnPlane : MonoBehaviour
     /// <summary>
     /// Player that determines the spawns of this enemy spawn plane
     /// </summary>
-    private Player m_owningPlayer;
-    private Player m_damagedPlayer;
+    private Player m_player;
     #endregion
 
     #region Methods
-    public void AssignPlayer( Player p_owningPlayer, Player p_damagedPlayer )
+    public void AssignPlayer( Player p_player )
     {
-        m_owningPlayer = p_owningPlayer;
-        m_damagedPlayer = p_damagedPlayer;
+        m_player = p_player;
     }
 
     /// <summary>
@@ -31,7 +29,7 @@ public class EnemySpawnPlane : MonoBehaviour
     /// </summary>
     public void SpawnMobs()
     {
-        PlayerConfig _config = m_owningPlayer.config;
+        PlayerConfig _config = m_player.config;
 
         StartCoroutine( Coroutine_Spawn( _config.enemyPrefabs, _config.spawnAmount, _config.spawnRate, _config.randomBias ) );
     }
@@ -45,7 +43,7 @@ public class EnemySpawnPlane : MonoBehaviour
             Vector3 _spawnPoint = transform.position + Randomx.Box( m_width, m_height, m_depth );
 
             // Create enemy
-            Enemy.CreateEnemy( _prefab, _spawnPoint, transform.rotation );
+            Enemy.CreateEnemy( _prefab, _spawnPoint, Quaternion.identity );
 
             Dbg.Log( "Instantiated enemy" );
             yield return new WaitForSeconds( Randomx.Bias( p_randomBias ) + p_baseTick );

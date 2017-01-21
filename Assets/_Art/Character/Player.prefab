@@ -19,9 +19,12 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4963815160449176}
+<<<<<<< HEAD
   - component: {fileID: 54790020407276466}
   - component: {fileID: 65925937542175552}
   - component: {fileID: 114454309498836878}
+=======
+>>>>>>> 8e2b3bf18940605e2a0502f69a9ea39d6db7a715
   m_Layer: 9
   m_Name: Arm_R
   m_TagString: Untagged
@@ -55,7 +58,6 @@ GameObject:
   - component: {fileID: 95281494104152054}
   - component: {fileID: 54105572718937330}
   - component: {fileID: 143990660960209314}
-  - component: {fileID: 114320280951783038}
   - component: {fileID: 114664324128465084}
   - component: {fileID: 114030755180119236}
   m_Layer: 9
@@ -325,33 +327,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!54 &54790020407276466
-Rigidbody:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1103397811030022}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!65 &65925937542175552
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1103397811030022}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.4236926, y: 0.4669616, z: 0.37912065}
-  m_Center: {x: -0.67484564, y: -0.03592706, z: -0.0071976194}
 --- !u!95 &95281494104152054
 Animator:
   serializedVersion: 3
@@ -382,8 +357,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_enemyPrefabs:
   - {fileID: 1245377934738654, guid: abdb2cf26f3d98b4184cd02ee6632419, type: 2}
-  m_spawnAmount: 30
+  m_spawnAmount: 5
   m_spawnRate: 5
+<<<<<<< HEAD
   m_randomBias: 2
 --- !u!114 &114320280951783038
 MonoBehaviour:
@@ -411,6 +387,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_controller: {fileID: 114320280951783038}
   m_damagePerHit: 1000
+=======
+  m_randomBias: 1
+>>>>>>> 8e2b3bf18940605e2a0502f69a9ea39d6db7a715
 --- !u!114 &114664324128465084
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -422,10 +401,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f607237bbdf80bc489268291e20ba35e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_animator: {fileID: 95281494104152054}
   m_cc: {fileID: 143990660960209314}
-  m_movementSpeed: 5
-  m_rotationSpeed: 360
+  m_movementSpeed: 10
+  m_rotationSpeed: 180
 --- !u!137 &137767246921845644
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
