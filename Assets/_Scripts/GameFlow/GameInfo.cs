@@ -119,6 +119,19 @@ public partial class GameInfo : MonoBehaviour
 
 public partial class GameInfo : MonoBehaviour
 {
+    public static GameInfo Instance
+    {
+        get
+        {
+            if ( s_instance == null )
+            {
+                s_instance = new GameObject( "GameInfo" ).AddComponent<GameInfo>();
+                DontDestroyOnLoad( s_instance );
+            }
+
+            return s_instance;
+        }
+    }
     private static GameInfo s_instance;
 
     public enum GamePhase
