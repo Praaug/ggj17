@@ -52,6 +52,17 @@ public static partial class ExtensionMethods
         else
             return "000" + p_number;
     }
+
+    public static string ToString000( this int p_number )
+    {
+        int _abs = Mathf.Abs( p_number );
+        if ( _abs >= 100 )
+            return p_number.ToString();
+        else if ( _abs >= 10 )
+            return "0" + p_number;
+        else
+            return "00" + p_number;
+    }
     /// <summary>
     /// Returns the reziprocal 1/x of the number
     /// </summary>

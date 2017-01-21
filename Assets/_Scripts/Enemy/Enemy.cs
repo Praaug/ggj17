@@ -10,6 +10,10 @@ public partial class Enemy
     /// Event that is fired when the enemy is killed
     /// </summary>
     public event System.Action OnKill;
+    /// <summary>
+    /// Event that is fired when the enemy is killed, with detailed Infos
+    /// </summary>
+    public static event System.Action<int, EnemyType, int> OnKillDetailed;
     #endregion
 
     #region Properties
@@ -86,4 +90,12 @@ public partial class Enemy
         p_enemy = allEnemies.FirstOrDefault( enemy => enemy.gameObject == p_component.gameObject );
         return p_enemy != null;
     }
+}
+
+public enum EnemyType
+{
+    Fire,
+    Water,
+    Wind,
+    Dirt
 }
