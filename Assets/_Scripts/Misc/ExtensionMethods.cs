@@ -732,6 +732,7 @@ public static partial class ExtensionMethods
         emission.enabled = enabled;
     }
 
+#pragma warning disable 0618
     public static float GetEmissionRate( this ParticleSystem particleSystem )
     {
         return particleSystem.emission.rate.constantMax;
@@ -744,22 +745,23 @@ public static partial class ExtensionMethods
         rate.constantMax = emissionRate;
         emission.rate = rate;
     }
+#pragma warning restore 0618
 
-    /// <summary>
-    /// Updates a button's interactivity settings and modifies text color in subobjects
-    /// </summary>
-    /// <param name="p_button">The button to update</param>
-    /// <param name="p_interactive">Whether button shall be interactive or not</param>
-    public static void SetActive( this Button p_button, bool p_interactive )
-    {
-        if ( p_button )
-        {
-            p_button.interactable = p_interactive;
-            Text _buttonText = p_button.GetComponentInChildren<Text>();
-            if ( _buttonText )
-                _buttonText.color = p_interactive ? Color.white : Color.grey;
-        }
-    }
+    ///// <summary>
+    ///// Updates a button's interactivity settings and modifies text color in subobjects
+    ///// </summary>
+    ///// <param name="p_button">The button to update</param>
+    ///// <param name="p_interactive">Whether button shall be interactive or not</param>
+    //public static void SetActive( this Button p_button, bool p_interactive )
+    //{
+    //    if ( p_button )
+    //    {
+    //        p_button.interactable = p_interactive;
+    //        Text _buttonText = p_button.GetComponentInChildren<Text>();
+    //        if ( _buttonText )
+    //            _buttonText.color = p_interactive ? Color.white : Color.grey;
+    //    }
+    //}
 
     #endregion
 

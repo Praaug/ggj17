@@ -27,7 +27,7 @@ using Random = UnityEngine.Random;
 /// Static class that provides a lot of useful math functions
 /// </summary>
 /// <remarks>A lot of functions were created in context to some repeating calculations in Looterkings</remarks>
-public static class LKMath
+public static class GGJMath
 {
     /// <summary>
     /// The square root of 2 as a constant
@@ -287,7 +287,7 @@ public static class LKMath
     /// <returns>a random direction vector inside an arc</returns>
     public static Vector3 RandomDirectionArc( Vector3 p_direction, float p_maxDeltaAngle, float p_angleOffset )
     {
-        return Quaternion.AngleAxis( LKRandom.sign * Random.Range( p_angleOffset, p_maxDeltaAngle ), Vector3.up ) * p_direction;
+        return Quaternion.AngleAxis( Randomx.sign * Random.Range( p_angleOffset, p_maxDeltaAngle ), Vector3.up ) * p_direction;
     }
 
     /// <summary>
@@ -497,10 +497,6 @@ public static class LKMath
         return alpha == 0 ? 0 : -x * ( x - d ) * ( Mathf.Tan( alpha ) / d );
     }
 
-    public static Quaternion ConeRotation( Quaternion rotation, float degreeX, float degreeY, int randomIndex )
-    {
-        return ConeRotationInternal( rotation, degreeX, degreeY, LKRandom.InsideUnitCircle( randomIndex ) );
-    }
     public static Quaternion ConeRotation( Quaternion rotation, float degreeX, float degreeY )
     {
         return ConeRotationInternal( rotation, degreeX, degreeY, Random.insideUnitCircle );
@@ -731,17 +727,17 @@ public static class LKMath
         return _tmp;
     }
 
-    public static U RandomEnumEntry<T, U>( IEnumerable<T> p_items, Func<T, U> predicate, U ignoreValue ) where U : struct, IConvertible, IFormattable, IComparable
-    {
-        HashSet<U> _test = new HashSet<U>( EnumUtility.GetValues<U>() );
+    //public static U RandomEnumEntry<T, U>( IEnumerable<T> p_items, Func<T, U> predicate, U ignoreValue ) where U : struct, IConvertible, IFormattable, IComparable
+    //{
+    //    HashSet<U> _test = new HashSet<U>( EnumUtility.GetValues<U>() );
 
-        foreach ( T item in p_items )
-            _test.Remove( predicate( item ) );
+    //    foreach ( T item in p_items )
+    //        _test.Remove( predicate( item ) );
 
-        _test.Remove( ignoreValue );
+    //    _test.Remove( ignoreValue );
 
-        return _test.RandomItem();
-    }
+    //    return _test.RandomItem();
+    //}
 
     public static int CalcGUIWidth( string p_string )
     {

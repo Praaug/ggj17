@@ -75,19 +75,19 @@ public class CameraThirdPerson : MonoBehaviour
 
     private void UpdateRotation()
     {
-        float _hor = InputUtility.GetAxis( Axis.MouseX );
-        float _ver = InputUtility.GetAxis( Axis.MouseY );
+        //float _hor = InputUtility.GetAxis( Axis.MouseX );
+        //float _ver = InputUtility.GetAxis( Axis.MouseY );
 
-        transform.rotation *= Quaternion.AngleAxis( ( m_invertY ? 1 : -1 ) * _ver * m_rotationSpeedY * Time.deltaTime, Vector3.right );
+        //transform.rotation *= Quaternion.AngleAxis( ( m_invertY ? 1 : -1 ) * _ver * m_rotationSpeedY * Time.deltaTime, Vector3.right );
 
-        if ( !m_controlTargetRotation )
-            transform.rotation = Quaternion.AngleAxis( _hor * m_rotationSpeedX * Time.deltaTime, Vector3.up ) * transform.rotation;
-        else
-        {
-            transform.rotation = Quaternion.AngleAxis( _hor * m_rotationSpeedX * Time.deltaTime, Vector3.up ) * transform.rotation;
-            Vector3 _eulerAngles = new Vector3( 0.0f, transform.rotation.eulerAngles.y, 0.0f );
-            m_target.transform.eulerAngles = _eulerAngles;
-        }
+        //if ( !m_controlTargetRotation )
+        //    transform.rotation = Quaternion.AngleAxis( _hor * m_rotationSpeedX * Time.deltaTime, Vector3.up ) * transform.rotation;
+        //else
+        //{
+        //    transform.rotation = Quaternion.AngleAxis( _hor * m_rotationSpeedX * Time.deltaTime, Vector3.up ) * transform.rotation;
+        //    Vector3 _eulerAngles = new Vector3( 0.0f, transform.rotation.eulerAngles.y, 0.0f );
+        //    m_target.transform.eulerAngles = _eulerAngles;
+        //}
     }
 
     private void UpdateMovement()
@@ -97,9 +97,9 @@ public class CameraThirdPerson : MonoBehaviour
 
     private void UpdateZoom()
     {
-        float _zoomDelta = InputUtility.GetAxis( Axis.MouseScrollwheel );
+        //float _zoomDelta = InputUtility.GetAxis( Axis.MouseScrollwheel );
 
-        m_camera.transform.position += transform.forward * _zoomDelta * m_scrollSpeed * Time.deltaTime;
+        //m_camera.transform.position += transform.forward * _zoomDelta * m_scrollSpeed * Time.deltaTime;
     }
     #endregion
 }
