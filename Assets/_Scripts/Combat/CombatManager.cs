@@ -11,5 +11,5 @@ public static class CombatManager
 
 public class CombatHit
 {
-    public int damage;
+    public float damage;
 }

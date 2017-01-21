@@ -32,6 +32,8 @@ public class EnemyKillPlane : MonoBehaviour
 
         // Reduce life of damaged player
         m_damagedPlayer.ReduceLife( 1 );
+
+        // Increase points / Reward owning player [NYI]
     }
     #endregion
 }

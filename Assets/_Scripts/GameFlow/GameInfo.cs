@@ -34,6 +34,8 @@ public partial class GameInfo : MonoBehaviour
     [SerializeField, Category( "References" )]
     private EnemySpawnPlane[] m_spawnPlanes = new EnemySpawnPlane[ 0 ];
     [SerializeField, Category( "References" )]
+    private EnemyKillPlane[] m_killPlanes = new EnemyKillPlane[ 0 ];
+    [SerializeField, Category( "References" )]
     private GameObject m_playerPrefab = null;
     #endregion
 
@@ -87,15 +89,21 @@ public partial class GameInfo : MonoBehaviour
         // Create the player avatars and objects
         Player.CreatePlayer( m_playerPrefab );
 
-        if ( Player.allPlayer.Count != m_spawnPlanes.Length )
+        if ( Player.allPlayer.Count != m_spawnPlanes.Length || Player.allPlayer.Count != m_killPlanes.Length )
         {
-            Dbg.LogError( "The amount of player does not match the amount of spawn planes!" );
+            Dbg.LogError( "The amount of player does not match the amount of spawn or kill planes!" );
             return;
         }
 
         // Assign player to spawn planes
         for ( int i = 0; i < m_spawnPlanes.Length; i++ )
-            m_spawnPlanes[ i ].AssignPlayer( Player.allPlayer[ i ] );
+        {
+            Player _owningPlayer = Player.allPlayer[ i ];
+            Player _damagedPlayer = Player.allPlayer[ ( i + 1 ) % Player.allPlayer.Count ];
+
+            m_spawnPlanes[ i ].AssignPlayer( _owningPlayer, _damagedPlayer );
+            m_killPlanes[ i ].AssignPlayer( _owningPlayer, _damagedPlayer );
+        }
 
         // Init the game phase
         currentGamePhase = GamePhase.Fight;
