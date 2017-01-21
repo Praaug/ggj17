@@ -5,13 +5,16 @@ public class UIMenu : MonoBehaviour
 {
     #region Fields
     [SerializeField]
-    private GameObject m_OptionsPopup = null;
+    private GameObject m_optionsPopup = null;
+    [SerializeField]
+    private GameObject m_creditsPopup = null;
     #endregion
 
     #region Methods
     private void Awake()
     {
-        m_OptionsPopup.SetActive( false );
+        m_optionsPopup.SetActive( false );
+        m_creditsPopup.SetActive( false );
     }
 
     public void OnStartClick()
@@ -22,12 +25,22 @@ public class UIMenu : MonoBehaviour
 
     public void OnOptionsClick()
     {
-        m_OptionsPopup.SetActive( true );
+        m_optionsPopup.SetActive( true );
     }
 
     public void OnOptionsOKClick()
     {
-        m_OptionsPopup.SetActive( false );
+        m_optionsPopup.SetActive( false );
+    }
+
+    public void OnCreditsClick()
+    {
+        m_creditsPopup.SetActive( true );
+    }
+
+    public void OnCredtirsOKClick()
+    {
+        m_creditsPopup.SetActive( false );
     }
     #endregion
 }

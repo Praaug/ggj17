@@ -10,13 +10,13 @@ public class UIDefending : MonoBehaviour
     [SerializeField, Category( "References" )]
     private GameObject[] m_healthglobs = null;
     [SerializeField, Category( "References" )]
-    private Text m_fireIncome = null;
+    private Text m_fireCount = null;
     [SerializeField, Category( "References" )]
-    private Text m_waterIncome = null;
+    private Text m_waterCount = null;
     [SerializeField, Category( "References" )]
-    private Text m_windIncome = null;
+    private Text m_windCount = null;
     [SerializeField, Category( "References" )]
-    private Text m_dirtIncome = null;
+    private Text m_dirtCount = null;
     #endregion
 
     #region Methods
@@ -33,10 +33,10 @@ public class UIDefending : MonoBehaviour
 
     private void OnIncomeChange()
     {
-        m_fireIncome.text = m_player.enemyCountDict[ EnemyType.Fire ].ToString000();
-        m_waterIncome.text = m_player.enemyCountDict[ EnemyType.Water ].ToString000();
-        m_windIncome.text = m_player.enemyCountDict[ EnemyType.Wind ].ToString000();
-        m_dirtIncome.text = m_player.enemyCountDict[ EnemyType.Dirt ].ToString000();
+        m_fireCount.text = m_player.enemyCountDict[ EnemyType.Fire ].ToString000();
+        m_waterCount.text = m_player.enemyCountDict[ EnemyType.Water ].ToString000();
+        m_windCount.text = m_player.enemyCountDict[ EnemyType.Wind ].ToString000();
+        m_dirtCount.text = m_player.enemyCountDict[ EnemyType.Dirt ].ToString000();
     }
 
     private void OnHealthLost()

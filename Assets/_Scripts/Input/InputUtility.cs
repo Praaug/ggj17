@@ -13,7 +13,11 @@ public enum Axis
 
 public enum InputButton
 {
-    Attack
+    Attack,
+    MenuLeft,
+    MenuRight,
+    MenuUp,
+    MenuDown
 }
 
 public enum InputSource
