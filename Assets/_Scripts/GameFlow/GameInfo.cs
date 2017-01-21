@@ -64,6 +64,9 @@ public partial class GameInfo : MonoBehaviour
     private bool m_player1WaveFinished = false;
     private bool m_player2WaveFinished = false;
 
+    private bool m_player1Ready;
+    private bool m_player2Ready;
+
     private GamePhase m_currentGamePhase;
     #endregion
 
@@ -163,6 +166,9 @@ public partial class GameInfo : MonoBehaviour
 
     private void InitPhase_Fight()
     {
+        m_player1Ready = false;
+        m_player2Ready = false;
+
         Player.CreateAvatars( m_player1Prefab, m_player2Prefab );
 
         m_player1WaveFinished = false;
@@ -174,6 +180,9 @@ public partial class GameInfo : MonoBehaviour
 
     private void InitPhase_WaveBuilding()
     {
+        m_player1Ready = false;
+        m_player2Ready = false;
+
         Player.DestroyAvatars();
     }
 
@@ -181,8 +190,23 @@ public partial class GameInfo : MonoBehaviour
     {
         if ( GUILayout.Button( "Start Game" ) )
             StartGame();
-    }
 
+        if ( currentGamePhase == GamePhase.WaveBuilding )
+        {
+            if ( !m_player1Ready && GUILayout.Button( "Player 1 ready" ) )
+            {
+                m_player1Ready = true;
+            }
+
+            if ( !m_player2Ready && GUILayout.Button( "Player 2 ready" ) )
+            {
+                m_player2Ready = true;
+            }
+
+            if ( m_player1Ready && m_player2Ready )
+                InitPhase( GamePhase.Fight );
+        }
+    }
     #endregion
 }
 

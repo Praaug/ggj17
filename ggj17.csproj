@@ -120,6 +120,7 @@
     <Compile Include="Assets\_Scripts\UI\UIDefending.cs" />
     <Compile Include="Assets\_Scripts\UI\UIMenu.cs" />
     <Compile Include="Assets\_Scripts\UI\UIPlanning.cs" />
+    <Compile Include="Assets\_Scripts\UI\UIWaveInfo.cs" />
     <Compile Include="Assets\unity-ui-extensions\Scripts\Accordion\Accordion.cs" />
     <Compile Include="Assets\unity-ui-extensions\Scripts\Accordion\AccordionElement.cs" />
     <Compile Include="Assets\unity-ui-extensions\Scripts\Accordion\Tweening\FloatTween.cs" />
