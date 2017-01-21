@@ -33,10 +33,10 @@ public class UIDefending : MonoBehaviour
 
     private void OnIncomeChange()
     {
-        m_fireIncome.text = ( (int)( m_player.elementBuffDict[ ElementType.Fire ] ) ).ToString000();
-        m_waterIncome.text = ( (int)( m_player.elementBuffDict[ ElementType.Water ] ) ).ToString000();
-        m_windIncome.text = ( (int)( m_player.elementBuffDict[ ElementType.Air ] ) ).ToString000();
-        m_dirtIncome.text = ( (int)( m_player.elementBuffDict[ ElementType.Dirt ] ) ).ToString000();
+        m_fireCount.text = ( (int)( m_player.elementBuffDict[ ElementType.Fire ] ) ).ToString000();
+        m_waterCount.text = ( (int)( m_player.elementBuffDict[ ElementType.Water ] ) ).ToString000();
+        m_windCount.text = ( (int)( m_player.elementBuffDict[ ElementType.Air ] ) ).ToString000();
+        m_dirtCount.text = ( (int)( m_player.elementBuffDict[ ElementType.Dirt ] ) ).ToString000();
     }
 
     private void OnHealthLost()
