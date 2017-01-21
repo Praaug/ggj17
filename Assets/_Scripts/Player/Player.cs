@@ -1,12 +1,14 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 
 public partial class Player
 {
     #region Properties
     public PlayerConfig config { get; private set; }
     public GameObject gameObject { get; private set; }
+    public InputSource inputSource { get; private set; }
 
     public int elePtsFire { get; private set; }
     public int elePtsWater { get; private set; }
@@ -15,10 +17,11 @@ public partial class Player
     #endregion
 
     #region Constructor
-    public Player( GameObject p_avatarInstance )
+    public Player( GameObject p_avatarInstance, InputSource p_inputSource )
     {
         gameObject = p_avatarInstance;
         config = p_avatarInstance.GetComponent<PlayerConfig>();
+        inputSource = p_inputSource;
     }
 
     public void ReduceLife( int p_amount )
@@ -44,9 +47,14 @@ public partial class Player
             GameObject _playerInstance = Object.Instantiate( p_playerPrefab );
 
             // Create player object with reference to avatar
-            allPlayer.Add( new Player( _playerInstance ) );
+            allPlayer.Add( new Player( _playerInstance, i == 0 ? InputSource.Player1 : InputSource.Player2 ) );
         }
 
         return allPlayer;
+    }
+
+    public static Player GetPlayer( GameObject p_gameObject )
+    {
+        return allPlayer.FirstOrDefault( p => p.gameObject == p_gameObject );
     }
 }
