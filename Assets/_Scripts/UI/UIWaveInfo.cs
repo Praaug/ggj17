@@ -1,10 +1,23 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine.UI.Extensions;
 
 public class UIWaveInfo : MonoBehaviour
 {
+    #region Consts
+    private const int PART_01_INDEX = 1;
+    private const int PART_02_INDEX = 3;
+    private const int PART_03_INDEX = 5;
+    private const float PART_01_X = 0.1666f;
+    private const float PART_02_X = 0.4998f;
+    private const float PART_03_X = 0.833f;
+
+    #endregion
+
     #region Fields
+    [SerializeField]
+    private ElementType m_type = ElementType.Fire;
     [SerializeField]
     private UILineRenderer m_wave = null;
     [SerializeField]
@@ -22,19 +35,23 @@ public class UIWaveInfo : MonoBehaviour
 
 
     #region Methods
+    public void Awake()
+    {
+        foreach ( GameObject _go in m_selector )
+            _go.SetActive( false );
+    }
     public void Init( Player p_player )
     {
         m_player = p_player;
-
-        foreach ( GameObject _go in m_selector )
-            _go.SetActive( false );
+        m_waveInfo = m_player.config.waveInfo;
+        m_elePoints = m_player.elementPointsDict[ m_type ];
     }
 
     /// <summary>
     /// Increments the selector
     /// </summary>
     /// <returns>true if the increment was successfull</returns>
-    public bool Increment()
+    public bool IncrementSelector()
     {
         if ( m_currentIndex == -1 )
         {
@@ -60,11 +77,11 @@ public class UIWaveInfo : MonoBehaviour
     /// Increments the selector
     /// </summary>
     /// <returns>true if the decrement was successfull</returns>
-    public bool Decrement()
+    public bool DecrementSelector()
     {
         if ( m_currentIndex == -1 )
         {
-            m_currentIndex = m_selector.Length;
+            m_currentIndex = m_selector.Length - 1;
             m_selector[ m_currentIndex ].SetActive( true );
             return true;
         }
@@ -80,6 +97,40 @@ public class UIWaveInfo : MonoBehaviour
         m_selector[ m_currentIndex ].SetActive( false );
         m_currentIndex = -1;
         return false;
+    }
+
+    public void IncrementStat()
+    {
+        int _pointsNeeded = m_waveInfo.PointsNeededForLevelUp( m_type );
+        if ( m_elePoints > _pointsNeeded )
+        {
+            m_player.RemoveElementPoints( m_type, _pointsNeeded );
+            m_waveInfo.IncrementElementCount( m_type );
+
+
+        }
+    }
+    public void DecrementStat()
+    {
+        int _pointsRewarded = 0;
+        m_player.AddElementPoints( m_type, _pointsRewarded );
+    }
+
+    public int GetElementCount( ElementType p_type )
+    {
+        switch ( p_type )
+        {
+            case ElementType.Fire:
+                return m_waveInfo.fireCount;
+            case ElementType.Water:
+                return m_waveInfo.waterCount;
+            case ElementType.Air:
+                return m_waveInfo.airCount;
+            case ElementType.Dirt:
+                return m_waveInfo.dirtCount;
+            default:
+                return 0;
+        }
     }
     #endregion
 }

@@ -8,7 +8,7 @@ public class WaveInfo
     #region Fields
     public int fireCount;
     public int waterCount;
-    public int windCount;
+    public int airCount;
     public int dirtCount;
 
     private Player m_player;
@@ -25,7 +25,7 @@ public class WaveInfo
 
         fireCount = p_waveInfo.fireCount;
         waterCount = p_waveInfo.waterCount;
-        windCount = p_waveInfo.windCount;
+        airCount = p_waveInfo.airCount;
         dirtCount = p_waveInfo.dirtCount;
     }
     #endregion
@@ -37,7 +37,7 @@ public class WaveInfo
 
         _resultList.AddRange( CalculateElement( fireCount, GameInfo.instance.elementPrefabDict[ ElementType.Fire ] ) );
         _resultList.AddRange( CalculateElement( waterCount, GameInfo.instance.elementPrefabDict[ ElementType.Water ] ) );
-        _resultList.AddRange( CalculateElement( windCount, GameInfo.instance.elementPrefabDict[ ElementType.Air ] ) );
+        _resultList.AddRange( CalculateElement( airCount, GameInfo.instance.elementPrefabDict[ ElementType.Air ] ) );
         _resultList.AddRange( CalculateElement( dirtCount, GameInfo.instance.elementPrefabDict[ ElementType.Dirt ] ) );
 
         _resultList.Shuffle();
@@ -72,7 +72,7 @@ public class WaveInfo
             case ElementType.Water:
                 return PointsNeededForLevelUp( waterCount );
             case ElementType.Air:
-                return PointsNeededForLevelUp( windCount );
+                return PointsNeededForLevelUp( airCount );
             case ElementType.Dirt:
                 return PointsNeededForLevelUp( dirtCount );
             default:
@@ -99,7 +99,7 @@ public class WaveInfo
                 break;
             case ElementType.Air:
                 m_player.RemoveElementPoints( ElementType.Air, PointsNeededForLevelUp( ElementType.Air ) );
-                windCount++;
+                airCount++;
                 break;
             case ElementType.Dirt:
                 m_player.RemoveElementPoints( ElementType.Dirt, PointsNeededForLevelUp( ElementType.Dirt ) );

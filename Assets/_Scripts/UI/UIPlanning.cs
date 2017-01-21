@@ -18,7 +18,7 @@ public class UIPlanning : MonoBehaviour
     public void Awake()
     {
         m_currentWaveInfo = m_waveInfos[ 0 ];
-        m_currentWaveInfo.Increment();
+        m_currentWaveInfo.IncrementSelector();
     }
 
     public void Init( Player p_player )
@@ -42,7 +42,7 @@ public class UIPlanning : MonoBehaviour
 
     private void IncreaseSelector()
     {
-        if ( !m_currentWaveInfo.Increment() )
+        if ( !m_currentWaveInfo.IncrementSelector() )
         {
             m_currentIndex = ( m_currentIndex + 1 ) % m_waveInfos.Length;
             m_currentWaveInfo = m_waveInfos[ m_currentIndex ];
@@ -52,7 +52,7 @@ public class UIPlanning : MonoBehaviour
 
     private void DecreaseSelector()
     {
-        if ( !m_currentWaveInfo.Decrement() )
+        if ( !m_currentWaveInfo.DecrementSelector() )
         {
             m_currentIndex = ( ( m_currentIndex % m_waveInfos.Length ) + m_waveInfos.Length - 1 ) % m_waveInfos.Length;
             m_currentWaveInfo = m_waveInfos[ m_currentIndex ];
