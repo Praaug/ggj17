@@ -17,6 +17,8 @@ public class PlayerMotor : MonoBehaviour
     private CharacterController m_cc = null;
     [SerializeField, Category( "Movement" )]
     private float m_movementSpeed = 0.0f;
+    [SerializeField, Category( "Rotation" )]
+    private float m_rotationSpeed = 0.0f;
 
     private float m_currentGravityForce = 0.0f;
     #endregion
@@ -27,14 +29,11 @@ public class PlayerMotor : MonoBehaviour
 
     }
 
-    private void Update()
-    {
-        Dbg.LogFast( isGrounded );
-    }
-
     private void FixedUpdate()
     {
         Vector3 _deltaTotal = Vector3.zero;
+
+        UpdateRotation();
 
         _deltaTotal += UpdateMovement();
 
@@ -43,15 +42,20 @@ public class PlayerMotor : MonoBehaviour
         ExecuteMove( _deltaTotal );
     }
 
-    private Vector3 UpdateMovement()
+    private void UpdateRotation()
     {
         float _hor = InputUtility.GetAxis( Axis.Horizontal );
+
+        transform.rotation *= Quaternion.AngleAxis( _hor * m_rotationSpeed * Time.deltaTime, Vector3.up );
+    }
+
+    private Vector3 UpdateMovement()
+    {
         float _ver = InputUtility.GetAxis( Axis.Vertical );
 
         Vector3 _deltaTotal = Vector3.zero;
 
         Vector3 _deltaMovement = Vector3.zero;
-        _deltaMovement += _hor * m_movementSpeed * Time.deltaTime * transform.right;
         _deltaMovement += _ver * m_movementSpeed * Time.deltaTime * transform.forward;
 
         _deltaMovement = Vector3.ClampMagnitude( _deltaMovement, m_movementSpeed * Time.deltaTime );
@@ -72,7 +76,7 @@ public class PlayerMotor : MonoBehaviour
     private void ExecuteMove( Vector3 p_deltaTotal )
     {
         isGrounded = m_cc.Move( p_deltaTotal ) == CollisionFlags.Below;
-        //isGrounded |= Physics.CheckSphere( CCSphereCenterLower, m_cc.radius, -1, QueryTriggerInteraction.Ignore );
+        isGrounded |= Physics.CheckSphere( CCSphereCenterLower, m_cc.radius, -1, QueryTriggerInteraction.Ignore );
 
         isGrounded = m_cc.isGrounded;
     }
