@@ -36,7 +36,7 @@ public partial class Player
     /// <summary>
     /// Dictionary that contains the amount of bonus damage per element for the player
     /// </summary>
-    public Dictionary<ElementType, int> elementBuffDict { get; private set; }
+    public Dictionary<ElementType, float> elementBuffDict { get; private set; }
     public Dictionary<ElementType, int> elementKillDictTemp { get; private set; }
     #endregion
 
@@ -55,25 +55,25 @@ public partial class Player
         elementPointsDict = new Dictionary<ElementType, int>();
         elementPointsDict.Add( ElementType.Fire, 0 );
         elementPointsDict.Add( ElementType.Water, 0 );
-        elementPointsDict.Add( ElementType.Wind, 0 );
+        elementPointsDict.Add( ElementType.Air, 0 );
         elementPointsDict.Add( ElementType.Dirt, 0 );
 
         elementKillDictTemp = new Dictionary<ElementType, int>();
         elementKillDictTemp.Add( ElementType.Fire, 0 );
         elementKillDictTemp.Add( ElementType.Water, 0 );
-        elementKillDictTemp.Add( ElementType.Wind, 0 );
+        elementKillDictTemp.Add( ElementType.Air, 0 );
         elementKillDictTemp.Add( ElementType.Dirt, 0 );
 
-        elementBuffDict = new Dictionary<ElementType, int>();
+        elementBuffDict = new Dictionary<ElementType, float>();
         elementBuffDict.Add( ElementType.Fire, 0 );
         elementBuffDict.Add( ElementType.Water, 0 );
-        elementBuffDict.Add( ElementType.Wind, 0 );
+        elementBuffDict.Add( ElementType.Air, 0 );
         elementBuffDict.Add( ElementType.Dirt, 0 );
 
         m_enemyStrenghDict = new Dictionary<ElementType, int>();
         m_enemyStrenghDict.Add( ElementType.Fire, MIN_DAMAGE );
         m_enemyStrenghDict.Add( ElementType.Water, MIN_DAMAGE );
-        m_enemyStrenghDict.Add( ElementType.Wind, MIN_DAMAGE );
+        m_enemyStrenghDict.Add( ElementType.Air, MIN_DAMAGE );
         m_enemyStrenghDict.Add( ElementType.Dirt, MIN_DAMAGE );
     }
     #endregion
@@ -102,10 +102,17 @@ public partial class Player
         // Add element points
         AddElementPoints( _elementType, p_enemy.info.elementPointValue );
 
+        // Increase tmp counter
         elementKillDictTemp[ _elementType ]++;
 
-        //if ( elementKillDictTemp[ _elementType ] >= )
+        if ( elementKillDictTemp[ _elementType ] >= GameInfo.instance.killsPerStep )
+        {
+            // Decrease tmp count
+            elementKillDictTemp[ _elementType ] -= GameInfo.instance.killsPerStep;
 
+            // Increase bonus damage for this elemental
+            elementBuffDict[ _elementType ] += GameInfo.instance.damageIncPerStep;
+        }
 
         // Increase counter for kill of this enemy type
         elementBuffDict[ p_enemy.info.elementType ]++;

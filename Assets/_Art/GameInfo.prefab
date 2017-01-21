@@ -59,3 +59,13 @@ MonoBehaviour:
   - {fileID: 0}
   m_playerPrefab: {fileID: 1407493350686444, guid: 80405b2ddc942c342a6a02ad3267e62b,
     type: 2}
+  m_enemyPrefabFire:
+  - {fileID: 114929247372140504, guid: abdb2cf26f3d98b4184cd02ee6632419, type: 2}
+  m_enemyPrefabAir:
+  - {fileID: 114929247372140504, guid: a40170f26c1715a4892b5cdeb39d6275, type: 2}
+  m_enemyPrefabWater:
+  - {fileID: 114929247372140504, guid: 7f5a2c3ee6571014d8bb147051e452b1, type: 2}
+  m_enemyPrefabDirt:
+  - {fileID: 114929247372140504, guid: ca8da665b061e0146b2f312ffd5a4b3d, type: 2}
+  m_damageIncPerStep: 0
+  m_killsPerStep: 0

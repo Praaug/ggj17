@@ -57,8 +57,6 @@ public class PlayerController : MonoBehaviour
 
     private void AnimEvnt_OnFrontSwingStart()
     {
-        Dbg.LogFast( "Animation Event OnFrontSwingStart" );
-
         isAttacking = true;
 
         if ( OnFrontSwingStart != null )
@@ -67,8 +65,6 @@ public class PlayerController : MonoBehaviour
 
     private void AnimEvnt_OnFrontSwingFinish()
     {
-        Dbg.LogFast( "Animation Event OnFrontSwingFinsih" );
-
         isAttacking = false;
 
         if ( OnFrontSwingFinish != null )

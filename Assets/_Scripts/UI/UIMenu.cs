@@ -17,7 +17,7 @@ public class UIMenu : MonoBehaviour
     public void OnStartClick()
     {
         gameObject.SetActive( false );
-        GameInfo.Instance.StartGame();
+        GameInfo.instance.StartGame();
     }
 
     public void OnOptionsClick()

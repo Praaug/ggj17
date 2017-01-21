@@ -11,6 +11,10 @@ public partial class Enemy : ICombatEntity
     /// </summary>
     public event System.Action OnKill;
     /// <summary>
+    /// Event that is fired when the enemy is killed. The parameter contains the enemy itself
+    /// </summary>
+    public event System.Action<Enemy> OnKillThis;
+    /// <summary>
     /// Event that is fired when the enemy is killed, with detailed Infos
     /// </summary>
     public static event System.Action<int, ElementType, int> OnKillDetailed;
@@ -47,6 +51,9 @@ public partial class Enemy : ICombatEntity
         // Fire kill event
         if ( OnKill != null )
             OnKill();
+
+        if ( OnKillThis != null )
+            OnKillThis( this );
 
         // Remove from enemy list
         allEnemies.Remove( this );
@@ -104,6 +111,6 @@ public enum ElementType
 {
     Fire,
     Water,
-    Wind,
+    Air,
     Dirt
 }

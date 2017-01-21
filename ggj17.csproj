@@ -95,9 +95,11 @@
     <Compile Include="Assets\_Scripts\Combat\ICombatEntity.cs" />
     <Compile Include="Assets\_Scripts\Enemy\Enemy.cs" />
     <Compile Include="Assets\_Scripts\Enemy\EnemyController.cs" />
+    <Compile Include="Assets\_Scripts\Enemy\EnemyInfo.cs" />
     <Compile Include="Assets\_Scripts\Enemy\EnemyKillPlane.cs" />
     <Compile Include="Assets\_Scripts\Enemy\EnemyMotor.cs" />
     <Compile Include="Assets\_Scripts\Enemy\EnemySpawnPlane.cs" />
+    <Compile Include="Assets\_Scripts\Enemy\RagdollController.cs" />
     <Compile Include="Assets\_Scripts\GameFlow\GameInfo.cs" />
     <Compile Include="Assets\_Scripts\GameFlow\WaveInfo.cs" />
     <Compile Include="Assets\_Scripts\Input\InputUtility.cs" />
@@ -113,6 +115,9 @@
     <Compile Include="Assets\_Scripts\Player\PlayerMotor.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerWeaponDamageTrigger.cs" />
     <Compile Include="Assets\_Scripts\UI\CursorManager.cs" />
+    <Compile Include="Assets\_Scripts\UI\GameUI.cs" />
+    <Compile Include="Assets\_Scripts\UI\UIDefending.cs" />
+    <Compile Include="Assets\_Scripts\UI\UIMenu.cs" />
     <Compile Include="Assets\unity-ui-extensions\Scripts\Accordion\Accordion.cs" />
     <Compile Include="Assets\unity-ui-extensions\Scripts\Accordion\AccordionElement.cs" />
     <Compile Include="Assets\unity-ui-extensions\Scripts\Accordion\Tweening\FloatTween.cs" />

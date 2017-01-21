@@ -380,10 +380,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7930b13d31f30c642869158a56fdd1f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_enemyPrefabs:
-  - {fileID: 1245377934738654, guid: abdb2cf26f3d98b4184cd02ee6632419, type: 2}
-  m_spawnAmount: 30
-  m_spawnRate: 5
+  m_waveInfo:
+    fireCount: 1
+    waterCount: 1
+    windCount: 1
+    dirtCount: 1
+  m_spawnRate: 4
   m_randomBias: 2
 --- !u!114 &114320280951783038
 MonoBehaviour:
