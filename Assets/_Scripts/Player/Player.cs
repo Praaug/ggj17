@@ -10,6 +10,8 @@ public partial class Player : ICombatEntity
     public GameObject gameObject { get; private set; }
     public InputSource inputSource { get; private set; }
 
+    public int lives { get; private set; }
+
     public int elePtsFire { get; private set; }
     public int elePtsWater { get; private set; }
     public int elePtsStorm { get; private set; }
@@ -29,7 +31,7 @@ public partial class Player : ICombatEntity
 
     }
 
-    public void InflictDamage(float p_amount)
+    public void InflictDamage( float p_amount )
     {
 
     }

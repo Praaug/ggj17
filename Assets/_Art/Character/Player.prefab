@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4963815160449176}
   - component: {fileID: 54790020407276466}
   - component: {fileID: 65925937542175552}
+  - component: {fileID: 114454309498836878}
   m_Layer: 9
   m_Name: Arm_R
   m_TagString: Untagged
@@ -397,6 +398,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_animator: {fileID: 95281494104152054}
   m_attacksPerSec: 1
+--- !u!114 &114454309498836878
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1103397811030022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25b792a5bd9c3dc4e8bf3f7149e2cb25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_controller: {fileID: 114320280951783038}
+  m_damagePerHit: 1000
 --- !u!114 &114664324128465084
 MonoBehaviour:
   m_ObjectHideFlags: 1

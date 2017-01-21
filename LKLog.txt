@@ -1,4 +1,4 @@
-[13:50:44; 00000] LOG STARTED!
+[14:17:01; 00000] LOG STARTED!
    at UnityEngine.GameObject.AddComponent(System.Type componentType) in C:\buildslave\unity\build\artifacts\generated\common\runtime\GameObjectBindings.gen.cs:line 352
    at UnityEngine.GameObject.AddComponent() in C:\buildslave\unity\build\artifacts\generated\common\runtime\GameObjectBindings.gen.cs:line 357
    at Dbg.get_Instance() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Misc\Dbg.cs:line 35
@@ -28,7 +28,7 @@
    at UnityEditor.HostView.InvokeOnGUI(Rect onGUIPosition) in C:\buildslave\unity\build\Editor\Mono\HostView.cs:line 212
    at UnityEditor.DockArea.OnGUI() in C:\buildslave\unity\build\Editor\Mono\GUI\DockArea.cs:line 341
 
-[13:50:44; 00000] Instantiated enemy
+[14:17:01; 00000] Instantiated enemy
    at Dbg.Log(UnityEngine.Object p_object, System.String message, StackTraceLogType p_type) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Misc\Dbg.cs:line 53
    at Dbg.Log(System.String message) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Misc\Dbg.cs:line 66
    at EnemySpawnPlane+<Coroutine_Spawn>c__Iterator0.MoveNext() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\EnemySpawnPlane.cs:line 50
@@ -55,7 +55,7 @@
    at UnityEditor.HostView.InvokeOnGUI(Rect onGUIPosition) in C:\buildslave\unity\build\Editor\Mono\HostView.cs:line 212
    at UnityEditor.DockArea.OnGUI() in C:\buildslave\unity\build\Editor\Mono\GUI\DockArea.cs:line 341
 
-[13:50:44; 00000] Instantiated enemy
+[14:17:01; 00000] Instantiated enemy
    at EnemySpawnPlane+<Coroutine_Spawn>c__Iterator0.MoveNext() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\EnemySpawnPlane.cs:line 50
    at UnityEngine.SetupCoroutine.InvokeMoveNext(IEnumerator enumerator, IntPtr returnValueAddress) in C:\buildslave\unity\build\Runtime\Export\Coroutines.cs:line 17
    at UnityEngine.MonoBehaviour.StartCoroutine_Auto_Internal(IEnumerator )
@@ -80,15 +80,2873 @@
    at UnityEditor.HostView.InvokeOnGUI(Rect onGUIPosition) in C:\buildslave\unity\build\Editor\Mono\HostView.cs:line 212
    at UnityEditor.DockArea.OnGUI() in C:\buildslave\unity\build\Editor\Mono\GUI\DockArea.cs:line 341
 
-[13:50:50; 00632] Instantiated enemy
+[14:17:01; 00000] OnTriggerStay with Arm_R
+
+[14:17:01; 00000] OnTriggerStay with Arm_R
+
+[14:17:01; 00000] OnTriggerStay with Arm_R
+
+[14:17:01; 00000] OnTriggerStay with Arm_R
+
+[14:17:01; 00000] OnTriggerStay with Arm_R
+
+[14:17:01; 00000] OnTriggerStay with Arm_R
+
+[14:17:01; 00056] OnTriggerStay with Arm_R
+
+[14:17:01; 00056] OnTriggerStay with Arm_R
+
+[14:17:01; 00056] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:01; 00056] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:01; 00057] OnTriggerStay with Arm_R
+
+[14:17:01; 00057] OnTriggerStay with Arm_R
+
+[14:17:01; 00057] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:01; 00057] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:01; 00058] OnTriggerStay with Arm_R
+
+[14:17:01; 00058] OnTriggerStay with Arm_R
+
+[14:17:01; 00059] OnTriggerStay with Arm_R
+
+[14:17:01; 00059] OnTriggerStay with Arm_R
+
+[14:17:01; 00060] OnTriggerStay with Arm_R
+
+[14:17:01; 00060] OnTriggerStay with Arm_R
+
+[14:17:01; 00062] OnTriggerStay with Arm_R
+
+[14:17:01; 00062] OnTriggerStay with Arm_R
+
+[14:17:01; 00063] OnTriggerStay with Arm_R
+
+[14:17:01; 00063] OnTriggerStay with Arm_R
+
+[14:17:01; 00064] OnTriggerStay with Arm_R
+
+[14:17:01; 00064] OnTriggerStay with Arm_R
+
+[14:17:01; 00065] OnTriggerStay with Arm_R
+
+[14:17:01; 00065] OnTriggerStay with Arm_R
+
+[14:17:01; 00066] OnTriggerStay with Arm_R
+
+[14:17:01; 00066] OnTriggerStay with Arm_R
+
+[14:17:01; 00068] OnTriggerStay with Arm_R
+
+[14:17:01; 00068] OnTriggerStay with Arm_R
+
+[14:17:01; 00069] OnTriggerStay with Arm_R
+
+[14:17:01; 00069] OnTriggerStay with Arm_R
+
+[14:17:01; 00070] OnTriggerStay with Arm_R
+
+[14:17:01; 00070] OnTriggerStay with Arm_R
+
+[14:17:01; 00071] OnTriggerStay with Arm_R
+
+[14:17:01; 00071] OnTriggerStay with Arm_R
+
+[14:17:01; 00072] OnTriggerStay with Arm_R
+
+[14:17:01; 00072] OnTriggerStay with Arm_R
+
+[14:17:01; 00074] OnTriggerStay with Arm_R
+
+[14:17:01; 00074] OnTriggerStay with Arm_R
+
+[14:17:01; 00075] OnTriggerStay with Arm_R
+
+[14:17:01; 00075] OnTriggerStay with Arm_R
+
+[14:17:01; 00076] OnTriggerStay with Arm_R
+
+[14:17:01; 00076] OnTriggerStay with Arm_R
+
+[14:17:01; 00077] OnTriggerStay with Arm_R
+
+[14:17:01; 00077] OnTriggerStay with Arm_R
+
+[14:17:01; 00078] OnTriggerStay with Arm_R
+
+[14:17:01; 00078] OnTriggerStay with Arm_R
+
+[14:17:01; 00080] OnTriggerStay with Arm_R
+
+[14:17:01; 00080] OnTriggerStay with Arm_R
+
+[14:17:01; 00081] OnTriggerStay with Arm_R
+
+[14:17:01; 00081] OnTriggerStay with Arm_R
+
+[14:17:01; 00081] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:01; 00081] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:01; 00082] OnTriggerStay with Arm_R
+
+[14:17:01; 00082] OnTriggerStay with Arm_R
+
+[14:17:01; 00082] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:01; 00082] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:01; 00083] OnTriggerStay with Arm_R
+
+[14:17:01; 00083] OnTriggerStay with Arm_R
+
+[14:17:01; 00083] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:01; 00083] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:01; 00084] OnTriggerStay with Arm_R
+
+[14:17:01; 00084] OnTriggerStay with Arm_R
+
+[14:17:01; 00084] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:01; 00084] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:01; 00084] OnTriggerStay with Player(Clone)
+
+[14:17:01; 00086] OnTriggerStay with Arm_R
+
+[14:17:01; 00086] OnTriggerStay with Arm_R
+
+[14:17:01; 00086] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:01; 00086] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:01; 00086] OnTriggerStay with Player(Clone)
+
+[14:17:01; 00087] OnTriggerStay with Arm_R
+
+[14:17:01; 00087] OnTriggerStay with Arm_R
+
+[14:17:01; 00087] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:01; 00087] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:01; 00087] OnTriggerStay with Player(Clone)
+
+[14:17:01; 00088] OnTriggerStay with Arm_R
+
+[14:17:01; 00088] OnTriggerStay with Arm_R
+
+[14:17:01; 00088] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:01; 00088] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:01; 00088] OnTriggerStay with Player(Clone)
+
+[14:17:01; 00089] OnTriggerStay with Arm_R
+
+[14:17:01; 00089] OnTriggerStay with Arm_R
+
+[14:17:01; 00089] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:01; 00089] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:02; 00095] OnTriggerStay with Arm_R
+
+[14:17:02; 00095] OnTriggerStay with Arm_R
+
+[14:17:02; 00097] OnTriggerStay with Arm_R
+
+[14:17:02; 00097] OnTriggerStay with Arm_R
+
+[14:17:02; 00098] OnTriggerStay with Arm_R
+
+[14:17:02; 00098] OnTriggerStay with Arm_R
+
+[14:17:02; 00099] OnTriggerStay with Arm_R
+
+[14:17:02; 00099] OnTriggerStay with Arm_R
+
+[14:17:02; 00100] OnTriggerStay with Arm_R
+
+[14:17:02; 00100] OnTriggerStay with Arm_R
+
+[14:17:02; 00101] OnTriggerStay with Arm_R
+
+[14:17:02; 00101] OnTriggerStay with Arm_R
+
+[14:17:02; 00103] OnTriggerStay with Arm_R
+
+[14:17:02; 00103] OnTriggerStay with Arm_R
+
+[14:17:02; 00115] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:02; 00116] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:02; 00116] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:02; 00117] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:02; 00117] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:02; 00118] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:02; 00118] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:02; 00120] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:02; 00120] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:02; 00121] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:02; 00121] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:02; 00122] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:02; 00122] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:02; 00123] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:02; 00123] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:02; 00124] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:03; 00150] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:03; 00150] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:03; 00151] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:03; 00151] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:03; 00152] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:03; 00152] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:03; 00153] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:03; 00153] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:03; 00155] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:03; 00155] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:03; 00156] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:03; 00156] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:03; 00157] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:03; 00157] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:03; 00158] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:03; 00158] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:03; 00164] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:03; 00165] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:03; 00167] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:03; 00168] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:03; 00169] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:03; 00170] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:03; 00171] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:03; 00173] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:03; 00174] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:03; 00175] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:03; 00176] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:03; 00177] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:03; 00179] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:03; 00180] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:03; 00181] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:03; 00182] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:03; 00183] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:03; 00183] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:03; 00183] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:03; 00185] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:03; 00185] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:03; 00185] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:03; 00186] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:03; 00186] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:03; 00186] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:03; 00187] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:03; 00187] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:03; 00187] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:03; 00188] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:03; 00188] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:03; 00188] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:03; 00190] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:03; 00190] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:03; 00190] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:03; 00191] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:03; 00191] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:03; 00191] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:03; 00192] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:03; 00192] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:03; 00192] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:03; 00193] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:03; 00194] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:03; 00196] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:03; 00197] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:03; 00198] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:03; 00199] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:03; 00200] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:03; 00202] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:03; 00203] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:03; 00204] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:03; 00205] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:03; 00206] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:03; 00208] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:03; 00209] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:04; 00210] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:04; 00211] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:04; 00212] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:04; 00214] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:04; 00215] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:04; 00216] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:04; 00217] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:04; 00217] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:04; 00217] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:04; 00218] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:04; 00218] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:04; 00218] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:04; 00220] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:04; 00220] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:04; 00220] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:04; 00221] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:04; 00221] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:04; 00221] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:04; 00222] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:04; 00222] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:04; 00222] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:04; 00223] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:04; 00223] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:04; 00223] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:04; 00225] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:04; 00225] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:04; 00225] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:04; 00226] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:04; 00226] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:04; 00226] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:04; 00227] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:04; 00228] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:04; 00229] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:04; 00231] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:04; 00232] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:04; 00233] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:04; 00234] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:04; 00235] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:04; 00237] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:04; 00238] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:04; 00239] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:04; 00251] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:04; 00251] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:04; 00252] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:04; 00252] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:04; 00254] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:04; 00254] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:04; 00255] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:04; 00255] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:04; 00256] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:04; 00256] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:04; 00257] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:04; 00257] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:04; 00258] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:04; 00258] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:04; 00260] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:04; 00260] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:05; 00280] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:05; 00285] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:05; 00285] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:05; 00286] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:05; 00286] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:05; 00287] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:05; 00287] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:05; 00289] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:05; 00289] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:05; 00290] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:05; 00290] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:05; 00291] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:05; 00291] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:05; 00292] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:05; 00292] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:05; 00293] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:05; 00293] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:05; 00319] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:05; 00320] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:05; 00320] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:05; 00321] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:05; 00321] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:05; 00321] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:05; 00322] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:05; 00322] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:05; 00322] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:05; 00324] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:05; 00324] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:05; 00324] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:05; 00325] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:05; 00325] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:05; 00325] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:05; 00326] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:05; 00326] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:05; 00326] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:05; 00327] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:05; 00327] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:05; 00327] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:05; 00328] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:05; 00328] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:05; 00330] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:06; 00331] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:06; 00332] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:06; 00333] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:06; 00334] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:06; 00336] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:06; 00337] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:06; 00338] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:06; 00339] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:06; 00340] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:06; 00342] OnTriggerStay with Player(Clone)
+
+[14:17:06; 00342] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:06; 00343] OnTriggerStay with Player(Clone)
+
+[14:17:06; 00343] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:06; 00344] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:06; 00345] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:06; 00346] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:06; 00348] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:06; 00349] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:06; 00350] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:06; 00351] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:06; 00352] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:06; 00354] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:06; 00354] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:06; 00354] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:06; 00355] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:06; 00355] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:06; 00355] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:06; 00356] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:06; 00356] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:06; 00356] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:06; 00357] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:06; 00357] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:06; 00357] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:06; 00359] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:06; 00359] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:06; 00360] OnTriggerStay with Arm_R
+
+[14:17:06; 00360] OnTriggerStay with Arm_R
+
+[14:17:06; 00360] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:06; 00360] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:06; 00361] OnTriggerStay with Arm_R
+
+[14:17:06; 00361] OnTriggerStay with Arm_R
+
+[14:17:06; 00361] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:06; 00361] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:06; 00362] OnTriggerStay with Arm_R
+
+[14:17:06; 00362] OnTriggerStay with Arm_R
+
+[14:17:06; 00362] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:06; 00363] OnTriggerStay with Arm_R
+
+[14:17:06; 00363] OnTriggerStay with Arm_R
+
+[14:17:06; 00365] OnTriggerStay with Arm_R
+
+[14:17:06; 00365] OnTriggerStay with Arm_R
+
+[14:17:06; 00365] OnTriggerStay with Player(Clone)
+
+[14:17:06; 00366] OnTriggerStay with Arm_R
+
+[14:17:06; 00366] OnTriggerStay with Arm_R
+
+[14:17:06; 00366] OnTriggerStay with Player(Clone)
+
+[14:17:06; 00367] OnTriggerStay with Arm_R
+
+[14:17:06; 00367] OnTriggerStay with Arm_R
+
+[14:17:06; 00367] OnTriggerStay with Player(Clone)
+
+[14:17:06; 00368] Instantiated enemy
    at EnemySpawnPlane+<Coroutine_Spawn>c__Iterator0.MoveNext() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\EnemySpawnPlane.cs:line 50
    at UnityEngine.SetupCoroutine.InvokeMoveNext(IEnumerator enumerator, IntPtr returnValueAddress) in C:\buildslave\unity\build\Runtime\Export\Coroutines.cs:line 17
 
-[13:50:52; 00765] Instantiated enemy
+[14:17:06; 00368] OnTriggerStay with Arm_R
+
+[14:17:06; 00368] OnTriggerStay with Arm_R
+
+[14:17:06; 00368] OnTriggerStay with Player(Clone)
+
+[14:17:06; 00369] OnTriggerStay with Arm_R
+
+[14:17:06; 00369] OnTriggerStay with Arm_R
+
+[14:17:06; 00369] OnTriggerStay with Player(Clone)
+
+[14:17:06; 00371] OnTriggerStay with Arm_R
+
+[14:17:06; 00371] OnTriggerStay with Arm_R
+
+[14:17:06; 00371] OnTriggerStay with Player(Clone)
+
+[14:17:06; 00372] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:06; 00372] OnTriggerStay with Arm_R
+
+[14:17:06; 00372] OnTriggerStay with Arm_R
+
+[14:17:06; 00372] OnTriggerStay with Player(Clone)
+
+[14:17:06; 00373] OnTriggerStay with Arm_R
+
+[14:17:06; 00373] OnTriggerStay with Arm_R
+
+[14:17:06; 00373] OnTriggerStay with Player(Clone)
+
+[14:17:06; 00374] OnTriggerStay with Arm_R
+
+[14:17:06; 00374] OnTriggerStay with Arm_R
+
+[14:17:06; 00374] OnTriggerStay with Player(Clone)
+
+[14:17:06; 00375] OnTriggerStay with Arm_R
+
+[14:17:06; 00375] OnTriggerStay with Arm_R
+
+[14:17:06; 00375] OnTriggerStay with Player(Clone)
+
+[14:17:06; 00377] OnTriggerStay with Arm_R
+
+[14:17:06; 00377] OnTriggerStay with Arm_R
+
+[14:17:06; 00377] OnTriggerStay with Player(Clone)
+
+[14:17:06; 00378] OnTriggerStay with Arm_R
+
+[14:17:06; 00378] OnTriggerStay with Arm_R
+
+[14:17:06; 00378] OnTriggerStay with Player(Clone)
+
+[14:17:06; 00379] OnTriggerStay with Arm_R
+
+[14:17:06; 00379] OnTriggerStay with Arm_R
+
+[14:17:06; 00379] OnTriggerStay with Player(Clone)
+
+[14:17:06; 00380] OnTriggerStay with Arm_R
+
+[14:17:06; 00380] OnTriggerStay with Arm_R
+
+[14:17:06; 00380] OnTriggerStay with Player(Clone)
+
+[14:17:06; 00381] Instantiated enemy
    at EnemySpawnPlane+<Coroutine_Spawn>c__Iterator0.MoveNext() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\EnemySpawnPlane.cs:line 50
    at UnityEngine.SetupCoroutine.InvokeMoveNext(IEnumerator enumerator, IntPtr returnValueAddress) in C:\buildslave\unity\build\Runtime\Export\Coroutines.cs:line 17
 
-[13:50:54; 00914] Instantiated enemy
+[14:17:06; 00381] OnTriggerStay with Arm_R
+
+[14:17:06; 00381] OnTriggerStay with Arm_R
+
+[14:17:06; 00381] OnTriggerStay with Player(Clone)
+
+[14:17:06; 00383] OnTriggerStay with Arm_R
+
+[14:17:06; 00383] OnTriggerStay with Arm_R
+
+[14:17:06; 00383] OnTriggerStay with Player(Clone)
+
+[14:17:06; 00384] OnTriggerStay with Arm_R
+
+[14:17:06; 00384] OnTriggerStay with Arm_R
+
+[14:17:06; 00384] OnTriggerStay with Player(Clone)
+
+[14:17:06; 00385] OnTriggerStay with Arm_R
+
+[14:17:06; 00385] OnTriggerStay with Arm_R
+
+[14:17:06; 00385] OnTriggerStay with Player(Clone)
+
+[14:17:06; 00386] OnTriggerStay with Arm_R
+
+[14:17:06; 00386] OnTriggerStay with Arm_R
+
+[14:17:06; 00386] OnTriggerStay with Player(Clone)
+
+[14:17:06; 00388] OnTriggerStay with Arm_R
+
+[14:17:06; 00388] OnTriggerStay with Arm_R
+
+[14:17:06; 00388] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:06; 00388] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:06; 00388] OnTriggerStay with Player(Clone)
+
+[14:17:06; 00389] OnTriggerStay with Arm_R
+
+[14:17:06; 00389] OnTriggerStay with Arm_R
+
+[14:17:06; 00389] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:06; 00389] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:06; 00389] OnTriggerStay with Player(Clone)
+
+[14:17:06; 00390] OnTriggerStay with Arm_R
+
+[14:17:06; 00390] OnTriggerStay with Arm_R
+
+[14:17:06; 00390] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:06; 00390] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:06; 00390] OnTriggerStay with Player(Clone)
+
+[14:17:07; 00391] OnTriggerStay with Arm_R
+
+[14:17:07; 00391] OnTriggerStay with Arm_R
+
+[14:17:07; 00391] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:07; 00391] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:07; 00391] OnTriggerStay with Player(Clone)
+
+[14:17:07; 00392] OnTriggerStay with Arm_R
+
+[14:17:07; 00392] OnTriggerStay with Arm_R
+
+[14:17:07; 00392] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:07; 00392] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:07; 00392] OnTriggerStay with Player(Clone)
+
+[14:17:07; 00394] OnTriggerStay with Arm_R
+
+[14:17:07; 00394] OnTriggerStay with Arm_R
+
+[14:17:07; 00394] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:07; 00394] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:07; 00394] OnTriggerStay with Player(Clone)
+
+[14:17:07; 00395] OnTriggerStay with Arm_R
+
+[14:17:07; 00395] OnTriggerStay with Arm_R
+
+[14:17:07; 00395] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:07; 00395] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:07; 00395] OnTriggerStay with Player(Clone)
+
+[14:17:07; 00396] OnTriggerStay with Arm_R
+
+[14:17:07; 00396] OnTriggerStay with Arm_R
+
+[14:17:07; 00396] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:07; 00396] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:07; 00396] OnTriggerStay with Player(Clone)
+
+[14:17:07; 00397] OnTriggerStay with Arm_R
+
+[14:17:07; 00397] OnTriggerStay with Arm_R
+
+[14:17:07; 00397] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:07; 00397] OnTriggerStay with Player(Clone)
+
+[14:17:07; 00398] OnTriggerStay with Arm_R
+
+[14:17:07; 00398] OnTriggerStay with Arm_R
+
+[14:17:07; 00398] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:07; 00398] OnTriggerStay with Player(Clone)
+
+[14:17:07; 00400] OnTriggerStay with Arm_R
+
+[14:17:07; 00400] OnTriggerStay with Arm_R
+
+[14:17:07; 00400] OnTriggerStay with Player(Clone)
+
+[14:17:07; 00401] OnTriggerStay with Arm_R
+
+[14:17:07; 00401] OnTriggerStay with Arm_R
+
+[14:17:07; 00401] OnTriggerStay with Player(Clone)
+
+[14:17:07; 00402] OnTriggerStay with Arm_R
+
+[14:17:07; 00402] OnTriggerStay with Arm_R
+
+[14:17:07; 00402] OnTriggerStay with Player(Clone)
+
+[14:17:07; 00403] OnTriggerStay with Arm_R
+
+[14:17:07; 00403] OnTriggerStay with Arm_R
+
+[14:17:07; 00403] OnTriggerStay with Player(Clone)
+
+[14:17:07; 00404] OnTriggerStay with Arm_R
+
+[14:17:07; 00404] OnTriggerStay with Arm_R
+
+[14:17:07; 00404] OnTriggerStay with Player(Clone)
+
+[14:17:07; 00406] OnTriggerStay with Arm_R
+
+[14:17:07; 00406] OnTriggerStay with Arm_R
+
+[14:17:07; 00406] OnTriggerStay with Player(Clone)
+
+[14:17:07; 00407] OnTriggerStay with Player(Clone)
+
+[14:17:07; 00408] OnTriggerStay with Player(Clone)
+
+[14:17:07; 00409] OnTriggerStay with Player(Clone)
+
+[14:17:07; 00410] OnTriggerStay with Player(Clone)
+
+[14:17:07; 00412] OnTriggerStay with Player(Clone)
+
+[14:17:07; 00413] OnTriggerStay with Player(Clone)
+
+[14:17:07; 00421] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:07; 00422] Animation Event OnFrontSwingStart
+
+[14:17:07; 00423] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:07; 00424] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:07; 00425] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:07; 00426] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:07; 00427] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:07; 00429] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:07; 00430] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:07; 00448] Animation Event OnFrontSwingFinsih
+
+[14:17:08; 00455] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:08; 00456] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:08; 00458] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:08; 00459] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:08; 00460] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:08; 00461] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:08; 00462] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:08; 00464] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:08; 00466] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:08; 00467] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:08; 00468] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:08; 00470] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:08; 00471] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:08; 00472] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:08; 00473] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:08; 00474] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:08; 00476] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:08; 00477] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:08; 00478] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:08; 00479] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:08; 00480] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:08; 00487] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:08; 00488] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:08; 00489] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:08; 00489] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:08; 00490] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:08; 00490] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:08; 00491] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:08; 00491] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:08; 00493] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:08; 00493] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:08; 00494] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:08; 00495] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:08; 00496] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:08; 00497] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:08; 00505] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:08; 00506] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:08; 00507] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:08; 00508] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:08; 00509] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:08; 00511] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:09; 00512] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:09; 00513] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:09; 00514] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:09; 00515] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:09; 00517] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:09; 00523] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:09; 00524] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:09; 00525] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:09; 00526] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:09; 00528] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:09; 00529] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:09; 00530] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:09; 00531] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:09; 00532] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:09; 00540] Animation Event OnFrontSwingStart
+
+[14:17:09; 00542] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:09; 00542] Enemy Enemy_Fire(Clone) hit!
+
+[14:17:09; 00543] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:09; 00544] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:09; 00546] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:09; 00547] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:09; 00548] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:09; 00549] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:09; 00550] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:09; 00552] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:09; 00553] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:09; 00554] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:09; 00555] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:09; 00557] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:09; 00557] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:09; 00558] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:09; 00559] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:09; 00560] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:09; 00561] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:09; 00563] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:09; 00564] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:09; 00565] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:09; 00566] Animation Event OnFrontSwingFinsih
+
+[14:17:09; 00566] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:10; 00573] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:10; 00575] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:10; 00584] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:10; 00585] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:10; 00587] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:10; 00588] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:10; 00589] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:10; 00590] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:10; 00592] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:10; 00592] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:10; 00593] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:10; 00593] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:10; 00594] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:10; 00594] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:10; 00595] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:10; 00595] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:10; 00596] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:10; 00596] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:10; 00598] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:10; 00598] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:10; 00599] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:10; 00600] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:10; 00602] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:10; 00604] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:10; 00605] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:10; 00606] Instantiated enemy
    at EnemySpawnPlane+<Coroutine_Spawn>c__Iterator0.MoveNext() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\EnemySpawnPlane.cs:line 50
    at UnityEngine.SetupCoroutine.InvokeMoveNext(IEnumerator enumerator, IntPtr returnValueAddress) in C:\buildslave\unity\build\Runtime\Export\Coroutines.cs:line 17
+
+[14:17:10; 00612] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:10; 00613] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:10; 00614] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:10; 00624] Instantiated enemy
+   at EnemySpawnPlane+<Coroutine_Spawn>c__Iterator0.MoveNext() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\EnemySpawnPlane.cs:line 50
+   at UnityEngine.SetupCoroutine.InvokeMoveNext(IEnumerator enumerator, IntPtr returnValueAddress) in C:\buildslave\unity\build\Runtime\Export\Coroutines.cs:line 17
+
+[14:17:10; 00624] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:10; 00625] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:10; 00625] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:10; 00627] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:10; 00627] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:10; 00628] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:10; 00628] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:10; 00629] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:10; 00629] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:10; 00630] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:10; 00630] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:10; 00631] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:10; 00631] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:11; 00633] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:11; 00634] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:11; 00658] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:11; 00659] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:11; 00659] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:11; 00660] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:11; 00660] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:11; 00662] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:11; 00662] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:11; 00663] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:11; 00663] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:11; 00664] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:11; 00664] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:11; 00665] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:11; 00665] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:11; 00666] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:11; 00666] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:11; 00668] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:11; 00684] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:11; 00686] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:11; 00692] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:12; 00693] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:12; 00693] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:12; 00694] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:12; 00695] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:12; 00697] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:12; 00698] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:12; 00699] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:12; 00700] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:12; 00701] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:12; 00709] Animation Event OnFrontSwingStart
+
+[14:17:12; 00718] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:12; 00718] Enemy Enemy_Fire(Clone) hit!
+
+[14:17:12; 00720] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:12; 00721] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:12; 00722] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:12; 00723] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:12; 00724] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:12; 00726] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:12; 00727] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:12; 00727] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:12; 00728] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:12; 00728] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:12; 00729] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:12; 00729] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:12; 00730] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:12; 00730] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:12; 00732] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:12; 00732] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:12; 00733] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:12; 00733] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:12; 00734] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:12; 00734] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:12; 00735] Animation Event OnFrontSwingFinsih
+
+[14:17:12; 00735] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:12; 00735] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:12; 00736] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:12; 00736] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:12; 00738] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:12; 00739] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:12; 00740] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:12; 00741] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:12; 00742] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:12; 00744] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:12; 00745] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:12; 00746] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:12; 00747] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:12; 00748] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:12; 00750] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:12; 00751] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:12; 00752] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:13; 00753] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:13; 00753] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:13; 00755] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:13; 00755] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:13; 00756] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:13; 00757] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:13; 00758] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:13; 00759] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:13; 00761] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:13; 00761] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:13; 00762] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:13; 00762] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:13; 00763] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:13; 00763] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:13; 00764] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:13; 00764] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:13; 00765] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:13; 00765] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:13; 00767] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:13; 00768] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:13; 00769] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:13; 00770] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:13; 00793] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:13; 00794] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:13; 00796] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:13; 00796] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:13; 00797] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:13; 00797] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:13; 00798] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:13; 00798] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:13; 00799] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:13; 00799] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:13; 00800] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:13; 00800] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:13; 00802] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:13; 00803] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:13; 00804] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:13; 00808] OnTriggerStay with Arm_R
+
+[14:17:13; 00808] OnTriggerStay with Arm_R
+
+[14:17:13; 00809] OnTriggerStay with Arm_R
+
+[14:17:13; 00809] OnTriggerStay with Arm_R
+
+[14:17:13; 00810] OnTriggerStay with Arm_R
+
+[14:17:13; 00810] OnTriggerStay with Arm_R
+
+[14:17:13; 00811] OnTriggerStay with Arm_R
+
+[14:17:13; 00811] OnTriggerStay with Arm_R
+
+[14:17:13; 00812] OnTriggerStay with Arm_R
+
+[14:17:13; 00812] OnTriggerStay with Arm_R
+
+[14:17:14; 00814] OnTriggerStay with Arm_R
+
+[14:17:14; 00814] OnTriggerStay with Arm_R
+
+[14:17:14; 00815] OnTriggerStay with Arm_R
+
+[14:17:14; 00815] OnTriggerStay with Arm_R
+
+[14:17:14; 00816] OnTriggerStay with Arm_R
+
+[14:17:14; 00816] OnTriggerStay with Arm_R
+
+[14:17:14; 00817] OnTriggerStay with Arm_R
+
+[14:17:14; 00817] OnTriggerStay with Arm_R
+
+[14:17:14; 00818] OnTriggerStay with Arm_R
+
+[14:17:14; 00818] OnTriggerStay with Arm_R
+
+[14:17:14; 00820] OnTriggerStay with Arm_R
+
+[14:17:14; 00820] OnTriggerStay with Arm_R
+
+[14:17:14; 00821] OnTriggerStay with Arm_R
+
+[14:17:14; 00821] OnTriggerStay with Arm_R
+
+[14:17:14; 00822] OnTriggerStay with Arm_R
+
+[14:17:14; 00822] OnTriggerStay with Arm_R
+
+[14:17:14; 00823] OnTriggerStay with Arm_R
+
+[14:17:14; 00823] OnTriggerStay with Arm_R
+
+[14:17:14; 00825] OnTriggerStay with Arm_R
+
+[14:17:14; 00825] OnTriggerStay with Arm_R
+
+[14:17:14; 00826] OnTriggerStay with Player(Clone)
+
+[14:17:14; 00826] OnTriggerStay with Arm_R
+
+[14:17:14; 00826] OnTriggerStay with Arm_R
+
+[14:17:14; 00827] OnTriggerStay with Player(Clone)
+
+[14:17:14; 00827] OnTriggerStay with Arm_R
+
+[14:17:14; 00827] OnTriggerStay with Arm_R
+
+[14:17:14; 00827] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:14; 00828] OnTriggerStay with Player(Clone)
+
+[14:17:14; 00828] OnTriggerStay with Arm_R
+
+[14:17:14; 00828] OnTriggerStay with Arm_R
+
+[14:17:14; 00828] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:14; 00829] OnTriggerStay with Player(Clone)
+
+[14:17:14; 00829] OnTriggerStay with Arm_R
+
+[14:17:14; 00829] OnTriggerStay with Arm_R
+
+[14:17:14; 00829] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:14; 00829] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:14; 00831] OnTriggerStay with Player(Clone)
+
+[14:17:14; 00831] OnTriggerStay with Arm_R
+
+[14:17:14; 00831] OnTriggerStay with Arm_R
+
+[14:17:14; 00831] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:14; 00831] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:14; 00832] OnTriggerStay with Player(Clone)
+
+[14:17:14; 00832] OnTriggerStay with Arm_R
+
+[14:17:14; 00832] OnTriggerStay with Arm_R
+
+[14:17:14; 00832] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:14; 00832] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:14; 00833] OnTriggerStay with Player(Clone)
+
+[14:17:14; 00833] OnTriggerStay with Arm_R
+
+[14:17:14; 00833] OnTriggerStay with Arm_R
+
+[14:17:14; 00833] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:14; 00833] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:14; 00834] OnTriggerStay with Player(Clone)
+
+[14:17:14; 00834] OnTriggerStay with Arm_R
+
+[14:17:14; 00834] OnTriggerStay with Arm_R
+
+[14:17:14; 00834] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:14; 00834] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:14; 00835] OnTriggerStay with Player(Clone)
+
+[14:17:14; 00835] OnTriggerStay with Arm_R
+
+[14:17:14; 00835] OnTriggerStay with Arm_R
+
+[14:17:14; 00835] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:14; 00837] OnTriggerStay with Player(Clone)
+
+[14:17:14; 00837] OnTriggerStay with Arm_R
+
+[14:17:14; 00837] OnTriggerStay with Arm_R
+
+[14:17:14; 00837] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:14; 00838] OnTriggerStay with Player(Clone)
+
+[14:17:14; 00838] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:14; 00839] OnTriggerStay with Player(Clone)
+
+[14:17:14; 00840] OnTriggerStay with Player(Clone)
+
+[14:17:14; 00841] OnTriggerStay with Player(Clone)
+
+[14:17:14; 00843] OnTriggerStay with Player(Clone)
+
+[14:17:14; 00844] OnTriggerStay with Player(Clone)
+
+[14:17:14; 00845] OnTriggerStay with Player(Clone)
+
+[14:17:14; 00861] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:14; 00862] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:14; 00863] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:14; 00863] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:14; 00864] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:14; 00864] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:14; 00866] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:14; 00866] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:14; 00867] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:14; 00867] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:14; 00868] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:14; 00868] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:14; 00869] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:14; 00870] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:14; 00872] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:15; 00887] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:15; 00889] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:15; 00897] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:15; 00898] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:15; 00898] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:15; 00899] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:15; 00899] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:15; 00901] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:15; 00901] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:15; 00902] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:15; 00902] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:15; 00903] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:15; 00903] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:15; 00904] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:15; 00904] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:15; 00905] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:15; 00905] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:15; 00907] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:15; 00908] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:15; 00909] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:15; 00910] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:15; 00911] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:15; 00912] Animation Event OnFrontSwingStart
+
+[14:17:15; 00913] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:15; 00913] Enemy Enemy_Fire(Clone) hit!
+
+[14:17:15; 00913] OnTriggerStay with EnemyKillPlane_Left
+
+[14:17:15; 00914] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:15; 00914] OnTriggerStay with EnemyKillPlane_Left
+
+[14:17:15; 00915] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:15; 00915] OnTriggerStay with EnemyKillPlane_Left
+
+[14:17:15; 00916] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:15; 00916] OnTriggerStay with EnemyKillPlane_Left
+
+[14:17:15; 00917] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:15; 00917] OnTriggerStay with EnemyKillPlane_Left
+
+[14:17:15; 00918] Instantiated enemy
+   at EnemySpawnPlane+<Coroutine_Spawn>c__Iterator0.MoveNext() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\EnemySpawnPlane.cs:line 50
+   at UnityEngine.SetupCoroutine.InvokeMoveNext(IEnumerator enumerator, IntPtr returnValueAddress) in C:\buildslave\unity\build\Runtime\Export\Coroutines.cs:line 17
+
+[14:17:15; 00919] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:15; 00919] OnTriggerStay with EnemyKillPlane_Left
+
+[14:17:15; 00920] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:15; 00920] OnTriggerStay with EnemyKillPlane_Left
+
+[14:17:15; 00921] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:15; 00921] OnTriggerStay with EnemyKillPlane_Left
+
+[14:17:15; 00922] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:15; 00922] OnTriggerStay with EnemyKillPlane_Left
+
+[14:17:15; 00924] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:15; 00924] OnTriggerStay with EnemyKillPlane_Left
+
+[14:17:15; 00925] OnTriggerStay with EnemyKillPlane_Left
+
+[14:17:15; 00926] OnTriggerStay with EnemyKillPlane_Left
+
+[14:17:15; 00927] OnTriggerStay with EnemyKillPlane_Left
+
+[14:17:15; 00928] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:15; 00928] OnTriggerStay with EnemyKillPlane_Left
+
+[14:17:15; 00930] OnTriggerStay with EnemyKillPlane_Left
+
+[14:17:15; 00931] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:15; 00931] OnTriggerStay with EnemyKillPlane_Left
+
+[14:17:15; 00931] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:15; 00932] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:15; 00932] OnTriggerStay with EnemyKillPlane_Left
+
+[14:17:15; 00932] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:15; 00933] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:15; 00933] OnTriggerStay with EnemyKillPlane_Left
+
+[14:17:15; 00933] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:15; 00934] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:15; 00934] OnTriggerStay with EnemyKillPlane_Left
+
+[14:17:15; 00934] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:16; 00936] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:16; 00936] OnTriggerStay with EnemyKillPlane_Left
+
+[14:17:16; 00936] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:16; 00937] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:16; 00937] OnTriggerStay with EnemyKillPlane_Left
+
+[14:17:16; 00937] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:16; 00938] Animation Event OnFrontSwingFinsih
+
+[14:17:16; 00938] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:16; 00938] OnTriggerStay with EnemyKillPlane_Left
+
+[14:17:16; 00938] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:16; 00939] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:16; 00939] OnTriggerStay with EnemyKillPlane_Left
+
+[14:17:16; 00939] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:16; 00940] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:16; 00940] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:16; 00952] Instantiated enemy
+   at EnemySpawnPlane+<Coroutine_Spawn>c__Iterator0.MoveNext() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\EnemySpawnPlane.cs:line 50
+   at UnityEngine.SetupCoroutine.InvokeMoveNext(IEnumerator enumerator, IntPtr returnValueAddress) in C:\buildslave\unity\build\Runtime\Export\Coroutines.cs:line 17
+
+[14:17:16; 00956] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:16; 00957] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:16; 00959] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:16; 00960] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:16; 00961] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:16; 00962] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:16; 00963] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:16; 00965] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:16; 00965] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:16; 00966] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:16; 00966] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:16; 00967] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:16; 00967] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:16; 00968] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:16; 00968] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:16; 00969] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:16; 00969] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:16; 00971] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:16; 00972] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:16; 00973] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:16; 00974] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:16; 00986] OnTriggerStay with Player(Clone)
+
+[14:17:16; 00988] OnTriggerStay with Player(Clone)
+
+[14:17:16; 00989] OnTriggerStay with Player(Clone)
+
+[14:17:16; 00990] OnTriggerStay with Player(Clone)
+
+[14:17:16; 00991] OnTriggerStay with Player(Clone)
+
+[14:17:16; 00992] OnTriggerStay with Player(Clone)
+
+[14:17:16; 00994] OnTriggerStay with Player(Clone)
+
+[14:17:17; 00996] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:17; 00997] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:17; 00998] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:17; 01000] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:17; 01000] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:17; 01001] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:17; 01001] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:17; 01002] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:17; 01002] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:17; 01003] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:17; 01003] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:17; 01004] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:17; 01006] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:17; 01007] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:17; 01008] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:17; 01020] OnTriggerStay with Player(Clone)
+
+[14:17:17; 01021] OnTriggerStay with Player(Clone)
+
+[14:17:17; 01023] OnTriggerStay with Player(Clone)
+
+[14:17:17; 01024] OnTriggerStay with Player(Clone)
+
+[14:17:17; 01025] OnTriggerStay with Player(Clone)
+
+[14:17:17; 01026] OnTriggerStay with Player(Clone)
+
+[14:17:17; 01027] OnTriggerStay with Player(Clone)
+
+[14:17:17; 01029] OnTriggerStay with Player(Clone)
+
+[14:17:17; 01030] OnTriggerStay with Arm_R
+
+[14:17:17; 01030] OnTriggerStay with Arm_R
+
+[14:17:17; 01030] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:17; 01031] OnTriggerStay with Arm_R
+
+[14:17:17; 01031] OnTriggerStay with Arm_R
+
+[14:17:17; 01031] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:17; 01032] OnTriggerStay with Arm_R
+
+[14:17:17; 01032] OnTriggerStay with Arm_R
+
+[14:17:17; 01032] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:17; 01033] OnTriggerStay with Arm_R
+
+[14:17:17; 01033] OnTriggerStay with Arm_R
+
+[14:17:17; 01033] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:17; 01033] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:17; 01035] OnTriggerStay with Arm_R
+
+[14:17:17; 01035] OnTriggerStay with Arm_R
+
+[14:17:17; 01035] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:17; 01035] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:17; 01036] OnTriggerStay with Arm_R
+
+[14:17:17; 01036] OnTriggerStay with Arm_R
+
+[14:17:17; 01036] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:17; 01036] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:17; 01037] OnTriggerStay with Arm_R
+
+[14:17:17; 01037] OnTriggerStay with Arm_R
+
+[14:17:17; 01037] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:17; 01037] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:17; 01038] OnTriggerStay with Arm_R
+
+[14:17:17; 01038] OnTriggerStay with Arm_R
+
+[14:17:17; 01038] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:17; 01039] OnTriggerStay with Arm_R
+
+[14:17:17; 01039] OnTriggerStay with Arm_R
+
+[14:17:17; 01039] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:17; 01041] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:17; 01042] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:17; 01047] OnTriggerStay with Player(Clone)
+
+[14:17:17; 01048] OnTriggerStay with Player(Clone)
+
+[14:17:17; 01049] OnTriggerStay with Player(Clone)
+
+[14:17:17; 01050] OnTriggerStay with Player(Clone)
+
+[14:17:17; 01051] OnTriggerStay with Player(Clone)
+
+[14:17:17; 01053] OnTriggerStay with Player(Clone)
+
+[14:17:17; 01054] OnTriggerStay with Player(Clone)
+
+[14:17:18; 01055] OnTriggerStay with Player(Clone)
+
+[14:17:18; 01056] OnTriggerStay with Player(Clone)
+
+[14:17:18; 01058] OnTriggerStay with Player(Clone)
+
+[14:17:18; 01064] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:18; 01065] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:18; 01066] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:18; 01067] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:18; 01067] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:18; 01068] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:18; 01068] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:18; 01070] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:18; 01070] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:18; 01071] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:18; 01071] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:18; 01072] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:18; 01073] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:18; 01074] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:18; 01076] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:18; 01097] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:18; 01099] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:18; 01100] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:18; 01101] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:18; 01101] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:18; 01102] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:18; 01102] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:18; 01103] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:18; 01103] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:18; 01105] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:18; 01105] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:18; 01106] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:18; 01107] OnTriggerStay with Arm_R
+
+[14:17:18; 01107] OnTriggerStay with Arm_R
+
+[14:17:18; 01107] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:18; 01108] OnTriggerStay with Arm_R
+
+[14:17:18; 01108] OnTriggerStay with Arm_R
+
+[14:17:18; 01108] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:18; 01109] OnTriggerStay with Arm_R
+
+[14:17:18; 01109] OnTriggerStay with Arm_R
+
+[14:17:18; 01109] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:18; 01111] OnTriggerStay with Arm_R
+
+[14:17:18; 01111] OnTriggerStay with Arm_R
+
+[14:17:18; 01112] OnTriggerStay with Arm_R
+
+[14:17:18; 01112] OnTriggerStay with Arm_R
+
+[14:17:18; 01113] OnTriggerStay with Arm_R
+
+[14:17:18; 01113] OnTriggerStay with Arm_R
+
+[14:17:18; 01114] OnTriggerStay with Arm_R
+
+[14:17:18; 01114] OnTriggerStay with Arm_R
+
+[14:17:18; 01115] OnTriggerStay with Arm_R
+
+[14:17:18; 01115] OnTriggerStay with Arm_R
+
+[14:17:19; 01117] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01117] OnTriggerStay with Arm_R
+
+[14:17:19; 01117] OnTriggerStay with Arm_R
+
+[14:17:19; 01118] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01118] OnTriggerStay with Arm_R
+
+[14:17:19; 01118] OnTriggerStay with Arm_R
+
+[14:17:19; 01119] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01119] OnTriggerStay with Arm_R
+
+[14:17:19; 01119] OnTriggerStay with Arm_R
+
+[14:17:19; 01120] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01120] OnTriggerStay with Arm_R
+
+[14:17:19; 01120] OnTriggerStay with Arm_R
+
+[14:17:19; 01122] OnTriggerStay with Arm_R
+
+[14:17:19; 01122] OnTriggerStay with Arm_R
+
+[14:17:19; 01123] OnTriggerStay with Arm_R
+
+[14:17:19; 01123] OnTriggerStay with Arm_R
+
+[14:17:19; 01123] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01124] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01124] OnTriggerStay with Arm_R
+
+[14:17:19; 01124] OnTriggerStay with Arm_R
+
+[14:17:19; 01124] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01125] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01125] OnTriggerStay with Arm_R
+
+[14:17:19; 01125] OnTriggerStay with Arm_R
+
+[14:17:19; 01125] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01126] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01126] OnTriggerStay with Arm_R
+
+[14:17:19; 01126] OnTriggerStay with Arm_R
+
+[14:17:19; 01126] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01128] Instantiated enemy
+   at EnemySpawnPlane+<Coroutine_Spawn>c__Iterator0.MoveNext() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\EnemySpawnPlane.cs:line 50
+   at UnityEngine.SetupCoroutine.InvokeMoveNext(IEnumerator enumerator, IntPtr returnValueAddress) in C:\buildslave\unity\build\Runtime\Export\Coroutines.cs:line 17
+
+[14:17:19; 01128] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01128] OnTriggerStay with Arm_R
+
+[14:17:19; 01128] OnTriggerStay with Arm_R
+
+[14:17:19; 01128] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01129] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01129] OnTriggerStay with Arm_R
+
+[14:17:19; 01129] OnTriggerStay with Arm_R
+
+[14:17:19; 01129] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01130] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01130] OnTriggerStay with Arm_R
+
+[14:17:19; 01130] OnTriggerStay with Arm_R
+
+[14:17:19; 01130] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01131] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01131] OnTriggerStay with Arm_R
+
+[14:17:19; 01131] OnTriggerStay with Arm_R
+
+[14:17:19; 01131] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01132] OnTriggerStay with Arm_R
+
+[14:17:19; 01132] OnTriggerStay with Arm_R
+
+[14:17:19; 01132] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:19; 01132] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01134] OnTriggerStay with Arm_R
+
+[14:17:19; 01134] OnTriggerStay with Arm_R
+
+[14:17:19; 01134] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:19; 01134] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01135] OnTriggerStay with Arm_R
+
+[14:17:19; 01135] OnTriggerStay with Arm_R
+
+[14:17:19; 01135] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:19; 01135] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:19; 01135] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01136] OnTriggerStay with Arm_R
+
+[14:17:19; 01136] OnTriggerStay with Arm_R
+
+[14:17:19; 01136] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:19; 01136] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:19; 01136] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01137] OnTriggerStay with Arm_R
+
+[14:17:19; 01137] OnTriggerStay with Arm_R
+
+[14:17:19; 01137] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:19; 01137] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:19; 01137] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01138] OnTriggerStay with Arm_R
+
+[14:17:19; 01138] OnTriggerStay with Arm_R
+
+[14:17:19; 01138] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:19; 01138] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:19; 01138] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01140] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:19; 01140] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01141] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:19; 01141] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01142] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:19; 01142] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01143] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:19; 01143] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01144] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:19; 01144] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01146] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01147] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01148] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01149] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01150] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01152] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01153] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01154] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01155] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01157] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01158] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01159] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01160] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01161] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01163] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01164] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01165] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:19; 01165] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01166] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:19; 01166] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01167] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01167] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:19; 01167] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01169] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01169] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:19; 01169] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:19; 01169] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01170] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01170] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:19; 01170] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:19; 01170] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01171] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01171] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:19; 01171] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:19; 01171] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01172] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01172] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:19; 01172] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:19; 01172] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01173] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01173] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:19; 01173] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:19; 01173] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01175] OnTriggerStay with Player(Clone)
+
+[14:17:19; 01175] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:19; 01175] OnTriggerStay with Player(Clone)
+
+[14:17:20; 01176] OnTriggerStay with Player(Clone)
+
+[14:17:20; 01176] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:20; 01176] OnTriggerStay with Player(Clone)
+
+[14:17:20; 01177] OnTriggerStay with Player(Clone)
+
+[14:17:20; 01177] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:20; 01177] OnTriggerStay with Player(Clone)
+
+[14:17:20; 01178] OnTriggerStay with Player(Clone)
+
+[14:17:20; 01178] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:20; 01178] OnTriggerStay with Player(Clone)
+
+[14:17:20; 01179] OnTriggerStay with Player(Clone)
+
+[14:17:20; 01179] OnTriggerStay with Player(Clone)
+
+[14:17:20; 01181] OnTriggerStay with Player(Clone)
+
+[14:17:20; 01181] OnTriggerStay with Player(Clone)
+
+[14:17:20; 01182] OnTriggerStay with Player(Clone)
+
+[14:17:20; 01182] OnTriggerStay with Player(Clone)
+
+[14:17:20; 01183] OnTriggerStay with Player(Clone)
+
+[14:17:20; 01183] OnTriggerStay with Player(Clone)
+
+[14:17:20; 01184] OnTriggerStay with Player(Clone)
+
+[14:17:20; 01184] OnTriggerStay with Player(Clone)
+
+[14:17:20; 01185] OnTriggerStay with Player(Clone)
+
+[14:17:20; 01185] OnTriggerStay with Player(Clone)
+
+[14:17:20; 01187] OnTriggerStay with Player(Clone)
+
+[14:17:20; 01187] OnTriggerStay with Player(Clone)
+
+[14:17:20; 01188] OnTriggerStay with Player(Clone)
+
+[14:17:20; 01189] OnTriggerStay with Player(Clone)
+
+[14:17:20; 01190] OnTriggerStay with Player(Clone)
+
+[14:17:20; 01192] OnTriggerStay with Player(Clone)
+
+[14:17:20; 01193] OnTriggerStay with Player(Clone)
+
+[14:17:20; 01194] OnTriggerStay with Player(Clone)
+
+[14:17:20; 01195] OnTriggerStay with Player(Clone)
+
+[14:17:20; 01196] OnTriggerStay with Player(Clone)
+
+[14:17:20; 01198] OnTriggerStay with Player(Clone)
+
+[14:17:20; 01199] OnTriggerStay with Player(Clone)
+
+[14:17:20; 01199] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:20; 01200] OnTriggerStay with Player(Clone)
+
+[14:17:20; 01200] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:20; 01201] OnTriggerStay with Player(Clone)
+
+[14:17:20; 01201] OnTriggerStay with Arm_R
+
+[14:17:20; 01201] OnTriggerStay with Arm_R
+
+[14:17:20; 01201] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:20; 01202] OnTriggerStay with Player(Clone)
+
+[14:17:20; 01202] OnTriggerStay with Arm_R
+
+[14:17:20; 01202] OnTriggerStay with Arm_R
+
+[14:17:20; 01202] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:20; 01204] OnTriggerStay with Player(Clone)
+
+[14:17:20; 01204] OnTriggerStay with Arm_R
+
+[14:17:20; 01204] OnTriggerStay with Arm_R
+
+[14:17:20; 01204] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:20; 01204] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:20; 01205] OnTriggerStay with Player(Clone)
+
+[14:17:20; 01205] OnTriggerStay with Arm_R
+
+[14:17:20; 01205] OnTriggerStay with Arm_R
+
+[14:17:20; 01205] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:20; 01205] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:20; 01206] OnTriggerStay with Player(Clone)
+
+[14:17:20; 01206] OnTriggerStay with Arm_R
+
+[14:17:20; 01206] OnTriggerStay with Arm_R
+
+[14:17:20; 01206] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:20; 01206] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:20; 01207] OnTriggerStay with Arm_R
+
+[14:17:20; 01207] OnTriggerStay with Arm_R
+
+[14:17:20; 01207] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:20; 01207] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:20; 01208] OnTriggerStay with Arm_R
+
+[14:17:20; 01208] OnTriggerStay with Arm_R
+
+[14:17:20; 01208] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:20; 01208] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:20; 01210] OnTriggerStay with Arm_R
+
+[14:17:20; 01210] OnTriggerStay with Arm_R
+
+[14:17:20; 01210] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:20; 01211] OnTriggerStay with Arm_R
+
+[14:17:20; 01211] OnTriggerStay with Arm_R
+
+[14:17:20; 01211] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:20; 01212] OnTriggerStay with Arm_R
+
+[14:17:20; 01212] OnTriggerStay with Arm_R
+
+[14:17:20; 01212] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:20; 01213] OnTriggerStay with Arm_R
+
+[14:17:20; 01213] OnTriggerStay with Arm_R
+
+[14:17:20; 01225] OnTriggerStay with Player(Clone)
+
+[14:17:20; 01227] OnTriggerStay with Player(Clone)
+
+[14:17:20; 01228] OnTriggerStay with Player(Clone)
+
+[14:17:20; 01229] OnTriggerStay with Player(Clone)
+
+[14:17:20; 01230] OnTriggerStay with Player(Clone)
+
+[14:17:20; 01231] OnTriggerStay with Player(Clone)
+
+[14:17:20; 01233] OnTriggerStay with Player(Clone)
+
+[14:17:20; 01234] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:20; 01234] OnTriggerStay with Player(Clone)
+
+[14:17:20; 01235] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:20; 01235] OnTriggerStay with Player(Clone)
+
+[14:17:21; 01236] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:21; 01236] OnTriggerStay with Player(Clone)
+
+[14:17:21; 01237] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:21; 01237] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:21; 01237] OnTriggerStay with Player(Clone)
+
+[14:17:21; 01239] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:21; 01239] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:21; 01239] OnTriggerStay with Player(Clone)
+
+[14:17:21; 01240] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:21; 01240] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:21; 01240] OnTriggerStay with Player(Clone)
+
+[14:17:21; 01241] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:21; 01241] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:21; 01241] OnTriggerStay with Player(Clone)
+
+[14:17:21; 01242] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:21; 01242] OnTriggerStay with Player(Clone)
+
+[14:17:21; 01243] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:21; 01243] OnTriggerStay with Player(Clone)
+
+[14:17:21; 01245] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:21; 01245] OnTriggerStay with Player(Clone)
+
+[14:17:21; 01246] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:21; 01246] OnTriggerStay with Player(Clone)
+
+[14:17:21; 01247] OnTriggerStay with Player(Clone)
+
+[14:17:21; 01248] OnTriggerStay with Player(Clone)
+
+[14:17:21; 01257] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:21; 01258] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:21; 01259] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:21; 01260] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:21; 01260] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:21; 01262] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:21; 01262] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:21; 01263] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:21; 01264] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:21; 01265] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:21; 01271] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:21; 01272] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:21; 01274] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:21; 01275] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:21; 01276] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:21; 01277] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:21; 01278] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:21; 01280] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:21; 01281] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:21; 01282] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:21; 01283] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:21; 01284] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:21; 01285] Animation Event OnFrontSwingStart
+
+[14:17:21; 01286] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:21; 01286] Enemy Enemy_Fire(Clone) hit!
+
+[14:17:21; 01287] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:21; 01288] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:21; 01289] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:21; 01291] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:21; 01292] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:21; 01293] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:21; 01294] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:21; 01295] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01297] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01298] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01299] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01300] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01301] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01303] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01304] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01305] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01305] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:22; 01306] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01306] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:22; 01307] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01307] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:22; 01309] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01309] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:22; 01310] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01310] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:22; 01311] Animation Event OnFrontSwingFinsih
+
+[14:17:22; 01311] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01311] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:22; 01312] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01312] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:22; 01313] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01313] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:22; 01315] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01316] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01317] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01318] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01320] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01321] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01322] Instantiated enemy
+   at EnemySpawnPlane+<Coroutine_Spawn>c__Iterator0.MoveNext() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\EnemySpawnPlane.cs:line 50
+   at UnityEngine.SetupCoroutine.InvokeMoveNext(IEnumerator enumerator, IntPtr returnValueAddress) in C:\buildslave\unity\build\Runtime\Export\Coroutines.cs:line 17
+
+[14:17:22; 01322] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01323] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01324] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01326] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01327] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01328] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01329] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01329] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:22; 01330] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01330] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:22; 01332] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01332] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:22; 01333] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01333] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:22; 01334] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01334] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:22; 01335] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01335] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:22; 01336] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01336] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:22; 01338] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01338] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:22; 01339] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01339] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:22; 01339] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:22; 01340] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01340] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:22; 01340] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:22; 01341] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01341] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:22; 01341] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:22; 01342] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01342] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:22; 01342] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:22; 01344] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01344] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:22; 01345] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01345] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:22; 01346] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01346] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:22; 01347] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01347] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:22; 01348] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01348] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:22; 01350] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01351] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01352] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01353] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01355] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:22; 01356] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:23; 01357] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:23; 01358] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:23; 01359] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:23; 01361] Instantiated enemy
+   at EnemySpawnPlane+<Coroutine_Spawn>c__Iterator0.MoveNext() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\EnemySpawnPlane.cs:line 50
+   at UnityEngine.SetupCoroutine.InvokeMoveNext(IEnumerator enumerator, IntPtr returnValueAddress) in C:\buildslave\unity\build\Runtime\Export\Coroutines.cs:line 17
+
+[14:17:23; 01361] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:23; 01362] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:23; 01363] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:23; 01364] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:23; 01365] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:23; 01367] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:23; 01368] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:23; 01368] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:23; 01369] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:23; 01369] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:23; 01370] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:23; 01370] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:23; 01371] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:23; 01371] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:23; 01373] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:23; 01373] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:23; 01373] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:23; 01374] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:23; 01374] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:23; 01374] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:23; 01375] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:23; 01375] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:23; 01375] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:23; 01376] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:23; 01376] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:23; 01376] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:23; 01377] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:23; 01377] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:23; 01377] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:23; 01379] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:23; 01379] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:23; 01380] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:23; 01380] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:23; 01381] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:23; 01381] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:23; 01382] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:23; 01382] OnTriggerStay with FloorPrototype64x01x64
+
+[14:17:23; 01383] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:23; 01385] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:23; 01385] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:23; 01385] OnTriggerStay with Enemy_Fire(Clone)
+
+[14:17:23; 01385] OnTriggerStay with Enemy_Fire(Clone)
 
