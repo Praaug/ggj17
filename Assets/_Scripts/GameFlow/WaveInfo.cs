@@ -5,11 +5,32 @@ using System.Collections.Generic;
 [System.Serializable]
 public class WaveInfo
 {
+    #region Fields
     public int fireCount;
     public int waterCount;
     public int windCount;
     public int dirtCount;
 
+    private Player m_player;
+    #endregion
+
+    #region Constructor
+    public WaveInfo( Player p_player )
+    {
+        m_player = p_player;
+    }
+    public WaveInfo( Player p_player, WaveInfo p_waveInfo )
+    {
+        m_player = p_player;
+
+        fireCount = p_waveInfo.fireCount;
+        waterCount = p_waveInfo.waterCount;
+        windCount = p_waveInfo.windCount;
+        dirtCount = p_waveInfo.dirtCount;
+    }
+    #endregion
+
+    #region Methods
     public List<EnemyInfo> CalculatePrefabs()
     {
         List<EnemyInfo> _resultList = new List<EnemyInfo>();
@@ -41,4 +62,52 @@ public class WaveInfo
 
         return _resultList;
     }
+
+    public int PointsNeededForLevelUp( ElementType p_elementType )
+    {
+        switch ( p_elementType )
+        {
+            case ElementType.Fire:
+                return PointsNeededForLevelUp( fireCount );
+            case ElementType.Water:
+                return PointsNeededForLevelUp( waterCount );
+            case ElementType.Air:
+                return PointsNeededForLevelUp( windCount );
+            case ElementType.Dirt:
+                return PointsNeededForLevelUp( dirtCount );
+            default:
+                throw new System.ArgumentException();
+        }
+    }
+
+    private int PointsNeededForLevelUp( int p_level )
+    {
+        return Mathf.FloorToInt( Mathf.Pow( 1.4f, p_level ) );
+    }
+
+    public void IncrementElementCount( ElementType p_type )
+    {
+        switch ( p_type )
+        {
+            case ElementType.Fire:
+                m_player.RemoveElementPoints( ElementType.Fire, PointsNeededForLevelUp( ElementType.Fire ) );
+                fireCount++;
+                break;
+            case ElementType.Water:
+                m_player.RemoveElementPoints( ElementType.Water, PointsNeededForLevelUp( ElementType.Water ) );
+                waterCount++;
+                break;
+            case ElementType.Air:
+                m_player.RemoveElementPoints( ElementType.Air, PointsNeededForLevelUp( ElementType.Air ) );
+                windCount++;
+                break;
+            case ElementType.Dirt:
+                m_player.RemoveElementPoints( ElementType.Dirt, PointsNeededForLevelUp( ElementType.Dirt ) );
+                dirtCount++;
+                break;
+            default:
+                throw new System.ArgumentException();
+        }
+    }
+    #endregion
 }

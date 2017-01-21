@@ -57,7 +57,9 @@ MonoBehaviour:
   m_killPlanes:
   - {fileID: 0}
   - {fileID: 0}
-  m_playerPrefab: {fileID: 1407493350686444, guid: 80405b2ddc942c342a6a02ad3267e62b,
+  m_player1Prefab: {fileID: 1407493350686444, guid: 80405b2ddc942c342a6a02ad3267e62b,
+    type: 2}
+  m_player2Prefab: {fileID: 1407493350686444, guid: 605408b11a5fe304c91db2895795f89e,
     type: 2}
   m_enemyPrefabFire:
   - {fileID: 114929247372140504, guid: abdb2cf26f3d98b4184cd02ee6632419, type: 2}

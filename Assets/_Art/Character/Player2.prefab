@@ -59,7 +59,7 @@ GameObject:
   - component: {fileID: 114664324128465084}
   - component: {fileID: 114030755180119236}
   m_Layer: 9
-  m_Name: Player
+  m_Name: Player2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -382,11 +382,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_waveInfo:
     fireCount: 1
-    waterCount: 1
-    windCount: 1
-    dirtCount: 1
-  m_spawnRate: 4
-  m_randomBias: 2
+    waterCount: 0
+    windCount: 0
+    dirtCount: 0
+  m_spawnRate: 3
+  m_randomBias: 1
 --- !u!114 &114320280951783038
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -441,7 +441,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 822182d492a59ea4889990ccf47253e5, type: 2}
+  - {fileID: 2100000, guid: 4f371b9191d9c0e4ba1bbb229ba4b41f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

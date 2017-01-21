@@ -73,10 +73,13 @@ public class EnemySpawnPlane : MonoBehaviour
             // Subscribe kill event
             _enemy.OnKillThis += Enemy_OnKillThis;
 
-            yield return new WaitForSeconds( Randomx.Bias( p_randomBias ) + p_baseTick );
+
+            if ( i < p_spawnPrefabs.Count - 1 )
+                yield return new WaitForSeconds( Randomx.Bias( p_randomBias ) + p_baseTick );
         }
 
         m_allEnemiesSpawned = true;
+        Dbg.Log( gameObject, "ALL ENEMIES ARE SPAWNED ON {0}", gameObject.name );
     }
 
     private void Enemy_OnKillThis( Enemy p_enemy )
@@ -85,18 +88,19 @@ public class EnemySpawnPlane : MonoBehaviour
 
         m_enemySpawnedList.Remove( p_enemy );
 
+        Dbg.Log( gameObject, "Enemy killed on wave {0}. List count {1}", gameObject, m_enemySpawnedList.Count );
+
         if ( m_allEnemiesSpawned && m_enemySpawnedList.Count == 0 )
         {
             Dbg.Log( "ON WAVE DONE CALLED" );
             if ( OnWaveDoneThis != null )
                 OnWaveDoneThis( this );
-
         }
     }
 
     private void OnDrawGizmos()
     {
-        Gizmos.DrawWireCube( transform.position, new Vector3( m_width, m_height, m_depth ) );
+        Gizmos.DrawWireCube( transform.position + Vector3.up * m_height * 0.5f, new Vector3( m_width, m_height, m_depth ) );
     }
     #endregion
 }

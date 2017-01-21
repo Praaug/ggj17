@@ -42,12 +42,12 @@ public class UIPlanning : MonoBehaviour
         m_player = p_player;
     }
 
-    private void IncreaseStat( EnemyType p_type )
+    private void IncreaseStat( ElementType p_type )
     {
 
     }
 
-    private void DecreaseStat( EnemyType p_type )
+    private void DecreaseStat( ElementType p_type )
     {
 
     }

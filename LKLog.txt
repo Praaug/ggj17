@@ -1,41 +1,17 @@
-[16:54:32; 00000] LOG STARTED!
+[21:15:59; 00000] LOG STARTED!
    at UnityEngine.GameObject.AddComponent(System.Type componentType) in C:\buildslave\unity\build\artifacts\generated\common\runtime\GameObjectBindings.gen.cs:line 352
    at UnityEngine.GameObject.AddComponent() in C:\buildslave\unity\build\artifacts\generated\common\runtime\GameObjectBindings.gen.cs:line 357
    at Dbg.get_Instance() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Misc\Dbg.cs:line 35
    at Dbg.Log(UnityEngine.Object p_object, System.String message, StackTraceLogType p_type) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Misc\Dbg.cs:line 52
    at Dbg.Log(System.String message, System.Object[] args) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Misc\Dbg.cs:line 76
-   at GameInfo.Internal_CurrentGamePhaseChange() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\GameFlow\GameInfo.cs:line 112
+   at GameInfo.Internal_CurrentGamePhaseChange() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\GameFlow\GameInfo.cs:line 114
    at GameInfo.set_currentGamePhase(GamePhase value) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\GameFlow\GameInfo.cs:line 32
-   at GameInfo.Awake() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\GameFlow\GameInfo.cs:line 82
+   at GameInfo.Awake() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\GameFlow\GameInfo.cs:line 84
 
-[16:54:32; 00000] GAME PHASE CHANGED TO PreGame
+[21:15:59; 00000] GAME PHASE CHANGED TO PreGame
    at Dbg.Log(UnityEngine.Object p_object, System.String message, StackTraceLogType p_type) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Misc\Dbg.cs:line 53
    at Dbg.Log(System.String message, System.Object[] args) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Misc\Dbg.cs:line 76
-   at GameInfo.Internal_CurrentGamePhaseChange() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\GameFlow\GameInfo.cs:line 112
+   at GameInfo.Internal_CurrentGamePhaseChange() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\GameFlow\GameInfo.cs:line 114
    at GameInfo.set_currentGamePhase(GamePhase value) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\GameFlow\GameInfo.cs:line 32
-   at GameInfo.Awake() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\GameFlow\GameInfo.cs:line 82
-
-[16:54:33; 00058] GAME PHASE CHANGED TO Fight
-   at GameInfo.Internal_CurrentGamePhaseChange() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\GameFlow\GameInfo.cs:line 112
-   at GameInfo.set_currentGamePhase(GamePhase value) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\GameFlow\GameInfo.cs:line 32
-   at GameInfo.StartGame() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\GameFlow\GameInfo.cs:line 158
-   at System.Reflection.MonoMethod.InternalInvoke(System.Object , System.Object[] , System.Exception ByRef )
-   at System.Reflection.MonoMethod.Invoke(System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Reflection/MonoMethod.cs:line 222
-   at System.Reflection.MethodBase.Invoke(System.Object obj, System.Object[] parameters) in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Reflection/MethodBase.cs:line 115
-   at MonoBehaviourEditor.OnInspectorGUI() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\CategoryExtension\Editor\MonoBehaviourEditor.cs:line 97
-   at UnityEditor.InspectorWindow.DrawEditor(UnityEditor.Editor editor, Int32 editorIndex, Boolean rebuildOptimizedGUIBlock, Boolean ByRef showImportedObjectBarNext, Rect ByRef importedObjectBarRect) in C:\buildslave\unity\build\Editor\Mono\Inspector\InspectorWindow.cs:line 1236
-   at UnityEditor.InspectorWindow.DrawEditors(UnityEditor.Editor[] editors) in C:\buildslave\unity\build\Editor\Mono\Inspector\InspectorWindow.cs:line 1031
-   at UnityEditor.InspectorWindow.OnGUI() in C:\buildslave\unity\build\Editor\Mono\Inspector\InspectorWindow.cs:line 356
-   at System.Reflection.MonoMethod.InternalInvoke(System.Object , System.Object[] , System.Exception ByRef )
-   at System.Reflection.MonoMethod.Invoke(System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Reflection/MonoMethod.cs:line 222
-   at System.Reflection.MethodBase.Invoke(System.Object obj, System.Object[] parameters) in /Users/builduser/buildslave/mono/build/mcs/class/corlib/System.Reflection/MethodBase.cs:line 115
-   at UnityEditor.HostView.Invoke(System.String methodName, System.Object obj) in C:\buildslave\unity\build\Editor\Mono\HostView.cs:line 249
-   at UnityEditor.HostView.Invoke(System.String methodName) in C:\buildslave\unity\build\Editor\Mono\HostView.cs:line 242
-   at UnityEditor.HostView.InvokeOnGUI(Rect onGUIPosition) in C:\buildslave\unity\build\Editor\Mono\HostView.cs:line 212
-   at UnityEditor.DockArea.OnGUI() in C:\buildslave\unity\build\Editor\Mono\GUI\DockArea.cs:line 341
-
-[16:54:51; 01183] ON WAVE DONE CALLED
-   at EnemySpawnPlane.Enemy_OnKillThis(.Enemy p_enemy) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\EnemySpawnPlane.cs:line 90
-   at Enemy.Kill() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\Enemy.cs:line 56
-   at EnemyKillPlane.OnTriggerEnter(UnityEngine.Collider p_collider) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\EnemyKillPlane.cs:line 31
+   at GameInfo.Awake() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\GameFlow\GameInfo.cs:line 84
 

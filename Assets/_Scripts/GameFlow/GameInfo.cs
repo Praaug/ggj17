@@ -43,7 +43,9 @@ public partial class GameInfo : MonoBehaviour
     [SerializeField, Category( "References" )]
     private EnemyKillPlane[] m_killPlanes = new EnemyKillPlane[ 0 ];
     [SerializeField, Category( "References" )]
-    private GameObject m_playerPrefab = null;
+    private GameObject m_player1Prefab = null;
+    [SerializeField, Category( "References" )]
+    private GameObject m_player2Prefab = null;
 
     [SerializeField, Category( "Enemy" )]
     private EnemyInfo[] m_enemyPrefabFire = new EnemyInfo[ 0 ];
@@ -124,11 +126,6 @@ public partial class GameInfo : MonoBehaviour
         }
     }
 
-    private void OnGUI()
-    {
-
-    }
-
     /// <summary>
     /// Starts the game
     /// </summary>
@@ -136,7 +133,7 @@ public partial class GameInfo : MonoBehaviour
     public void StartGame()
     {
         // Create the player avatars and objects
-        Player.CreatePlayer( m_playerPrefab );
+        Player.CreatePlayer( m_player1Prefab, m_player2Prefab );
 
         if ( Player.allPlayer.Count != m_spawnPlanes.Length || Player.allPlayer.Count != m_killPlanes.Length )
         {
@@ -155,7 +152,12 @@ public partial class GameInfo : MonoBehaviour
         }
 
         // Init the game phase
-        currentGamePhase = GamePhase.Fight;
+        InitPhase( GamePhase.Fight );
+    }
+
+    public void InitPhase( GamePhase p_phase )
+    {
+        currentGamePhase = p_phase;
     }
 
     private void InitPhase_Fight()
@@ -171,6 +173,12 @@ public partial class GameInfo : MonoBehaviour
     private void InitPhase_WaveBuilding()
     {
 
+    }
+
+    private void OnGUI()
+    {
+        if ( GUILayout.Button( "Start Game" ) )
+            StartGame();
     }
 
     #endregion

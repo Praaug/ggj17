@@ -118,7 +118,7 @@ public partial class Player
         elementBuffDict[ p_enemy.info.elementType ]++;
     }
 
-    private void AddElementPoints( ElementType p_type, int p_amount )
+    public void AddElementPoints( ElementType p_type, int p_amount )
     {
         // Increase points
         elementPointsDict[ p_type ] += p_amount;
@@ -128,7 +128,7 @@ public partial class Player
             OnElementPointsChange( p_type );
     }
 
-    private void RemoveElementPoints( ElementType p_type, int p_amount )
+    public void RemoveElementPoints( ElementType p_type, int p_amount )
     {
         // Increase points
         elementPointsDict[ p_type ] = Mathf.Max( 0, elementPointsDict[ p_type ] - p_amount );
@@ -156,18 +156,20 @@ public partial class Player
 
     public static List<Player> allPlayer { get; private set; }
 
-    public static List<Player> CreatePlayer( GameObject p_playerPrefab )
+    public static List<Player> CreatePlayer( GameObject p_player1Prefab, GameObject p_player2Prefab )
     {
         allPlayer = new List<Player>();
 
-        for ( int i = 0; i < PLAYER_COUNT; i++ )
-        {
-            // Create player avatar
-            GameObject _playerInstance = Object.Instantiate( p_playerPrefab );
+        // Create player avatar
+        GameObject _player1Instance = Object.Instantiate( p_player1Prefab );
+        // Create player object with reference to avatar
+        allPlayer.Add( new Player( _player1Instance, InputSource.Player1 ) );
 
-            // Create player object with reference to avatar
-            allPlayer.Add( new Player( _playerInstance, i == 0 ? InputSource.Player1 : InputSource.Player2 ) );
-        }
+
+        // Create player avatar
+        GameObject _player2Instance = Object.Instantiate( p_player2Prefab );
+        // Create player object with reference to avatar
+        allPlayer.Add( new Player( _player2Instance, InputSource.Player2 ) );
 
         return allPlayer;
     }
