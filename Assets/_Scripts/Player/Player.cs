@@ -20,6 +20,11 @@ public partial class Player
         gameObject = p_avatarInstance;
         config = p_avatarInstance.GetComponent<PlayerConfig>();
     }
+
+    public void ReduceLife( int p_amount )
+    {
+
+    }
     #endregion
 }
 
