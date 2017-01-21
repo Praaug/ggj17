@@ -3,6 +3,8 @@ using System.Collections;
 
 public static class Randomx
 {
+    public static float sign { get { return Random.value > 0.5 ? 1 : -1; } }
+
     public static float Bias( float p_bias )
     {
         return Random.Range( -p_bias, p_bias );

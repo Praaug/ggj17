@@ -83,6 +83,7 @@ GameObject:
   - component: {fileID: 95270717487436808}
   - component: {fileID: 54252997012048408}
   - component: {fileID: 143090442815577918}
+  - component: {fileID: 114929247372140504}
   - component: {fileID: 114315270806778976}
   - component: {fileID: 114690437827547586}
   m_Layer: 8
@@ -349,6 +350,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 788db62043f6d214cad727fdcec1a55c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_ragdollController: {fileID: 0}
 --- !u!114 &114690437827547586
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -360,6 +362,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eed6fbdc91322dd4aaa647bdca3d7de6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_animator: {fileID: 95270717487436808}
+  m_cc: {fileID: 143090442815577918}
+  m_controller: {fileID: 0}
+  m_movementSpeed: 3
+--- !u!114 &114929247372140504
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1245377934738654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8371182b7f337cb42bcd05d2d981c56f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_health: 10
 --- !u!137 &137151526310180484
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
@@ -373,7 +391,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: d0dd497c1c43bf04b83986885c5180ed, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

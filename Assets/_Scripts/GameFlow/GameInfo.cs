@@ -9,9 +9,16 @@ public partial class GameInfo : MonoBehaviour
     /// Event that is fired when the game phase has changed
     /// </summary>
     public event System.Action OnCurrentGamePhaseChange;
+
+    /// <summary>
+    /// Event that is fired when the game has started
+    /// </summary>
+    public event System.Action OnStartGame;
     #endregion
 
     #region Properties
+    public float damageIncPerStep { get { return m_damageIncPerStep; } }
+    public float killsPerStep { get { return m_killsPerStep; } }
     [Debug]
     public GamePhase currentGamePhase
     {
@@ -27,14 +34,22 @@ public partial class GameInfo : MonoBehaviour
                 OnCurrentGamePhaseChange();
         }
     }
-    private GamePhase m_currentGamePhase;
     #endregion
 
     #region Fields
     [SerializeField, Category( "References" )]
     private EnemySpawnPlane[] m_spawnPlanes = new EnemySpawnPlane[ 0 ];
     [SerializeField, Category( "References" )]
+    private EnemyKillPlane[] m_killPlanes = new EnemyKillPlane[ 0 ];
+    [SerializeField, Category( "References" )]
     private GameObject m_playerPrefab = null;
+
+    [SerializeField, Category( "Stats" )]
+    private float m_damageIncPerStep = 0.0f;
+    [SerializeField, Category( "Stats" )]
+    private float m_killsPerStep = 0.0f;
+
+    private GamePhase m_currentGamePhase;
     #endregion
 
     #region Methods
@@ -87,15 +102,21 @@ public partial class GameInfo : MonoBehaviour
         // Create the player avatars and objects
         Player.CreatePlayer( m_playerPrefab );
 
-        if ( Player.allPlayer.Count != m_spawnPlanes.Length )
+        if ( Player.allPlayer.Count != m_spawnPlanes.Length || Player.allPlayer.Count != m_killPlanes.Length )
         {
-            Dbg.LogError( "The amount of player does not match the amount of spawn planes!" );
+            Dbg.LogError( "The amount of player does not match the amount of spawn or kill planes!" );
             return;
         }
 
         // Assign player to spawn planes
         for ( int i = 0; i < m_spawnPlanes.Length; i++ )
-            m_spawnPlanes[ i ].AssignPlayer( Player.allPlayer[ i ] );
+        {
+            Player _owningPlayer = Player.allPlayer[ i ];
+            Player _damagedPlayer = Player.allPlayer[ ( i + 1 ) % Player.allPlayer.Count ];
+
+            m_spawnPlanes[ i ].AssignPlayer( _owningPlayer, _damagedPlayer );
+            m_killPlanes[ i ].AssignPlayer( _owningPlayer, _damagedPlayer );
+        }
 
         // Init the game phase
         currentGamePhase = GamePhase.Fight;

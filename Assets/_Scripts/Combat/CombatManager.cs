@@ -3,7 +3,7 @@ using System.Collections;
 
 public static class CombatManager
 {
-    public static void PerformAttack( ICombatEntity p_attackingEntity, ICombatEntity p_targetEntity, CombatHit p_hitInfo )
+    public static void PerformAttack( Player p_attackingPlayer, ICombatEntity p_targetEntity, CombatHit p_hitInfo )
     {
         p_targetEntity.InflictDamage( p_hitInfo.damage );
     }
@@ -11,5 +11,5 @@ public static class CombatManager
 
 public class CombatHit
 {
-    public int damage;
+    public float damage;
 }
