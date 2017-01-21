@@ -28,7 +28,7 @@ public class EnemyKillPlane : MonoBehaviour
             return;
 
         // Kill the enemy
-        _enemy.Kill();
+        _enemy.Kill( null );
 
         // Reduce life of damaged player
         m_damagedPlayer.ReduceLife( 1 );

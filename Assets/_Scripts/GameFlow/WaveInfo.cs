@@ -63,6 +63,14 @@ public class WaveInfo
         return _resultList;
     }
 
+    public void ClearElementCount()
+    {
+        fireCount = 0;
+        waterCount = 0;
+        windCount = 0;
+        dirtCount = 0;
+    }
+
     public int PointsNeededForLevelUp( ElementType p_elementType )
     {
         switch ( p_elementType )
@@ -104,6 +112,31 @@ public class WaveInfo
             case ElementType.Dirt:
                 m_player.RemoveElementPoints( ElementType.Dirt, PointsNeededForLevelUp( ElementType.Dirt ) );
                 dirtCount++;
+                break;
+            default:
+                throw new System.ArgumentException();
+        }
+    }
+
+    public void DecrementElementCount( ElementType p_type )
+    {
+        switch ( p_type )
+        {
+            case ElementType.Fire:
+                fireCount--;
+                m_player.AddElementPoints( ElementType.Fire, PointsNeededForLevelUp( ElementType.Fire ) );
+                break;
+            case ElementType.Water:
+                waterCount--;
+                m_player.AddElementPoints( ElementType.Water, PointsNeededForLevelUp( ElementType.Water ) );
+                break;
+            case ElementType.Air:
+                windCount--;
+                m_player.AddElementPoints( ElementType.Air, PointsNeededForLevelUp( ElementType.Air ) );
+                break;
+            case ElementType.Dirt:
+                dirtCount--;
+                m_player.AddElementPoints( ElementType.Dirt, PointsNeededForLevelUp( ElementType.Dirt ) );
                 break;
             default:
                 throw new System.ArgumentException();
