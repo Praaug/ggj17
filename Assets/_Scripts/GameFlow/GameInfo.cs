@@ -60,6 +60,8 @@ public partial class GameInfo : MonoBehaviour
     private float m_damageIncPerStep = 0.0f;
     [SerializeField, Category( "Stats" )]
     private int m_killsPerStep = 0;
+    [SerializeField, Category( "Stats" )]
+    private float m_waveBuildTimer = 0.0f;
 
     private bool m_player1WaveFinished = false;
     private bool m_player2WaveFinished = false;
@@ -68,6 +70,8 @@ public partial class GameInfo : MonoBehaviour
     private bool m_player2Ready;
 
     private GamePhase m_currentGamePhase;
+
+    private Coroutine m_coroutineTimerWaveBuilding;
     #endregion
 
     #region Methods
@@ -166,6 +170,12 @@ public partial class GameInfo : MonoBehaviour
 
     private void InitPhase_Fight()
     {
+        if ( m_coroutineTimerWaveBuilding != null )
+        {
+            StopCoroutine( m_coroutineTimerWaveBuilding );
+            m_coroutineTimerWaveBuilding = null;
+        }
+
         m_player1Ready = false;
         m_player2Ready = false;
 
@@ -180,6 +190,10 @@ public partial class GameInfo : MonoBehaviour
 
     private void InitPhase_WaveBuilding()
     {
+        if ( m_coroutineTimerWaveBuilding != null )
+            StopCoroutine( m_coroutineTimerWaveBuilding );
+        m_coroutineTimerWaveBuilding = StartCoroutine( Coroutine_TimerWaveBuilding() );
+
         m_player1Ready = false;
         m_player2Ready = false;
 
@@ -239,6 +253,13 @@ public partial class GameInfo : MonoBehaviour
             if ( m_player1Ready && m_player2Ready )
                 InitPhase( GamePhase.Fight );
         }
+    }
+
+    private IEnumerator Coroutine_TimerWaveBuilding()
+    {
+        yield return new WaitForSeconds( 20.0f );
+
+        InitPhase( GamePhase.Fight );
     }
     #endregion
 }
