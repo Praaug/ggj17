@@ -28,7 +28,6 @@ public class UIPlanning : MonoBehaviour
             _wi.Init( m_player );
     }
 
-    private void IncreaseStat( ElementType p_type )
     public void FixedUpdate()
     {
         //if ( InputUtility.GetButtonDown( InputButton.MenuRight, m_player.inputSource ) )
