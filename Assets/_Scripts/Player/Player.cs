@@ -45,10 +45,8 @@ public partial class Player
     #endregion
 
     #region Constructor
-    public Player( GameObject p_avatarInstance, InputSource p_inputSource )
+    public Player( InputSource p_inputSource )
     {
-        gameObject = p_avatarInstance;
-        config = p_avatarInstance.GetComponent<PlayerConfig>();
         inputSource = p_inputSource;
         lifes = 10;
 
@@ -79,6 +77,17 @@ public partial class Player
     #endregion
 
     #region Methods
+    public void AssignAvatar( GameObject p_gameObject )
+    {
+        gameObject = p_gameObject;
+        config = p_gameObject.GetComponent<PlayerConfig>();
+    }
+
+    public void DestroyAvatar()
+    {
+        Object.Destroy( gameObject );
+    }
+
     public void ReduceLife( int p_amount )
     {
         // Reduce life
@@ -156,22 +165,28 @@ public partial class Player
 
     public static List<Player> allPlayer { get; private set; }
 
-    public static List<Player> CreatePlayer( GameObject p_player1Prefab, GameObject p_player2Prefab )
+    public static List<Player> CreatePlayer()
     {
-        allPlayer = new List<Player>();
+        allPlayer = new List<Player>() { new Player( InputSource.Player1 ), new Player( InputSource.Player2 ) };
 
+        return allPlayer;
+    }
+
+    public static void CreateAvatars( GameObject p_player1Prefab, GameObject p_player2Prefab )
+    {
         // Create player avatar
         GameObject _player1Instance = Object.Instantiate( p_player1Prefab );
-        // Create player object with reference to avatar
-        allPlayer.Add( new Player( _player1Instance, InputSource.Player1 ) );
-
+        allPlayer[ 0 ].AssignAvatar( _player1Instance );
 
         // Create player avatar
         GameObject _player2Instance = Object.Instantiate( p_player2Prefab );
-        // Create player object with reference to avatar
-        allPlayer.Add( new Player( _player2Instance, InputSource.Player2 ) );
+        allPlayer[ 1 ].AssignAvatar( _player2Instance );
+    }
 
-        return allPlayer;
+    public static void DestroyAvatars()
+    {
+        foreach ( Player _player in allPlayer )
+            _player.DestroyAvatar();
     }
 
     public static Player GetPlayer( GameObject p_gameObject )

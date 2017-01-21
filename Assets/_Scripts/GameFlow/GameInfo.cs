@@ -117,6 +117,7 @@ public partial class GameInfo : MonoBehaviour
             case GamePhase.PreGame:
                 break;
             case GamePhase.WaveBuilding:
+                InitPhase_WaveBuilding();
                 break;
             case GamePhase.Fight:
                 InitPhase_Fight();
@@ -133,7 +134,7 @@ public partial class GameInfo : MonoBehaviour
     public void StartGame()
     {
         // Create the player avatars and objects
-        Player.CreatePlayer( m_player1Prefab, m_player2Prefab );
+        Player.CreatePlayer();
 
         if ( Player.allPlayer.Count != m_spawnPlanes.Length || Player.allPlayer.Count != m_killPlanes.Length )
         {
@@ -162,9 +163,10 @@ public partial class GameInfo : MonoBehaviour
 
     private void InitPhase_Fight()
     {
+        Player.CreateAvatars( m_player1Prefab, m_player2Prefab );
+
         m_player1WaveFinished = false;
         m_player2WaveFinished = false;
-
 
         for ( int i = 0; i < m_spawnPlanes.Length; i++ )
             m_spawnPlanes[ i ].SpawnMobs();
@@ -172,7 +174,7 @@ public partial class GameInfo : MonoBehaviour
 
     private void InitPhase_WaveBuilding()
     {
-
+        Player.DestroyAvatars();
     }
 
     private void OnGUI()
