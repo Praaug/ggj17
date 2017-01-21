@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4963815160449176}
   - component: {fileID: 54790020407276466}
   - component: {fileID: 65925937542175552}
+  - component: {fileID: 114380869572811568}
   m_Layer: 9
   m_Name: Arm_R
   m_TagString: Untagged
@@ -58,7 +59,7 @@ GameObject:
   - component: {fileID: 114664324128465084}
   - component: {fileID: 114030755180119236}
   m_Layer: 9
-  m_Name: Player
+  m_Name: Player2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -379,11 +380,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7930b13d31f30c642869158a56fdd1f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_enemyPrefabs:
-  - {fileID: 1245377934738654, guid: abdb2cf26f3d98b4184cd02ee6632419, type: 2}
-  m_spawnAmount: 30
-  m_spawnRate: 5
-  m_randomBias: 2
+  m_waveInfo:
+    fireCount: 1
+    waterCount: 0
+    windCount: 0
+    dirtCount: 0
+  m_spawnRate: 3
+  m_randomBias: 1
 --- !u!114 &114320280951783038
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -397,6 +400,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_animator: {fileID: 95281494104152054}
   m_attacksPerSec: 1
+--- !u!114 &114380869572811568
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1103397811030022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25b792a5bd9c3dc4e8bf3f7149e2cb25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_controller: {fileID: 114320280951783038}
+  m_damagePerHit: 1000
 --- !u!114 &114664324128465084
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -425,7 +441,7 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 4f371b9191d9c0e4ba1bbb229ba4b41f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

@@ -37,7 +37,6 @@ public class EnemyMotor : MonoBehaviour
             this.AssignComponent( out m_controller );
         if ( m_controller == null )
             Dbg.LogError( gameObject, "No EnemyController component found on {0}", gameObject.name );
-
     }
 
     private void FixedUpdate()

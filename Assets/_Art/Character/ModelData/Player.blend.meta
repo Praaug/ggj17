@@ -131,7 +131,7 @@ ModelImporter:
       name: attack_01
       takeName: attack_01
       firstFrame: -1
-      lastFrame: 32
+      lastFrame: 23
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -151,14 +151,14 @@ ModelImporter:
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events:
-      - time: 0.3575983
+      - time: 0.055436146
         functionName: AnimEvnt_OnFrontSwingStart
         data: 
         objectReferenceParameter: {instanceID: 0}
         floatParameter: 0
         intParameter: 0
         messageOptions: 0
-      - time: 0.6705632
+      - time: 0.3046173
         functionName: AnimEvnt_OnFrontSwingFinish
         data: 
         objectReferenceParameter: {instanceID: 0}
@@ -193,7 +193,7 @@ ModelImporter:
       name: attack_02
       takeName: attack_02
       firstFrame: -1
-      lastFrame: 39
+      lastFrame: 28
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

@@ -49,13 +49,9 @@ public class PlayerWeaponDamageTrigger : MonoBehaviour
 
     private void OnTriggerStay( Collider p_collider )
     {
-        Dbg.LogFast( "OnTriggerStay with {0}", p_collider.name );
-
         Enemy _enemy;
         if ( !m_controller.isAttacking || !Enemy.IsEnemy( p_collider, out _enemy ) || m_enemyHitList.Contains( _enemy ) )
             return;
-
-        Dbg.LogFast( "Enemy {0} hit!", _enemy.gameObject.name );
 
         // Add to hit list
         m_enemyHitList.Add( _enemy );

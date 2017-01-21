@@ -9,9 +9,17 @@ public partial class GameInfo : MonoBehaviour
     /// Event that is fired when the game phase has changed
     /// </summary>
     public event System.Action OnCurrentGamePhaseChange;
+
+    /// <summary>
+    /// Event that is fired when the game has started
+    /// </summary>
+    public event System.Action OnStartGame;
     #endregion
 
     #region Properties
+    public Dictionary<ElementType, EnemyInfo[]> elementPrefabDict { get; private set; }
+    public float damageIncPerStep { get { return m_damageIncPerStep; } }
+    public int killsPerStep { get { return m_killsPerStep; } }
     [Debug]
     public GamePhase currentGamePhase
     {
@@ -27,7 +35,6 @@ public partial class GameInfo : MonoBehaviour
                 OnCurrentGamePhaseChange();
         }
     }
-    private GamePhase m_currentGamePhase;
     #endregion
 
     #region Fields
@@ -36,7 +43,28 @@ public partial class GameInfo : MonoBehaviour
     [SerializeField, Category( "References" )]
     private EnemyKillPlane[] m_killPlanes = new EnemyKillPlane[ 0 ];
     [SerializeField, Category( "References" )]
-    private GameObject m_playerPrefab = null;
+    private GameObject m_player1Prefab = null;
+    [SerializeField, Category( "References" )]
+    private GameObject m_player2Prefab = null;
+
+    [SerializeField, Category( "Enemy" )]
+    private EnemyInfo[] m_enemyPrefabFire = new EnemyInfo[ 0 ];
+    [SerializeField, Category( "Enemy" )]
+    private EnemyInfo[] m_enemyPrefabAir = new EnemyInfo[ 0 ];
+    [SerializeField, Category( "Enemy" )]
+    private EnemyInfo[] m_enemyPrefabWater = new EnemyInfo[ 0 ];
+    [SerializeField, Category( "Enemy" )]
+    private EnemyInfo[] m_enemyPrefabDirt = new EnemyInfo[ 0 ];
+
+    [SerializeField, Category( "Stats" )]
+    private float m_damageIncPerStep = 0.0f;
+    [SerializeField, Category( "Stats" )]
+    private int m_killsPerStep = 0;
+
+    private bool m_player1WaveFinished = false;
+    private bool m_player2WaveFinished = false;
+
+    private GamePhase m_currentGamePhase;
     #endregion
 
     #region Methods
@@ -48,9 +76,31 @@ public partial class GameInfo : MonoBehaviour
             return;
         }
 
+        for ( int i = 0; i < m_spawnPlanes.Length; i++ )
+            m_spawnPlanes[ i ].OnWaveDoneThis += SpawnPlane_OnWaveDone;
+
         s_instance = this;
 
         currentGamePhase = GamePhase.PreGame;
+
+
+
+        elementPrefabDict = new Dictionary<ElementType, EnemyInfo[]>();
+        elementPrefabDict.Add( ElementType.Dirt, m_enemyPrefabDirt );
+        elementPrefabDict.Add( ElementType.Fire, m_enemyPrefabFire );
+        elementPrefabDict.Add( ElementType.Water, m_enemyPrefabWater );
+        elementPrefabDict.Add( ElementType.Air, m_enemyPrefabAir );
+    }
+
+    private void SpawnPlane_OnWaveDone( EnemySpawnPlane p_spawnPlane )
+    {
+        if ( p_spawnPlane == m_spawnPlanes[ 0 ] )
+            m_player1WaveFinished = true;
+        if ( p_spawnPlane == m_spawnPlanes[ 1 ] )
+            m_player2WaveFinished = true;
+
+        if ( m_player1WaveFinished && m_player2WaveFinished )
+            currentGamePhase = GamePhase.WaveBuilding;
     }
 
     private void OnDestroy()
@@ -61,11 +111,13 @@ public partial class GameInfo : MonoBehaviour
 
     private void Internal_CurrentGamePhaseChange()
     {
+        Dbg.Log( "GAME PHASE CHANGED TO {0}", currentGamePhase );
         switch ( currentGamePhase )
         {
             case GamePhase.PreGame:
                 break;
             case GamePhase.WaveBuilding:
+                InitPhase_WaveBuilding();
                 break;
             case GamePhase.Fight:
                 InitPhase_Fight();
@@ -75,11 +127,6 @@ public partial class GameInfo : MonoBehaviour
         }
     }
 
-    private void OnGUI()
-    {
-
-    }
-
     /// <summary>
     /// Starts the game
     /// </summary>
@@ -87,7 +134,7 @@ public partial class GameInfo : MonoBehaviour
     public void StartGame()
     {
         // Create the player avatars and objects
-        Player.CreatePlayer( m_playerPrefab );
+        Player.CreatePlayer();
 
         if ( Player.allPlayer.Count != m_spawnPlanes.Length || Player.allPlayer.Count != m_killPlanes.Length )
         {
@@ -106,20 +153,42 @@ public partial class GameInfo : MonoBehaviour
         }
 
         // Init the game phase
-        currentGamePhase = GamePhase.Fight;
+        InitPhase( GamePhase.Fight );
+    }
+
+    public void InitPhase( GamePhase p_phase )
+    {
+        currentGamePhase = p_phase;
     }
 
     private void InitPhase_Fight()
     {
+        Player.CreateAvatars( m_player1Prefab, m_player2Prefab );
+
+        m_player1WaveFinished = false;
+        m_player2WaveFinished = false;
+
         for ( int i = 0; i < m_spawnPlanes.Length; i++ )
             m_spawnPlanes[ i ].SpawnMobs();
     }
+
+    private void InitPhase_WaveBuilding()
+    {
+        Player.DestroyAvatars();
+    }
+
+    private void OnGUI()
+    {
+        if ( GUILayout.Button( "Start Game" ) )
+            StartGame();
+    }
+
     #endregion
 }
 
 public partial class GameInfo : MonoBehaviour
 {
-    public static GameInfo Instance
+    public static GameInfo instance
     {
         get
         {
