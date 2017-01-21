@@ -28,10 +28,10 @@ public class UIDefending : MonoBehaviour
     private void InitWave()
     {
         Reset();
-        OnIncomeChange();
+        OnEnemyCountChange();
     }
 
-    private void OnIncomeChange()
+    private void OnEnemyCountChange()
     {
         m_fireCount.text = ( (int)( m_player.elementBuffDict[ ElementType.Fire ] ) ).ToString000();
         m_waterCount.text = ( (int)( m_player.elementBuffDict[ ElementType.Water ] ) ).ToString000();
