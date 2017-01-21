@@ -47,6 +47,14 @@ public class InputUtility : MonoBehaviour
     private string m_verAxis1 = "Vertical";
     [SerializeField, Category( "KeyBindings - Player 1" )]
     private KeyCode m_attackKey1 = KeyCode.Space;
+    [SerializeField, Category( "KeyBindings - Player 1" )]
+    private KeyCode m_menuUp1 = KeyCode.Space;
+    [SerializeField, Category( "KeyBindings - Player 1" )]
+    private KeyCode m_menuDown1 = KeyCode.Space;
+    [SerializeField, Category( "KeyBindings - Player 1" )]
+    private KeyCode m_menuRight1 = KeyCode.Space;
+    [SerializeField, Category( "KeyBindings - Player 1" )]
+    private KeyCode m_menuLeft1 = KeyCode.Space;
 
     [SerializeField, Category( "KeyBindings - Player 2" )]
     private string m_horAxis2 = "Horizontal";
@@ -54,6 +62,14 @@ public class InputUtility : MonoBehaviour
     private string m_verAxis2 = "Vertical";
     [SerializeField, Category( "KeyBindings - Player 2" )]
     private KeyCode m_attackKey2 = KeyCode.Space;
+    [SerializeField, Category( "KeyBindings - Player 1" )]
+    private KeyCode m_menuUp2 = KeyCode.Space;
+    [SerializeField, Category( "KeyBindings - Player 1" )]
+    private KeyCode m_menuDown2 = KeyCode.Space;
+    [SerializeField, Category( "KeyBindings - Player 1" )]
+    private KeyCode m_menuRight2 = KeyCode.Space;
+    [SerializeField, Category( "KeyBindings - Player 1" )]
+    private KeyCode m_menuLeft2 = KeyCode.Space;
 
     #endregion
 
@@ -83,6 +99,26 @@ public class InputUtility : MonoBehaviour
                     return Input.GetKeyDown( s_instance.m_attackKey1 );
                 else
                     return Input.GetKeyDown( s_instance.m_attackKey2 );
+            case InputButton.MenuUp:
+                if ( p_inputSource == InputSource.Player1 )
+                    return Input.GetKeyDown( s_instance.m_menuUp1 );
+                else
+                    return Input.GetKeyDown( s_instance.m_menuUp1 );
+            case InputButton.MenuDown:
+                if ( p_inputSource == InputSource.Player1 )
+                    return Input.GetKeyDown( s_instance.m_menuDown1 );
+                else
+                    return Input.GetKeyDown( s_instance.m_menuDown2 );
+            case InputButton.MenuRight:
+                if ( p_inputSource == InputSource.Player1 )
+                    return Input.GetKeyDown( s_instance.m_menuRight1 );
+                else
+                    return Input.GetKeyDown( s_instance.m_menuRight2 );
+            case InputButton.MenuLeft:
+                if ( p_inputSource == InputSource.Player1 )
+                    return Input.GetKeyDown( s_instance.m_menuLeft1 );
+                else
+                    return Input.GetKeyDown( s_instance.m_menuLeft2 );
             default:
                 throw new System.NotImplementedException( "This button is not yet implemented in the InputUtility" );
         }

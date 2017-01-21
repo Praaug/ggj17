@@ -54,6 +54,14 @@ MonoBehaviour:
   m_horAxis1: Horizontal1
   m_verAxis1: Vertical1
   m_attackKey1: 32
+  m_menuUp1: 119
+  m_menuDown1: 115
+  m_menuRight1: 100
+  m_menuLeft1: 97
   m_horAxis2: Horizontal2
   m_verAxis2: Vertical2
   m_attackKey2: 271
+  m_menuUp2: 273
+  m_menuDown2: 274
+  m_menuRight2: 275
+  m_menuLeft2: 276

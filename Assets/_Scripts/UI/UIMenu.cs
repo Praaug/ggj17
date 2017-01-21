@@ -19,6 +19,7 @@ public class UIMenu : MonoBehaviour
 
     public void OnStartClick()
     {
+        Dbg.Log( "On Start Clicked" );
         gameObject.SetActive( false );
         GameInfo.instance.StartGame();
     }

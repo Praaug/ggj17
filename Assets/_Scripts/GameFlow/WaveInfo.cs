@@ -6,11 +6,7 @@ using System.Collections.Generic;
 public class WaveInfo
 {
     #region Fields
-    public int fireCount;
-    public int waterCount;
-    public int airCount;
-    public int dirtCount;
-
+    public Dictionary<ElementType, int>[] m_amplitudes;
     private Player m_player;
     #endregion
 
@@ -18,27 +14,57 @@ public class WaveInfo
     public WaveInfo( Player p_player )
     {
         m_player = p_player;
+        m_amplitudes = new Dictionary<ElementType, int>[ 3 ];
+        for ( int i = 0; i < m_amplitudes.Length; i++ )
+        {
+            m_amplitudes[ i ] = new Dictionary<ElementType, int>();
+            m_amplitudes[ i ].Add( ElementType.Fire, 0 );
+            m_amplitudes[ i ].Add( ElementType.Air, 0 );
+            m_amplitudes[ i ].Add( ElementType.Dirt, 0 );
+            m_amplitudes[ i ].Add( ElementType.Water, 0 );
+        }
     }
-    public WaveInfo( Player p_player, WaveInfo p_waveInfo )
+    public WaveInfo( Player p_player, WaveInfo p_waveInfo ) : this( p_player )
     {
         m_player = p_player;
 
-        fireCount = p_waveInfo.fireCount;
-        waterCount = p_waveInfo.waterCount;
-        airCount = p_waveInfo.airCount;
-        dirtCount = p_waveInfo.dirtCount;
+        for ( int i = 0; i < m_amplitudes.Length; i++ )
+        {
+            m_amplitudes[ i ][ ElementType.Fire ] = p_waveInfo.m_amplitudes[ i ][ ElementType.Fire ];
+            m_amplitudes[ i ][ ElementType.Air ] = p_waveInfo.m_amplitudes[ i ][ ElementType.Air ];
+            m_amplitudes[ i ][ ElementType.Dirt ] = p_waveInfo.m_amplitudes[ i ][ ElementType.Dirt ];
+            m_amplitudes[ i ][ ElementType.Water ] = p_waveInfo.m_amplitudes[ i ][ ElementType.Water ];
+        }
     }
     #endregion
 
     #region Methods
+    public int GetAmplitudeCount( ElementType p_type, int p_frequencyIndex )
+    {
+        return m_amplitudes[ p_frequencyIndex ][ p_type ];
+    }
+
+    public int GetTotalAmplitude( ElementType p_type )
+    {
+        int _totalAmp = 0;
+
+        for ( int i = 0; i < m_amplitudes.Length; i++ )
+            _totalAmp += m_amplitudes[ i ][ p_type ];
+
+        return _totalAmp;
+    }
+
     public List<EnemyInfo> CalculatePrefabs()
     {
         List<EnemyInfo> _resultList = new List<EnemyInfo>();
 
-        _resultList.AddRange( CalculateElement( fireCount, GameInfo.instance.elementPrefabDict[ ElementType.Fire ] ) );
-        _resultList.AddRange( CalculateElement( waterCount, GameInfo.instance.elementPrefabDict[ ElementType.Water ] ) );
-        _resultList.AddRange( CalculateElement( airCount, GameInfo.instance.elementPrefabDict[ ElementType.Air ] ) );
-        _resultList.AddRange( CalculateElement( dirtCount, GameInfo.instance.elementPrefabDict[ ElementType.Dirt ] ) );
+        for ( int i = 0; i < m_amplitudes.Length; i++ )
+        {
+            _resultList.AddRange( CalculateElement( m_amplitudes[ i ][ ElementType.Fire ], GameInfo.instance.elementPrefabDict[ ElementType.Fire ] ) );
+            _resultList.AddRange( CalculateElement( m_amplitudes[ i ][ ElementType.Water ], GameInfo.instance.elementPrefabDict[ ElementType.Water ] ) );
+            _resultList.AddRange( CalculateElement( m_amplitudes[ i ][ ElementType.Air ], GameInfo.instance.elementPrefabDict[ ElementType.Air ] ) );
+            _resultList.AddRange( CalculateElement( m_amplitudes[ i ][ ElementType.Dirt ], GameInfo.instance.elementPrefabDict[ ElementType.Dirt ] ) );
+        }
 
         _resultList.Shuffle();
 
@@ -65,27 +91,18 @@ public class WaveInfo
 
     public void ClearElementCount()
     {
-        fireCount = 0;
-        waterCount = 0;
-        airCount = 0;
-        dirtCount = 0;
+        for ( int i = 0; i < m_amplitudes.Length; i++ )
+        {
+            m_amplitudes[ i ][ ElementType.Fire ] = 0;
+            m_amplitudes[ i ][ ElementType.Water ] = 0;
+            m_amplitudes[ i ][ ElementType.Air ] = 0;
+            m_amplitudes[ i ][ ElementType.Dirt ] = 0;
+        }
     }
 
-    public int PointsNeededForLevelUp( ElementType p_elementType )
+    public int PointsNeededForLevelUp( ElementType p_elementType, int p_frequencyIndex )
     {
-        switch ( p_elementType )
-        {
-            case ElementType.Fire:
-                return PointsNeededForLevelUp( fireCount );
-            case ElementType.Water:
-                return PointsNeededForLevelUp( waterCount );
-            case ElementType.Air:
-                return PointsNeededForLevelUp( airCount );
-            case ElementType.Dirt:
-                return PointsNeededForLevelUp( dirtCount );
-            default:
-                throw new System.ArgumentException();
-        }
+        return PointsNeededForLevelUp( m_amplitudes[ p_frequencyIndex ][ p_elementType ] );
     }
 
     private int PointsNeededForLevelUp( int p_level )
@@ -93,54 +110,16 @@ public class WaveInfo
         return Mathf.FloorToInt( Mathf.Pow( 1.4f, p_level ) );
     }
 
-    public void IncrementElementCount( ElementType p_type )
+    public void IncrementElementCount( ElementType p_type, int p_frequencyIndex )
     {
-        switch ( p_type )
-        {
-            case ElementType.Fire:
-                m_player.RemoveElementPoints( ElementType.Fire, PointsNeededForLevelUp( ElementType.Fire ) );
-                fireCount++;
-                break;
-            case ElementType.Water:
-                m_player.RemoveElementPoints( ElementType.Water, PointsNeededForLevelUp( ElementType.Water ) );
-                waterCount++;
-                break;
-            case ElementType.Air:
-                m_player.RemoveElementPoints( ElementType.Air, PointsNeededForLevelUp( ElementType.Air ) );
-                airCount++;
-                break;
-            case ElementType.Dirt:
-                m_player.RemoveElementPoints( ElementType.Dirt, PointsNeededForLevelUp( ElementType.Dirt ) );
-                dirtCount++;
-                break;
-            default:
-                throw new System.ArgumentException();
-        }
+        m_player.RemoveElementPoints( ElementType.Fire, PointsNeededForLevelUp( m_amplitudes[ p_frequencyIndex ][ p_type ] ) );
+        m_amplitudes[ p_frequencyIndex ][ p_type ]++;
     }
 
-    public void DecrementElementCount( ElementType p_type )
+    public void DecrementElementCount( ElementType p_type, int p_frequencyIndex )
     {
-        switch ( p_type )
-        {
-            case ElementType.Fire:
-                fireCount--;
-                m_player.AddElementPoints( ElementType.Fire, PointsNeededForLevelUp( ElementType.Fire ) );
-                break;
-            case ElementType.Water:
-                waterCount--;
-                m_player.AddElementPoints( ElementType.Water, PointsNeededForLevelUp( ElementType.Water ) );
-                break;
-            case ElementType.Air:
-                airCount--;
-                m_player.AddElementPoints( ElementType.Air, PointsNeededForLevelUp( ElementType.Air ) );
-                break;
-            case ElementType.Dirt:
-                dirtCount--;
-                m_player.AddElementPoints( ElementType.Dirt, PointsNeededForLevelUp( ElementType.Dirt ) );
-                break;
-            default:
-                throw new System.ArgumentException();
-        }
+        m_amplitudes[ p_frequencyIndex ][ p_type ]--;
+        m_player.AddElementPoints( p_type, PointsNeededForLevelUp( m_amplitudes[ p_frequencyIndex ][ p_type ] ) );
     }
     #endregion
 }

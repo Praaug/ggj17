@@ -47,10 +47,10 @@ public class EnemySpawnPlane : MonoBehaviour
 
         WaveInfo _waveInfo = m_owningPlayer.waveInfo;
 
-        m_owningPlayer.RegisterSpendElementPoints( ElementType.Dirt, _waveInfo.dirtCount );
-        m_owningPlayer.RegisterSpendElementPoints( ElementType.Fire, _waveInfo.fireCount );
-        m_owningPlayer.RegisterSpendElementPoints( ElementType.Air, _waveInfo.airCount );
-        m_owningPlayer.RegisterSpendElementPoints( ElementType.Water, _waveInfo.waterCount );
+        m_owningPlayer.RegisterSpendElementPoints( ElementType.Dirt, _waveInfo.GetTotalAmplitude( ElementType.Dirt ) );
+        m_owningPlayer.RegisterSpendElementPoints( ElementType.Fire, _waveInfo.GetTotalAmplitude( ElementType.Fire ) );
+        m_owningPlayer.RegisterSpendElementPoints( ElementType.Air, _waveInfo.GetTotalAmplitude( ElementType.Air ) );
+        m_owningPlayer.RegisterSpendElementPoints( ElementType.Water, _waveInfo.GetTotalAmplitude( ElementType.Water ) );
 
         PlayerConfig _config = m_owningPlayer.config;
         StartCoroutine( Coroutine_Spawn( _waveInfo.CalculatePrefabs(), _config.spawnRate, _config.randomBias ) );

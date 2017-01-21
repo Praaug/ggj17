@@ -23,6 +23,7 @@ public partial class Player
     #endregion
 
     #region Properties
+    public Player otherPlayer { get { return OtherPlayer( this ); } }
     public PlayerConfig config { get; private set; }
     public GameObject gameObject { get; private set; }
     public InputSource inputSource { get; private set; }
@@ -88,7 +89,10 @@ public partial class Player
         m_enemyStrenghDict.Add( ElementType.Dirt, MIN_DAMAGE );
 
         waveInfo = new WaveInfo( this );
-        waveInfo.fireCount++;
+        waveInfo.m_amplitudes[ 0 ][ ElementType.Fire ] = 1;
+        waveInfo.m_amplitudes[ 0 ][ ElementType.Water ] = 1;
+        waveInfo.m_amplitudes[ 0 ][ ElementType.Air ] = 1;
+        waveInfo.m_amplitudes[ 0 ][ ElementType.Dirt ] = 1;
     }
     #endregion
 

@@ -8,6 +8,8 @@ public class UIPlanning : MonoBehaviour
     #region Fields
     [SerializeField, Category( "Selection" )]
     private UIWaveInfo[] m_waveInfos = null;
+    [SerializeField, Category( "Selection" )]
+    private bool m_isPlayer1 = false;
 
     private Player m_player = null;
     private UIWaveInfo m_currentWaveInfo = null;
@@ -21,6 +23,23 @@ public class UIPlanning : MonoBehaviour
         m_currentWaveInfo.IncrementSelector();
     }
 
+    private void Start()
+    {
+        GameInfo.instance.OnStartGame += GameInfo_OnStartGame;
+        GameInfo.instance.OnCurrentGamePhaseChange += GameInfo_OnCurrentGamePhaseChange;
+        gameObject.SetActive( false );
+    }
+
+    private void GameInfo_OnCurrentGamePhaseChange()
+    {
+        gameObject.SetActive( GameInfo.instance.currentGamePhase == GameInfo.GamePhase.WaveBuilding );
+    }
+
+    private void GameInfo_OnStartGame()
+    {
+        Init( m_isPlayer1 ? Player.allPlayer[ 0 ] : Player.allPlayer[ 1 ] );
+    }
+
     public void Init( Player p_player )
     {
         m_player = p_player;
@@ -30,14 +49,21 @@ public class UIPlanning : MonoBehaviour
 
     public void FixedUpdate()
     {
-        //if ( InputUtility.GetButtonDown( InputButton.MenuRight, m_player.inputSource ) )
-        //    IncreaseSelector();
-        //if ( InputUtility.GetButtonDown( InputButton.MenuLeft, m_player.inputSource ) )
-        //    DecreaseSelector();
-        if ( Input.GetKeyDown( KeyCode.D ) )
+        if ( GameInfo.instance.currentGamePhase != GameInfo.GamePhase.WaveBuilding )
+            return;
+
+        if ( InputUtility.GetButtonDown( InputButton.MenuRight, m_player.inputSource ) )
             IncreaseSelector();
-        if ( Input.GetKeyDown( KeyCode.A ) )
+        if ( InputUtility.GetButtonDown( InputButton.MenuLeft, m_player.inputSource ) )
             DecreaseSelector();
+        if ( InputUtility.GetButtonDown( InputButton.MenuUp, m_player.inputSource ) )
+            IncreaseStat();
+        if ( InputUtility.GetButtonDown( InputButton.MenuDown, m_player.inputSource ) )
+            DecreaseStat();
+        //if ( Input.GetKeyDown( KeyCode.D ) )
+        //    IncreaseSelector();
+        //if ( Input.GetKeyDown( KeyCode.A ) )
+        //    DecreaseSelector();
     }
 
     private void IncreaseSelector()
@@ -58,6 +84,15 @@ public class UIPlanning : MonoBehaviour
             m_currentWaveInfo = m_waveInfos[ m_currentIndex ];
             DecreaseSelector();
         }
+    }
+
+    private void IncreaseStat()
+    {
+        m_currentWaveInfo.IncrementStat();
+    }
+    private void DecreaseStat()
+    {
+        m_currentWaveInfo.DecrementStat();
     }
     #endregion
 }

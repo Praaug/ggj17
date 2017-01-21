@@ -106,33 +106,17 @@ public class UIWaveInfo : MonoBehaviour
 
     public void IncrementStat()
     {
-        int _pointsNeeded = m_waveInfo.PointsNeededForLevelUp( m_type );
+        int _pointsNeeded = m_waveInfo.PointsNeededForLevelUp( m_type, m_currentIndex );
         if ( m_elePoints > _pointsNeeded )
         {
             m_player.RemoveElementPoints( m_type, _pointsNeeded );
-            m_waveInfo.IncrementElementCount( m_type );
+            m_waveInfo.IncrementElementCount( m_type, m_currentIndex );
         }
-    }
-    public void DecrementStat()
-    {
-        m_waveInfo.DecrementElementCount( m_type );
     }
 
-    public int GetElementCount( ElementType p_type )
+    public void DecrementStat()
     {
-        switch ( p_type )
-        {
-            case ElementType.Fire:
-                return m_waveInfo.fireCount;
-            case ElementType.Water:
-                return m_waveInfo.waterCount;
-            case ElementType.Air:
-                return m_waveInfo.airCount;
-            case ElementType.Dirt:
-                return m_waveInfo.dirtCount;
-            default:
-                return 0;
-        }
+        m_waveInfo.DecrementElementCount( m_type, m_currentIndex );
     }
     #endregion
 }
