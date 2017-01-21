@@ -432,26 +432,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 114697268395329290, guid: fe8c00059d1df5649939d4971185d10f,
-        type: 2}
-      propertyPath: m_horAxis1
-      value: Horizontal1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114697268395329290, guid: fe8c00059d1df5649939d4971185d10f,
-        type: 2}
-      propertyPath: m_verAxis1
-      value: Vertical1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114697268395329290, guid: fe8c00059d1df5649939d4971185d10f,
-        type: 2}
-      propertyPath: m_horAxis2
-      value: Horizontal2
-      objectReference: {fileID: 0}
-    - target: {fileID: 114697268395329290, guid: fe8c00059d1df5649939d4971185d10f,
-        type: 2}
-      propertyPath: m_verAxis2
-      value: Vertical2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fe8c00059d1df5649939d4971185d10f, type: 2}
   m_IsPrefabParent: 0

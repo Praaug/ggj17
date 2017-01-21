@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
-public partial class Player
+public partial class Player : ICombatEntity
 {
     #region Properties
     public PlayerConfig config { get; private set; }
@@ -25,6 +25,11 @@ public partial class Player
     }
 
     public void ReduceLife( int p_amount )
+    {
+
+    }
+
+    public void InflictDamage(float p_amount)
     {
 
     }

@@ -6,5 +6,5 @@ public interface ICombatEntity
 {
     GameObject gameObject { get; }
 
-    void InflictDamage( int p_damage );
+    void InflictDamage( float p_damage );
 }

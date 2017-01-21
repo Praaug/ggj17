@@ -51,9 +51,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6134a486b36f2cc4e804cc18b9828a6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_horAxis1: Horizontal
-  m_verAxis1: Vertical
+  m_horAxis1: Horizontal1
+  m_verAxis1: Vertical1
   m_attackKey1: 32
-  m_horAxis2: Horizontal
-  m_verAxis2: Vertical
-  m_attackKey2: 32
+  m_horAxis2: Horizontal2
+  m_verAxis2: Vertical2
+  m_attackKey2: 271

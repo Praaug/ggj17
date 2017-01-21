@@ -1,4 +1,4 @@
-[13:20:37; 00000] LOG STARTED!
+[13:50:44; 00000] LOG STARTED!
    at UnityEngine.GameObject.AddComponent(System.Type componentType) in C:\buildslave\unity\build\artifacts\generated\common\runtime\GameObjectBindings.gen.cs:line 352
    at UnityEngine.GameObject.AddComponent() in C:\buildslave\unity\build\artifacts\generated\common\runtime\GameObjectBindings.gen.cs:line 357
    at Dbg.get_Instance() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Misc\Dbg.cs:line 35
@@ -28,7 +28,7 @@
    at UnityEditor.HostView.InvokeOnGUI(Rect onGUIPosition) in C:\buildslave\unity\build\Editor\Mono\HostView.cs:line 212
    at UnityEditor.DockArea.OnGUI() in C:\buildslave\unity\build\Editor\Mono\GUI\DockArea.cs:line 341
 
-[13:20:37; 00000] Instantiated enemy
+[13:50:44; 00000] Instantiated enemy
    at Dbg.Log(UnityEngine.Object p_object, System.String message, StackTraceLogType p_type) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Misc\Dbg.cs:line 53
    at Dbg.Log(System.String message) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Misc\Dbg.cs:line 66
    at EnemySpawnPlane+<Coroutine_Spawn>c__Iterator0.MoveNext() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\EnemySpawnPlane.cs:line 50
@@ -55,7 +55,7 @@
    at UnityEditor.HostView.InvokeOnGUI(Rect onGUIPosition) in C:\buildslave\unity\build\Editor\Mono\HostView.cs:line 212
    at UnityEditor.DockArea.OnGUI() in C:\buildslave\unity\build\Editor\Mono\GUI\DockArea.cs:line 341
 
-[13:20:37; 00000] Instantiated enemy
+[13:50:44; 00000] Instantiated enemy
    at EnemySpawnPlane+<Coroutine_Spawn>c__Iterator0.MoveNext() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\EnemySpawnPlane.cs:line 50
    at UnityEngine.SetupCoroutine.InvokeMoveNext(IEnumerator enumerator, IntPtr returnValueAddress) in C:\buildslave\unity\build\Runtime\Export\Coroutines.cs:line 17
    at UnityEngine.MonoBehaviour.StartCoroutine_Auto_Internal(IEnumerator )
@@ -80,31 +80,15 @@
    at UnityEditor.HostView.InvokeOnGUI(Rect onGUIPosition) in C:\buildslave\unity\build\Editor\Mono\HostView.cs:line 212
    at UnityEditor.DockArea.OnGUI() in C:\buildslave\unity\build\Editor\Mono\GUI\DockArea.cs:line 341
 
-[13:20:41; 00346] Instantiated enemy
+[13:50:50; 00632] Instantiated enemy
    at EnemySpawnPlane+<Coroutine_Spawn>c__Iterator0.MoveNext() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\EnemySpawnPlane.cs:line 50
    at UnityEngine.SetupCoroutine.InvokeMoveNext(IEnumerator enumerator, IntPtr returnValueAddress) in C:\buildslave\unity\build\Runtime\Export\Coroutines.cs:line 17
 
-[13:20:42; 00424] Instantiated enemy
+[13:50:52; 00765] Instantiated enemy
    at EnemySpawnPlane+<Coroutine_Spawn>c__Iterator0.MoveNext() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\EnemySpawnPlane.cs:line 50
    at UnityEngine.SetupCoroutine.InvokeMoveNext(IEnumerator enumerator, IntPtr returnValueAddress) in C:\buildslave\unity\build\Runtime\Export\Coroutines.cs:line 17
 
-[13:20:46; 00632] Instantiated enemy
-   at EnemySpawnPlane+<Coroutine_Spawn>c__Iterator0.MoveNext() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\EnemySpawnPlane.cs:line 50
-   at UnityEngine.SetupCoroutine.InvokeMoveNext(IEnumerator enumerator, IntPtr returnValueAddress) in C:\buildslave\unity\build\Runtime\Export\Coroutines.cs:line 17
-
-[13:20:48; 00784] Instantiated enemy
-   at EnemySpawnPlane+<Coroutine_Spawn>c__Iterator0.MoveNext() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\EnemySpawnPlane.cs:line 50
-   at UnityEngine.SetupCoroutine.InvokeMoveNext(IEnumerator enumerator, IntPtr returnValueAddress) in C:\buildslave\unity\build\Runtime\Export\Coroutines.cs:line 17
-
-[13:20:50; 00872] Instantiated enemy
-   at EnemySpawnPlane+<Coroutine_Spawn>c__Iterator0.MoveNext() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\EnemySpawnPlane.cs:line 50
-   at UnityEngine.SetupCoroutine.InvokeMoveNext(IEnumerator enumerator, IntPtr returnValueAddress) in C:\buildslave\unity\build\Runtime\Export\Coroutines.cs:line 17
-
-[13:20:53; 01087] Instantiated enemy
-   at EnemySpawnPlane+<Coroutine_Spawn>c__Iterator0.MoveNext() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\EnemySpawnPlane.cs:line 50
-   at UnityEngine.SetupCoroutine.InvokeMoveNext(IEnumerator enumerator, IntPtr returnValueAddress) in C:\buildslave\unity\build\Runtime\Export\Coroutines.cs:line 17
-
-[13:20:55; 01199] Instantiated enemy
+[13:50:54; 00914] Instantiated enemy
    at EnemySpawnPlane+<Coroutine_Spawn>c__Iterator0.MoveNext() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\EnemySpawnPlane.cs:line 50
    at UnityEngine.SetupCoroutine.InvokeMoveNext(IEnumerator enumerator, IntPtr returnValueAddress) in C:\buildslave\unity\build\Runtime\Export\Coroutines.cs:line 17
 

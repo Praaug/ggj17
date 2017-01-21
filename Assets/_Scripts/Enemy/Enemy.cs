@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
-public partial class Enemy
+public partial class Enemy : ICombatEntity
 {
     #region Events
     /// <summary>
@@ -55,9 +55,12 @@ public partial class Enemy
         Object.Destroy( gameObject, 5.0f );
     }
 
-    public static Enemy GetEnemy( GameObject gameObject )
+    public void InflictDamage( float p_amount )
     {
-        return allEnemies.FirstOrDefault( e => e.gameObject == gameObject );
+        health = Mathf.Max( 0, health - p_amount );
+
+        if ( health <= 0 )
+            Kill();
     }
 }
 
@@ -89,6 +92,11 @@ public partial class Enemy
     {
         p_enemy = allEnemies.FirstOrDefault( enemy => enemy.gameObject == p_component.gameObject );
         return p_enemy != null;
+    }
+
+    public static Enemy GetEnemy( GameObject gameObject )
+    {
+        return allEnemies.FirstOrDefault( e => e.gameObject == gameObject );
     }
 }
 
