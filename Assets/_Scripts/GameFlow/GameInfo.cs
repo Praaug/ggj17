@@ -184,12 +184,45 @@ public partial class GameInfo : MonoBehaviour
         m_player2Ready = false;
 
         Player.DestroyAvatars();
+
+        // Add income
+        foreach ( Player _player in Player.allPlayer )
+        {
+            _player.AddElementPoints( ElementType.Air, CalculcateIncome( _player.elementPointSpendDict[ ElementType.Air ] ) );
+            _player.AddElementPoints( ElementType.Dirt, CalculcateIncome( _player.elementPointSpendDict[ ElementType.Dirt ] ) );
+            _player.AddElementPoints( ElementType.Fire, CalculcateIncome( _player.elementPointSpendDict[ ElementType.Fire ] ) );
+            _player.AddElementPoints( ElementType.Water, CalculcateIncome( _player.elementPointSpendDict[ ElementType.Water ] ) );
+        }
+    }
+
+    private int CalculcateIncome( int p_pointsSpend )
+    {
+        return Mathf.FloorToInt( Mathf.Sqrt( p_pointsSpend * 3.0f ) );
     }
 
     private void OnGUI()
     {
         if ( GUILayout.Button( "Start Game" ) )
             StartGame();
+
+        if ( Player.allPlayer != null && Player.allPlayer.Count > 0 )
+        {
+            GUILayout.Label( "Player1" );
+            Player _player1 = Player.allPlayer[ 0 ];
+            GUILayout.Label( string.Format( "Fire: {0}, spend: {1}, wave: {2}", _player1.elementPointsDict[ ElementType.Fire ], _player1.elementPointSpendDict[ ElementType.Fire ], _player1.waveInfo.fireCount ) );
+            GUILayout.Label( string.Format( "Water: {0}, spend: {1}, wave: {2}", _player1.elementPointsDict[ ElementType.Water ], _player1.elementPointSpendDict[ ElementType.Water ], _player1.waveInfo.waterCount ) );
+            GUILayout.Label( string.Format( "Air: {0}, spend: {1}, wave: {2}", _player1.elementPointsDict[ ElementType.Air ], _player1.elementPointSpendDict[ ElementType.Air ], _player1.waveInfo.windCount ) );
+            GUILayout.Label( string.Format( "Dirt: {0}, spend: {1}, wave: {2}", _player1.elementPointsDict[ ElementType.Dirt ], _player1.elementPointSpendDict[ ElementType.Dirt ], _player1.waveInfo.dirtCount ) );
+
+            GUILayout.Label( "" );
+            GUILayout.Label( "Player2" );
+            Player _player2 = Player.allPlayer[ 1 ];
+            GUILayout.Label( string.Format( "Fire: {0}, spend: {1}, wave: {2}", _player2.elementPointsDict[ ElementType.Fire ], _player2.elementPointSpendDict[ ElementType.Fire ], _player1.waveInfo.fireCount ) );
+            GUILayout.Label( string.Format( "Water: {0}, spend: {1}, wave: {2}", _player2.elementPointsDict[ ElementType.Water ], _player2.elementPointSpendDict[ ElementType.Water ], _player1.waveInfo.waterCount ) );
+            GUILayout.Label( string.Format( "Air: {0}, spend: {1}, wave: {2}", _player2.elementPointsDict[ ElementType.Air ], _player2.elementPointSpendDict[ ElementType.Air ], _player1.waveInfo.windCount ) );
+            GUILayout.Label( string.Format( "Dirt: {0}, spend: {1}, wave: {2}", _player2.elementPointsDict[ ElementType.Dirt ], _player2.elementPointSpendDict[ ElementType.Dirt ], _player1.waveInfo.dirtCount ) );
+        }
+
 
         if ( currentGamePhase == GamePhase.WaveBuilding )
         {

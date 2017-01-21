@@ -28,7 +28,13 @@ public partial class Player
     public InputSource inputSource { get; private set; }
 
     public int lifes { get; private set; }
+    public WaveInfo waveInfo { get; private set; }
 
+
+    /// <summary>
+    /// Dictionary that holds the income of the player per element
+    /// </summary>
+    public Dictionary<ElementType, int> elementPointSpendDict { get; private set; }
     /// <summary>
     /// Dictionary that holds the points per element for the player
     /// </summary>
@@ -37,6 +43,7 @@ public partial class Player
     /// Dictionary that contains the amount of bonus damage per element for the player
     /// </summary>
     public Dictionary<ElementType, float> elementBuffDict { get; private set; }
+
     public Dictionary<ElementType, int> elementKillDictTemp { get; private set; }
     #endregion
 
@@ -49,6 +56,12 @@ public partial class Player
     {
         inputSource = p_inputSource;
         lifes = 10;
+
+        elementPointSpendDict = new Dictionary<ElementType, int>();
+        elementPointSpendDict.Add( ElementType.Fire, 0 );
+        elementPointSpendDict.Add( ElementType.Water, 0 );
+        elementPointSpendDict.Add( ElementType.Air, 0 );
+        elementPointSpendDict.Add( ElementType.Dirt, 0 );
 
         elementPointsDict = new Dictionary<ElementType, int>();
         elementPointsDict.Add( ElementType.Fire, 0 );
@@ -73,6 +86,9 @@ public partial class Player
         m_enemyStrenghDict.Add( ElementType.Water, MIN_DAMAGE );
         m_enemyStrenghDict.Add( ElementType.Air, MIN_DAMAGE );
         m_enemyStrenghDict.Add( ElementType.Dirt, MIN_DAMAGE );
+
+        waveInfo = new WaveInfo( this );
+        waveInfo.fireCount++;
     }
     #endregion
 
@@ -147,6 +163,11 @@ public partial class Player
             OnElementPointsChange( p_type );
     }
 
+    public void RegisterSpendElementPoints( ElementType p_type, int p_amount )
+    {
+        elementPointSpendDict[ p_type ] += p_amount;
+    }
+
     public void Kill()
     {
         if ( OnKill != null )
@@ -192,5 +213,10 @@ public partial class Player
     public static Player GetPlayer( GameObject p_gameObject )
     {
         return allPlayer.FirstOrDefault( p => p.gameObject == p_gameObject );
+    }
+
+    public static Player OtherPlayer( Player p_player )
+    {
+        return allPlayer[ 0 ] == p_player ? allPlayer[ 1 ] : allPlayer[ 0 ];
     }
 }

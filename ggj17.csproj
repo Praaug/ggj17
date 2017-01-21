@@ -93,7 +93,6 @@
     <Compile Include="Assets\_Scripts\CategoryExtension\Attributes\ShowOnlyOnRuntimeAttribute.cs" />
     <Compile Include="Assets\_Scripts\CategoryExtension\Attributes\StandardEditorAttribute.cs" />
     <Compile Include="Assets\_Scripts\Combat\CombatManager.cs" />
-    <Compile Include="Assets\_Scripts\Combat\ICombatEntity.cs" />
     <Compile Include="Assets\_Scripts\Enemy\Enemy.cs" />
     <Compile Include="Assets\_Scripts\Enemy\EnemyController.cs" />
     <Compile Include="Assets\_Scripts\Enemy\EnemyInfo.cs" />

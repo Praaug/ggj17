@@ -45,9 +45,18 @@ public class EnemySpawnPlane : MonoBehaviour
         m_enemySpawnedList.Clear();
         m_allEnemiesSpawned = false;
 
-        PlayerConfig _config = m_owningPlayer.config;
+        WaveInfo _waveInfo = m_owningPlayer.waveInfo;
 
-        StartCoroutine( Coroutine_Spawn( m_owningPlayer.config.waveInfo.CalculatePrefabs(), _config.spawnRate, _config.randomBias ) );
+        m_owningPlayer.RegisterSpendElementPoints( ElementType.Dirt, _waveInfo.dirtCount );
+        m_owningPlayer.RegisterSpendElementPoints( ElementType.Fire, _waveInfo.fireCount );
+        m_owningPlayer.RegisterSpendElementPoints( ElementType.Air, _waveInfo.windCount );
+        m_owningPlayer.RegisterSpendElementPoints( ElementType.Water, _waveInfo.waterCount );
+
+        PlayerConfig _config = m_owningPlayer.config;
+        StartCoroutine( Coroutine_Spawn( _waveInfo.CalculatePrefabs(), _config.spawnRate, _config.randomBias ) );
+
+        // Clear wave data
+        _waveInfo.ClearElementCount();
     }
 
     private void OnDestroy()
@@ -72,7 +81,6 @@ public class EnemySpawnPlane : MonoBehaviour
             m_enemySpawnedList.Add( _enemy );
             // Subscribe kill event
             _enemy.OnKillThis += Enemy_OnKillThis;
-
 
             if ( i < p_spawnPrefabs.Count - 1 )
                 yield return new WaitForSeconds( Randomx.Bias( p_randomBias ) + p_baseTick );
