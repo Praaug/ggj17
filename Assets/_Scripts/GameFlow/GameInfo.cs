@@ -225,7 +225,7 @@ public partial class GameInfo : MonoBehaviour
             Player _player1 = Player.allPlayer[ 0 ];
             GUILayout.Label( string.Format( "Fire: {0}, spend: {1}, wave: {2}", _player1.elementPointsDict[ ElementType.Fire ], _player1.elementPointSpendDict[ ElementType.Fire ], _player1.waveInfo.fireCount ) );
             GUILayout.Label( string.Format( "Water: {0}, spend: {1}, wave: {2}", _player1.elementPointsDict[ ElementType.Water ], _player1.elementPointSpendDict[ ElementType.Water ], _player1.waveInfo.waterCount ) );
-            GUILayout.Label( string.Format( "Air: {0}, spend: {1}, wave: {2}", _player1.elementPointsDict[ ElementType.Air ], _player1.elementPointSpendDict[ ElementType.Air ], _player1.waveInfo.windCount ) );
+            GUILayout.Label( string.Format( "Air: {0}, spend: {1}, wave: {2}", _player1.elementPointsDict[ ElementType.Air ], _player1.elementPointSpendDict[ ElementType.Air ], _player1.waveInfo.airCount ) );
             GUILayout.Label( string.Format( "Dirt: {0}, spend: {1}, wave: {2}", _player1.elementPointsDict[ ElementType.Dirt ], _player1.elementPointSpendDict[ ElementType.Dirt ], _player1.waveInfo.dirtCount ) );
 
             GUILayout.Label( "" );
@@ -233,7 +233,7 @@ public partial class GameInfo : MonoBehaviour
             Player _player2 = Player.allPlayer[ 1 ];
             GUILayout.Label( string.Format( "Fire: {0}, spend: {1}, wave: {2}", _player2.elementPointsDict[ ElementType.Fire ], _player2.elementPointSpendDict[ ElementType.Fire ], _player1.waveInfo.fireCount ) );
             GUILayout.Label( string.Format( "Water: {0}, spend: {1}, wave: {2}", _player2.elementPointsDict[ ElementType.Water ], _player2.elementPointSpendDict[ ElementType.Water ], _player1.waveInfo.waterCount ) );
-            GUILayout.Label( string.Format( "Air: {0}, spend: {1}, wave: {2}", _player2.elementPointsDict[ ElementType.Air ], _player2.elementPointSpendDict[ ElementType.Air ], _player1.waveInfo.windCount ) );
+            GUILayout.Label( string.Format( "Air: {0}, spend: {1}, wave: {2}", _player2.elementPointsDict[ ElementType.Air ], _player2.elementPointSpendDict[ ElementType.Air ], _player1.waveInfo.airCount ) );
             GUILayout.Label( string.Format( "Dirt: {0}, spend: {1}, wave: {2}", _player2.elementPointsDict[ ElementType.Dirt ], _player2.elementPointSpendDict[ ElementType.Dirt ], _player1.waveInfo.dirtCount ) );
         }
 

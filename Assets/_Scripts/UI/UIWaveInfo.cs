@@ -40,10 +40,11 @@ public class UIWaveInfo : MonoBehaviour
         foreach ( GameObject _go in m_selector )
             _go.SetActive( false );
     }
+
     public void Init( Player p_player )
     {
         m_player = p_player;
-        m_waveInfo = m_player.config.waveInfo;
+        m_waveInfo = m_player.waveInfo;
         m_elePoints = m_player.elementPointsDict[ m_type ];
     }
 
@@ -106,14 +107,11 @@ public class UIWaveInfo : MonoBehaviour
         {
             m_player.RemoveElementPoints( m_type, _pointsNeeded );
             m_waveInfo.IncrementElementCount( m_type );
-
-
         }
     }
     public void DecrementStat()
     {
-        int _pointsRewarded = 0;
-        m_player.AddElementPoints( m_type, _pointsRewarded );
+        m_waveInfo.DecrementElementCount( m_type );
     }
 
     public int GetElementCount( ElementType p_type )

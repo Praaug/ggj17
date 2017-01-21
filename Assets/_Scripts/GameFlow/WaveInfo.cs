@@ -67,7 +67,7 @@ public class WaveInfo
     {
         fireCount = 0;
         waterCount = 0;
-        windCount = 0;
+        airCount = 0;
         dirtCount = 0;
     }
 
@@ -131,7 +131,7 @@ public class WaveInfo
                 m_player.AddElementPoints( ElementType.Water, PointsNeededForLevelUp( ElementType.Water ) );
                 break;
             case ElementType.Air:
-                windCount--;
+                airCount--;
                 m_player.AddElementPoints( ElementType.Air, PointsNeededForLevelUp( ElementType.Air ) );
                 break;
             case ElementType.Dirt:

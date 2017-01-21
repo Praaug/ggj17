@@ -49,7 +49,7 @@ public class EnemySpawnPlane : MonoBehaviour
 
         m_owningPlayer.RegisterSpendElementPoints( ElementType.Dirt, _waveInfo.dirtCount );
         m_owningPlayer.RegisterSpendElementPoints( ElementType.Fire, _waveInfo.fireCount );
-        m_owningPlayer.RegisterSpendElementPoints( ElementType.Air, _waveInfo.windCount );
+        m_owningPlayer.RegisterSpendElementPoints( ElementType.Air, _waveInfo.airCount );
         m_owningPlayer.RegisterSpendElementPoints( ElementType.Water, _waveInfo.waterCount );
 
         PlayerConfig _config = m_owningPlayer.config;
