@@ -17,6 +17,16 @@ public class UIMenu : MonoBehaviour
         m_creditsPopup.SetActive( false );
     }
 
+    private void Start()
+    {
+        GameInfo.instance.OnCurrentGamePhaseChange += GameInfo_OnCurrentGamePhaseChange;
+    }
+
+    private void GameInfo_OnCurrentGamePhaseChange()
+    {
+        gameObject.SetActive( GameInfo.instance.currentGamePhase == GameInfo.GamePhase.PreGame );
+    }
+
     public void OnStartClick()
     {
         Dbg.Log( "On Start Clicked" );

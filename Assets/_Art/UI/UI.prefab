@@ -516,6 +516,7 @@ GameObject:
   - component: {fileID: 224565800148351452}
   - component: {fileID: 222835700077508600}
   - component: {fileID: 114913936725486648}
+  - component: {fileID: 114270603050492822}
   m_Layer: 5
   m_Name: Endscreen
   m_TagString: Untagged
@@ -4142,7 +4143,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114105507309879182}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114270603050492822}
+        m_MethodName: BackToMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114058662673488956
@@ -5530,6 +5542,18 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114270603050492822
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1136033447320354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e68e1c2716db6841b9496cc10db4a4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_winnerText: {fileID: 114687663064670658}
 --- !u!114 &114273160852156986
 MonoBehaviour:
   m_ObjectHideFlags: 1
