@@ -81,6 +81,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\_Scripts\Camera\CameraSwitcher.cs" />
     <Compile Include="Assets\_Scripts\Camera\CameraThirdPerson.cs" />
     <Compile Include="Assets\_Scripts\CategoryExtension\Attributes\BitMaskAttribute.cs" />
     <Compile Include="Assets\_Scripts\CategoryExtension\Attributes\ButtonAttribute.cs" />
@@ -92,7 +93,6 @@
     <Compile Include="Assets\_Scripts\CategoryExtension\Attributes\ShowOnlyOnRuntimeAttribute.cs" />
     <Compile Include="Assets\_Scripts\CategoryExtension\Attributes\StandardEditorAttribute.cs" />
     <Compile Include="Assets\_Scripts\Combat\CombatManager.cs" />
-    <Compile Include="Assets\_Scripts\Combat\ICombatEntity.cs" />
     <Compile Include="Assets\_Scripts\Enemy\Enemy.cs" />
     <Compile Include="Assets\_Scripts\Enemy\EnemyController.cs" />
     <Compile Include="Assets\_Scripts\Enemy\EnemyInfo.cs" />
@@ -105,8 +105,10 @@
     <Compile Include="Assets\_Scripts\Input\InputUtility.cs" />
     <Compile Include="Assets\_Scripts\Misc\BlenderAssetProcessor.cs" />
     <Compile Include="Assets\_Scripts\Misc\Dbg.cs" />
+    <Compile Include="Assets\_Scripts\Misc\EnumUtility.cs" />
     <Compile Include="Assets\_Scripts\Misc\ExtensionMethods.cs" />
     <Compile Include="Assets\_Scripts\Misc\GGJUtil.cs" />
+    <Compile Include="Assets\_Scripts\Misc\GeneralTestScript.cs" />
     <Compile Include="Assets\_Scripts\Misc\LKMath.cs" />
     <Compile Include="Assets\_Scripts\Misc\Random.cs" />
     <Compile Include="Assets\_Scripts\Player\Player.cs" />
@@ -115,7 +117,11 @@
     <Compile Include="Assets\_Scripts\Player\PlayerMotor.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerWeaponDamageTrigger.cs" />
     <Compile Include="Assets\_Scripts\UI\CursorManager.cs" />
+    <Compile Include="Assets\_Scripts\UI\GameUI.cs" />
     <Compile Include="Assets\_Scripts\UI\UIDefending.cs" />
+    <Compile Include="Assets\_Scripts\UI\UIMenu.cs" />
+    <Compile Include="Assets\_Scripts\UI\UIPlanning.cs" />
+    <Compile Include="Assets\_Scripts\UI\UIWaveInfo.cs" />
     <Compile Include="Assets\unity-ui-extensions\Scripts\Accordion\Accordion.cs" />
     <Compile Include="Assets\unity-ui-extensions\Scripts\Accordion\AccordionElement.cs" />
     <Compile Include="Assets\unity-ui-extensions\Scripts\Accordion\Tweening\FloatTween.cs" />

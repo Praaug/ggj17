@@ -25,14 +25,12 @@ public class RagdollController : MonoBehaviour
 
         for ( int i = 0; i < m_joints.Length; i++ )
         {
-            m_joints[ i ].gameObject.layer = LayerMask.NameToLayer( "Ragdoll" );
             m_joints[ i ].GetComponent<Collider>().isTrigger = false;
             _rb = m_joints[ i ].GetComponent<Rigidbody>();
             _rb.isKinematic = false;
             _rb.useGravity = true;
         }
 
-        m_base.layer = LayerMask.NameToLayer( "Ragdoll" );
         m_base.GetComponent<Collider>().isTrigger = false;
         _rb = m_base.GetComponent<Rigidbody>();
         _rb.isKinematic = false;
