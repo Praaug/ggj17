@@ -65,6 +65,7 @@ MonoBehaviour:
   m_player2Spawn: {fileID: 0}
   m_enemyPrefabFire:
   - {fileID: 114929247372140504, guid: abdb2cf26f3d98b4184cd02ee6632419, type: 2}
+  - {fileID: 114929247372140504, guid: 8a5249c675c5e7341a08113af62996d9, type: 2}
   m_enemyPrefabAir:
   - {fileID: 114929247372140504, guid: a40170f26c1715a4892b5cdeb39d6275, type: 2}
   m_enemyPrefabWater:
