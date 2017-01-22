@@ -51,6 +51,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c491c127df0ffb458f6cb7ccd3007eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_healthbarParent: {fileID: 0}
+  m_healthbarPrefab: {fileID: 114284775523046648, guid: cda3c7b39f3e0504094c7808a1612de8,
+    type: 2}
   m_spawnPlanes:
   - {fileID: 0}
   - {fileID: 0}
@@ -63,6 +66,7 @@ MonoBehaviour:
   m_player2Prefab: {fileID: 1407493350686444, guid: 605408b11a5fe304c91db2895795f89e,
     type: 2}
   m_player2Spawn: {fileID: 0}
+  m_endscreen: {fileID: 0}
   m_enemyPrefabFire:
   - {fileID: 114929247372140504, guid: abdb2cf26f3d98b4184cd02ee6632419, type: 2}
   - {fileID: 114929247372140504, guid: 8a5249c675c5e7341a08113af62996d9, type: 2}

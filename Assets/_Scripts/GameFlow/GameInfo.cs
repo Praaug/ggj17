@@ -14,9 +14,14 @@ public partial class GameInfo : MonoBehaviour
     /// Event that is fired when the game has started
     /// </summary>
     public event System.Action OnStartGame;
+    ///// <summary>
+    ///// Event that is fired when the game has ended. Parameter contains winner
+    ///// </summary>
+    //public event System.Action<Player> OnEndGame;
     #endregion
 
     #region Properties
+    public Player winner { get; private set; }
     public Dictionary<ElementType, EnemyInfo[]> elementPrefabDict { get; private set; }
     public float damageIncPerStep { get { return m_damageIncPerStep; } }
     public int killsPerStep { get { return m_killsPerStep; } }
@@ -54,6 +59,8 @@ public partial class GameInfo : MonoBehaviour
     private GameObject m_player2Prefab = null;
     [SerializeField, Category( "References" )]
     private Transform m_player2Spawn = null;
+    [SerializeField, Category( "References" )]
+    private Endscreen m_endscreen = null;
 
     [SerializeField, Category( "Enemy" )]
     private EnemyInfo[] m_enemyPrefabFire = new EnemyInfo[ 0 ];
@@ -96,13 +103,16 @@ public partial class GameInfo : MonoBehaviour
 
         s_instance = this;
 
-        currentGamePhase = GamePhase.PreGame;
-
         elementPrefabDict = new Dictionary<ElementType, EnemyInfo[]>();
         elementPrefabDict.Add( ElementType.Dirt, m_enemyPrefabDirt );
         elementPrefabDict.Add( ElementType.Fire, m_enemyPrefabFire );
         elementPrefabDict.Add( ElementType.Water, m_enemyPrefabWater );
         elementPrefabDict.Add( ElementType.Air, m_enemyPrefabAir );
+    }
+
+    private void Start()
+    {
+        currentGamePhase = GamePhase.PreGame;
     }
 
     private void SpawnPlane_OnWaveDone( EnemySpawnPlane p_spawnPlane )
@@ -146,8 +156,13 @@ public partial class GameInfo : MonoBehaviour
     [Button( "Start Game" )]
     public void StartGame()
     {
+        winner = null;
+
         // Create the player avatars and objects
         Player.CreatePlayer();
+
+        Player.allPlayer[ 0 ].OnKillThis += Player_OnKillThis;
+        Player.allPlayer[ 1 ].OnKillThis += Player_OnKillThis;
 
         if ( Player.allPlayer.Count != m_spawnPlanes.Length || Player.allPlayer.Count != m_killPlanes.Length )
         {
@@ -170,6 +185,17 @@ public partial class GameInfo : MonoBehaviour
 
         // Init the game phase
         InitPhase( GamePhase.Fight );
+    }
+
+    private void Player_OnKillThis( Player p_player )
+    {
+        EndGame( p_player );
+    }
+
+    private void EndGame( Player p_player )
+    {
+        winner = p_player.otherPlayer;
+        currentGamePhase = GamePhase.PostGame;
     }
 
     public void InitPhase( GamePhase p_phase )
@@ -225,39 +251,16 @@ public partial class GameInfo : MonoBehaviour
 
     private void OnGUI()
     {
-        if ( GUILayout.Button( "Start Game" ) )
-            StartGame();
-
-        if ( Player.allPlayer != null && Player.allPlayer.Count > 0 )
-        {
-            //GUILayout.Label( "Player1" );
-            //Player _player1 = Player.allPlayer[ 0 ];
-            //GUILayout.Label( string.Format( "Fire: {0}, spend: {1}, wave: {2}", _player1.elementPointsDict[ ElementType.Fire ], _player1.elementPointSpendDict[ ElementType.Fire ], _player1.waveInfo.fireCount ) );
-            //GUILayout.Label( string.Format( "Water: {0}, spend: {1}, wave: {2}", _player1.elementPointsDict[ ElementType.Water ], _player1.elementPointSpendDict[ ElementType.Water ], _player1.waveInfo.waterCount ) );
-            //GUILayout.Label( string.Format( "Air: {0}, spend: {1}, wave: {2}", _player1.elementPointsDict[ ElementType.Air ], _player1.elementPointSpendDict[ ElementType.Air ], _player1.waveInfo.airCount ) );
-            //GUILayout.Label( string.Format( "Dirt: {0}, spend: {1}, wave: {2}", _player1.elementPointsDict[ ElementType.Dirt ], _player1.elementPointSpendDict[ ElementType.Dirt ], _player1.waveInfo.dirtCount ) );
-
-            //GUILayout.Label( "" );
-            //GUILayout.Label( "Player2" );
-            //Player _player2 = Player.allPlayer[ 1 ];
-            //GUILayout.Label( string.Format( "Fire: {0}, spend: {1}, wave: {2}", _player2.elementPointsDict[ ElementType.Fire ], _player2.elementPointSpendDict[ ElementType.Fire ], _player1.waveInfo.fireCount ) );
-            //GUILayout.Label( string.Format( "Water: {0}, spend: {1}, wave: {2}", _player2.elementPointsDict[ ElementType.Water ], _player2.elementPointSpendDict[ ElementType.Water ], _player1.waveInfo.waterCount ) );
-            //GUILayout.Label( string.Format( "Air: {0}, spend: {1}, wave: {2}", _player2.elementPointsDict[ ElementType.Air ], _player2.elementPointSpendDict[ ElementType.Air ], _player1.waveInfo.airCount ) );
-            //GUILayout.Label( string.Format( "Dirt: {0}, spend: {1}, wave: {2}", _player2.elementPointsDict[ ElementType.Dirt ], _player2.elementPointSpendDict[ ElementType.Dirt ], _player1.waveInfo.dirtCount ) );
-        }
-
+        if ( GUILayout.Button( "Restart Game" ) )
+            RestartGame();
 
         if ( currentGamePhase == GamePhase.WaveBuilding )
         {
             if ( !m_player1Ready && GUILayout.Button( "Player 1 ready" ) )
-            {
                 m_player1Ready = true;
-            }
 
             if ( !m_player2Ready && GUILayout.Button( "Player 2 ready" ) )
-            {
                 m_player2Ready = true;
-            }
 
             if ( m_player1Ready && m_player2Ready )
                 InitPhase( GamePhase.Fight );
@@ -277,6 +280,14 @@ public partial class GameInfo : MonoBehaviour
 
         _healthbar.Init( p_enemy );
         return _healthbar;
+    }
+
+    public static void RestartGame()
+    {
+        Player.DestroyPlayer();
+        Enemy.DestroyEnemies();
+
+        s_instance.StartGame();
     }
     #endregion
 }
@@ -302,6 +313,7 @@ public partial class GameInfo : MonoBehaviour
     {
         PreGame,
         WaveBuilding,
-        Fight
+        Fight,
+        PostGame,
     }
 }

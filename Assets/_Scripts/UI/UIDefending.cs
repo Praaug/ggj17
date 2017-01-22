@@ -44,6 +44,14 @@ public class UIDefending : MonoBehaviour
         Player.OnPlayerCreation += Player_OnPlayerCreation;
         gameObject.SetActive( false );
         GameInfo.instance.OnCurrentGamePhaseChange += Instance_OnCurrentGamePhaseChange;
+        //GameInfo.instance.OnEndGame += GameInfo_OnEndGame;
+    }
+
+    private void GameInfo_OnEndGame( Player p_winningPlayer )
+    {
+        gameObject.SetActive( false );
+        foreach ( var _go in m_objectsToActivate )
+            _go.SetActive( false );
     }
 
     private void Instance_OnCurrentGamePhaseChange()

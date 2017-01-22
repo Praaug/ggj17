@@ -47,6 +47,10 @@ public class EnemyController : MonoBehaviour
             enemy.OnKill -= Enemy_OnKill;
             enemy.OnInflictDamage -= Enemy_OnInflictDamage;
         }
+
+        if ( m_healthbar != null )
+            Destroy( m_healthbar.gameObject );
+        m_healthbar = null;
     }
 
     private void Enemy_OnKill()
@@ -57,6 +61,7 @@ public class EnemyController : MonoBehaviour
 
         if ( m_healthbar != null )
             Destroy( m_healthbar.gameObject );
+        m_healthbar = null;
     }
 
     // Update is called once per frame

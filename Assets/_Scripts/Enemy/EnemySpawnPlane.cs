@@ -87,7 +87,6 @@ public class EnemySpawnPlane : MonoBehaviour
         }
 
         m_allEnemiesSpawned = true;
-        Dbg.Log( gameObject, "ALL ENEMIES ARE SPAWNED ON {0}", gameObject.name );
     }
 
     private void Enemy_OnKillThis( Enemy p_enemy )
@@ -96,11 +95,8 @@ public class EnemySpawnPlane : MonoBehaviour
 
         m_enemySpawnedList.Remove( p_enemy );
 
-        Dbg.Log( gameObject, "Enemy killed on wave {0}. List count {1}", gameObject, m_enemySpawnedList.Count );
-
         if ( m_allEnemiesSpawned && m_enemySpawnedList.Count == 0 )
         {
-            Dbg.Log( "ON WAVE DONE CALLED" );
             if ( OnWaveDoneThis != null )
                 OnWaveDoneThis( this );
         }

@@ -118,6 +118,7 @@
     <Compile Include="Assets\_Scripts\Player\PlayerWeaponDamageTrigger.cs" />
     <Compile Include="Assets\_Scripts\Sound\SoundManager.cs" />
     <Compile Include="Assets\_Scripts\UI\CursorManager.cs" />
+    <Compile Include="Assets\_Scripts\UI\Endscreen.cs" />
     <Compile Include="Assets\_Scripts\UI\GameUI.cs" />
     <Compile Include="Assets\_Scripts\UI\Healthbar.cs" />
     <Compile Include="Assets\_Scripts\UI\UIDefending.cs" />

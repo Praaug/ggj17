@@ -73,6 +73,9 @@ public class PlayerMotor : MonoBehaviour
 
     private Vector3 UpdateGravitiy()
     {
+        if ( isGrounded )
+            m_currentGravityForce = 0.0f;
+
         m_currentGravityForce += Time.deltaTime * Physics.gravity.y;
 
         return m_currentGravityForce * Time.deltaTime * Vector3.up;
