@@ -1,3 +1,7 @@
 Library/
 Temp/
 Builds/
+*.stackdump
+*.csproj
+*.suo
+*.sln

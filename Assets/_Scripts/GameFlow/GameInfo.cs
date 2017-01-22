@@ -94,8 +94,6 @@ public partial class GameInfo : MonoBehaviour
 
         currentGamePhase = GamePhase.PreGame;
 
-
-
         elementPrefabDict = new Dictionary<ElementType, EnemyInfo[]>();
         elementPrefabDict.Add( ElementType.Dirt, m_enemyPrefabDirt );
         elementPrefabDict.Add( ElementType.Fire, m_enemyPrefabFire );
@@ -156,8 +154,8 @@ public partial class GameInfo : MonoBehaviour
         // Assign player to spawn planes
         for ( int i = 0; i < m_spawnPlanes.Length; i++ )
         {
-            Player _owningPlayer = Player.allPlayer[ i ];
-            Player _damagedPlayer = Player.allPlayer[ ( i + 1 ) % Player.allPlayer.Count ];
+            Player _owningPlayer = Player.allPlayer[ ( i + 1 ) % m_spawnPlanes.Length ];
+            Player _damagedPlayer = Player.allPlayer[ i ];
 
             m_spawnPlanes[ i ].AssignPlayer( _owningPlayer, _damagedPlayer );
             m_killPlanes[ i ].AssignPlayer( _owningPlayer, _damagedPlayer );
@@ -264,7 +262,7 @@ public partial class GameInfo : MonoBehaviour
 
     private IEnumerator Coroutine_TimerWaveBuilding()
     {
-        yield return new WaitForSeconds( 20.0f );
+        yield return new WaitForSeconds( 200.0f );
 
         InitPhase( GamePhase.Fight );
     }

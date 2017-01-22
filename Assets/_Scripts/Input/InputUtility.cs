@@ -135,7 +135,7 @@ public class InputUtility : MonoBehaviour
                 if ( p_inputSource == InputSource.Player1 )
                     return Input.GetKeyDown( s_instance.m_menuUp1 );
                 else
-                    return Input.GetKeyDown( s_instance.m_menuUp1 );
+                    return Input.GetKeyDown( s_instance.m_menuUp2 );
             case InputButton.MenuDown:
                 if ( p_inputSource == InputSource.Player1 )
                     return Input.GetKeyDown( s_instance.m_menuDown1 );

@@ -380,11 +380,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7930b13d31f30c642869158a56fdd1f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_waveInfo:
-    fireCount: 1
-    waterCount: 0
-    windCount: 0
-    dirtCount: 0
   m_spawnRate: 3
   m_randomBias: 1
 --- !u!114 &114320280951783038
@@ -412,7 +407,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_controller: {fileID: 114320280951783038}
-  m_damagePerHit: 1000
+  m_damagePerHit: 10
 --- !u!114 &114664324128465084
 MonoBehaviour:
   m_ObjectHideFlags: 1

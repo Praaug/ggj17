@@ -21,7 +21,7 @@ public partial class Player
     /// </summary>
     public event System.Action OnKill;
 
-    public event System.Action<ElementType> OnEnemyKilled;
+    public event System.Action<Enemy> OnEnemyKilled;
     #endregion
 
     #region Properties
@@ -149,7 +149,7 @@ public partial class Player
         elementBuffDict[ p_enemy.info.elementType ]++;
 
         if ( OnEnemyKilled != null )
-            OnEnemyKilled( _elementType );
+            OnEnemyKilled( p_enemy );
     }
 
     public void AddElementPoints( ElementType p_type, int p_amount )

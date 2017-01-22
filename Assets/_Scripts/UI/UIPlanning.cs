@@ -14,15 +14,15 @@ public class UIPlanning : MonoBehaviour
     private GameObject[] m_objectsToActivate = null;
 
     private Player m_player = null;
-    private UIWaveInfo m_currentWaveInfo = null;
+    private UIWaveInfo m_currentUIWaveInfo = null;
     private int m_currentIndex = 0;
     #endregion
 
     #region Methods
     public void Awake()
     {
-        m_currentWaveInfo = m_waveInfos[ 0 ];
-        m_currentWaveInfo.IncrementSelector();
+        m_currentUIWaveInfo = m_waveInfos[ 0 ];
+        m_currentUIWaveInfo.IncrementSelector();
     }
 
     private void Start()
@@ -78,31 +78,31 @@ public class UIPlanning : MonoBehaviour
 
     private void IncreaseSelector()
     {
-        if ( !m_currentWaveInfo.IncrementSelector() )
+        if ( !m_currentUIWaveInfo.IncrementSelector() )
         {
             m_currentIndex = ( m_currentIndex + 1 ) % m_waveInfos.Length;
-            m_currentWaveInfo = m_waveInfos[ m_currentIndex ];
+            m_currentUIWaveInfo = m_waveInfos[ m_currentIndex ];
             IncreaseSelector();
         }
     }
 
     private void DecreaseSelector()
     {
-        if ( !m_currentWaveInfo.DecrementSelector() )
+        if ( !m_currentUIWaveInfo.DecrementSelector() )
         {
             m_currentIndex = ( ( m_currentIndex % m_waveInfos.Length ) + m_waveInfos.Length - 1 ) % m_waveInfos.Length;
-            m_currentWaveInfo = m_waveInfos[ m_currentIndex ];
+            m_currentUIWaveInfo = m_waveInfos[ m_currentIndex ];
             DecreaseSelector();
         }
     }
 
     private void IncreaseStat()
     {
-        m_currentWaveInfo.IncrementStat();
+        m_currentUIWaveInfo.IncrementStat();
     }
     private void DecreaseStat()
     {
-        m_currentWaveInfo.DecrementStat();
+        m_currentUIWaveInfo.DecrementStat();
     }
     #endregion
 }
