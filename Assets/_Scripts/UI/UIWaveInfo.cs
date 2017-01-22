@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI.Extensions;
+using UnityEngine.UI;
 
 public class UIWaveInfo : MonoBehaviour
 {
@@ -17,6 +18,8 @@ public class UIWaveInfo : MonoBehaviour
 
     #region Fields
     [SerializeField]
+    private Text m_elePointsAvailableText = null;
+    [SerializeField]
     private ElementType m_type = ElementType.Fire;
     [SerializeField]
     private UILineRenderer m_wave = null;
@@ -31,6 +34,7 @@ public class UIWaveInfo : MonoBehaviour
 
     private Player m_player = null;
     private int m_currentIndex = -1;
+    private float m_maxAmplitudeHeight = 0.0f;
     #endregion
 
 
@@ -45,12 +49,23 @@ public class UIWaveInfo : MonoBehaviour
         m_wave.Points[ PART_03_INDEX ] = new Vector2( PART_03_X, 0.0f );
     }
 
+    private void OnEnable()
+    {
+        if ( m_player == null )
+            return;
+
+        m_elePoints = m_player.elementPointsDict[ m_type ];
+        m_elePointsAvailableText.text = m_elePoints.ToString000();
+
+        m_otherPlayerStrengh = Player.MIN_DAMAGE + (int)m_player.otherPlayer.elementBuffDict[ m_type ];
+        m_maxAmplitudeHeight = m_waveInfo.MaximumPossibleAmplitude();
+    }
+
     public void Init( Player p_player )
     {
         m_player = p_player;
         m_waveInfo = m_player.waveInfo;
-        m_elePoints = m_player.elementPointsDict[ m_type ];
-        m_otherPlayerStrengh = Player.MIN_DAMAGE + (int)m_player.otherPlayer.elementBuffDict[ m_type ];
+        OnEnable();
     }
 
     /// <summary>
@@ -114,14 +129,13 @@ public class UIWaveInfo : MonoBehaviour
             m_waveInfo.IncrementElementCount( m_type, m_currentIndex );
 
             m_wave.Points[ GetIndex() ] = new Vector2( GetXValue(), m_waveInfo.GetAmplitudeCount( m_type, m_currentIndex ) );
-
         }
     }
 
     public void DecrementStat()
     {
         m_waveInfo.DecrementElementCount( m_type, m_currentIndex );
-        m_wave.Points[ GetIndex() ] = new Vector2( GetXValue(), m_waveInfo.GetAmplitudeCount( m_type, m_currentIndex ) );
+        m_wave.Points[ GetIndex() ] = new Vector2( GetXValue(), GetAmplitudeHeight() );
     }
 
     private int GetIndex()
@@ -132,9 +146,9 @@ public class UIWaveInfo : MonoBehaviour
     {
         return m_currentIndex == 0 ? PART_01_X : m_currentIndex == 1 ? PART_02_X : PART_03_X;
     }
-    private float GetAmplitudeHight()
+    private float GetAmplitudeHeight()
     {
-        return 0.0f;
+        return m_waveInfo.GetAmplitudeCount( m_type, m_currentIndex ) / m_maxAmplitudeHeight;
     }
     #endregion
 }

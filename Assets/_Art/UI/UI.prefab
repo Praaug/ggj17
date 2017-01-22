@@ -5742,6 +5742,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4bde51fe221abb499d6cd871a4e7f1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_elePointsAvailableText: {fileID: 114587070361062614}
   m_type: 1
   m_wave: {fileID: 114797916260285966}
   m_elePoints: 0
@@ -5788,6 +5789,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4bde51fe221abb499d6cd871a4e7f1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_elePointsAvailableText: {fileID: 114069670081621590}
   m_type: 0
   m_wave: {fileID: 114746200460267180}
   m_elePoints: 0
@@ -6011,6 +6013,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4bde51fe221abb499d6cd871a4e7f1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_elePointsAvailableText: {fileID: 114683082319043352}
   m_type: 3
   m_wave: {fileID: 114016914261847834}
   m_elePoints: 0
@@ -6598,6 +6601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4bde51fe221abb499d6cd871a4e7f1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_elePointsAvailableText: {fileID: 114094299350289234}
   m_type: 2
   m_wave: {fileID: 114402478154786666}
   m_elePoints: 0
@@ -6832,6 +6836,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4bde51fe221abb499d6cd871a4e7f1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_elePointsAvailableText: {fileID: 114153158390635702}
   m_type: 0
   m_wave: {fileID: 114457975210457564}
   m_elePoints: 0
@@ -8328,6 +8333,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4bde51fe221abb499d6cd871a4e7f1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_elePointsAvailableText: {fileID: 114436992769857984}
   m_type: 1
   m_wave: {fileID: 114709185669050902}
   m_elePoints: 0
@@ -8621,6 +8627,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4bde51fe221abb499d6cd871a4e7f1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_elePointsAvailableText: {fileID: 114148280429781582}
   m_type: 0
   m_wave: {fileID: 114376508781379588}
   m_elePoints: 0
@@ -9419,6 +9426,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4bde51fe221abb499d6cd871a4e7f1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_elePointsAvailableText: {fileID: 114870110280782152}
   m_type: 2
   m_wave: {fileID: 114979109143183442}
   m_elePoints: 0
@@ -12485,13 +12493,13 @@ RectTransform:
   m_Children:
   - {fileID: 224363714911390306}
   - {fileID: 224612196026580356}
-  m_Father: {fileID: 224958334489527114}
-  m_RootOrder: 0
+  m_Father: {fileID: 224969873519382700}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 184.5, y: 0}
-  m_SizeDelta: {x: 369, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224394082652159720
 RectTransform:
@@ -14588,10 +14596,9 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 224384373649932966}
+  m_Children: []
   m_Father: {fileID: 224969873519382700}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -14684,6 +14691,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224089138811564728}
+  - {fileID: 224384373649932966}
   - {fileID: 224958334489527114}
   m_Father: {fileID: 224009280522398068}
   m_RootOrder: 2
