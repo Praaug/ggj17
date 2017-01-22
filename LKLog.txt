@@ -1,4 +1,4 @@
-[16:03:19; 00000] LOG STARTED!
+[16:08:31; 00000] LOG STARTED!
    at UnityEngine.GameObject.AddComponent(System.Type componentType) in C:\buildslave\unity\build\artifacts\generated\common\runtime\GameObjectBindings.gen.cs:line 352
    at UnityEngine.GameObject.AddComponent() in C:\buildslave\unity\build\artifacts\generated\common\runtime\GameObjectBindings.gen.cs:line 357
    at Dbg.get_Instance() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Misc\Dbg.cs:line 35
@@ -8,14 +8,14 @@
    at GameInfo.set_currentGamePhase(GamePhase value) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\GameFlow\GameInfo.cs:line 37
    at GameInfo.Start() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\GameFlow\GameInfo.cs:line 115
 
-[16:03:19; 00000] GAME PHASE CHANGED TO PreGame
+[16:08:31; 00000] GAME PHASE CHANGED TO PreGame
    at Dbg.Log(UnityEngine.Object p_object, System.String message, StackTraceLogType p_type) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Misc\Dbg.cs:line 53
    at Dbg.Log(System.String message, System.Object[] args) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Misc\Dbg.cs:line 76
    at GameInfo.Internal_CurrentGamePhaseChange() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\GameFlow\GameInfo.cs:line 137
    at GameInfo.set_currentGamePhase(GamePhase value) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\GameFlow\GameInfo.cs:line 37
    at GameInfo.Start() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\GameFlow\GameInfo.cs:line 115
 
-[16:03:20; 00061] On Start Clicked
+[16:08:32; 00049] On Start Clicked
    at UIMenu.OnStartClick() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\UI\UIMenu.cs:line 32
    at UnityEngine.Events.InvokableCall.Invoke(System.Object[] args) in C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:line 153
    at UnityEngine.Events.InvokableCallList.Invoke(System.Object[] parameters) in C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:line 634
@@ -31,7 +31,7 @@
    at UnityEngine.EventSystems.StandaloneInputModule.Process() in C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:line 184
    at UnityEngine.EventSystems.EventSystem.Update() in C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\EventSystem.cs:line 287
 
-[16:03:20; 00061] GAME PHASE CHANGED TO Fight
+[16:08:32; 00049] GAME PHASE CHANGED TO Fight
    at GameInfo.Internal_CurrentGamePhaseChange() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\GameFlow\GameInfo.cs:line 137
    at GameInfo.set_currentGamePhase(GamePhase value) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\GameFlow\GameInfo.cs:line 37
    at GameInfo.InitPhase(GamePhase p_phase) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\GameFlow\GameInfo.cs:line 203
