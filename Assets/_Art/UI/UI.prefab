@@ -5790,7 +5790,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_elePointsAvailableText: {fileID: 114069670081621590}
-  m_type: 0
+  m_type: 3
   m_wave: {fileID: 114746200460267180}
   m_elePoints: 0
   m_otherPlayerStrengh: 0

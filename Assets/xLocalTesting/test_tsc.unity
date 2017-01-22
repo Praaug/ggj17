@@ -464,6 +464,51 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114797916260285966, guid: 2d4c805a445b8ec4f88e5b4c52a3c16a,
+        type: 2}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114376508781379588, guid: 2d4c805a445b8ec4f88e5b4c52a3c16a,
+        type: 2}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114457975210457564, guid: 2d4c805a445b8ec4f88e5b4c52a3c16a,
+        type: 2}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114746200460267180, guid: 2d4c805a445b8ec4f88e5b4c52a3c16a,
+        type: 2}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114402478154786666, guid: 2d4c805a445b8ec4f88e5b4c52a3c16a,
+        type: 2}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114979109143183442, guid: 2d4c805a445b8ec4f88e5b4c52a3c16a,
+        type: 2}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114709185669050902, guid: 2d4c805a445b8ec4f88e5b4c52a3c16a,
+        type: 2}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114016914261847834, guid: 2d4c805a445b8ec4f88e5b4c52a3c16a,
+        type: 2}
+      propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114457975210457564, guid: 2d4c805a445b8ec4f88e5b4c52a3c16a,
+        type: 2}
+      propertyPath: m_points.Array.data[3].y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2d4c805a445b8ec4f88e5b4c52a3c16a, type: 2}
   m_IsPrefabParent: 0

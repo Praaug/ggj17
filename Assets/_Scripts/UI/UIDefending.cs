@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class UIDefending : MonoBehaviour
 {
@@ -21,13 +22,19 @@ public class UIDefending : MonoBehaviour
     [SerializeField, Category( "Selection" )]
     private bool m_isPlayer1 = false;
 
-    private int[] m_enemiesKilled = new int[ 4 ] { 0, 0, 0, 0 };
+    private Dictionary<ElementType, int> m_elePointsGainedPerRound = new Dictionary<ElementType, int>();
 
     [SerializeField]
     private GameObject[] m_objectsToActivate = null;
     #endregion
 
     #region Methods
+    private void Awake()
+    {
+        foreach ( ElementType _type in EnumUtility.GetValues<ElementType>() )
+            m_elePointsGainedPerRound.Add( _type, 0 );
+    }
+
     private void Start()
     {
         foreach ( var _go in m_objectsToActivate )
@@ -59,19 +66,39 @@ public class UIDefending : MonoBehaviour
         Reset();
         m_player.OnLifeChanged += OnHealthLost;
         m_player.OnEnemyKilled += OnEnemyKilled;
+
+        GameInfo.instance.OnCurrentGamePhaseChange += GameInfo_OnCurrentGamePhaseChange1;
+
+        UpdateHealthGlobs();
     }
 
-    private void OnEnemyKilled( ElementType p_type )
+    private void GameInfo_OnCurrentGamePhaseChange1()
     {
-        m_enemiesKilled[ (int)p_type ]++;
+        if ( GameInfo.instance.currentGamePhase == GameInfo.GamePhase.Fight )
+            Reset();
+    }
 
-        m_fireCount.text = m_enemiesKilled[ (int)ElementType.Fire ].ToString000();
-        m_fireCount.text = m_enemiesKilled[ (int)ElementType.Water ].ToString000();
-        m_fireCount.text = m_enemiesKilled[ (int)ElementType.Air ].ToString000();
-        m_fireCount.text = m_enemiesKilled[ (int)ElementType.Dirt ].ToString000();
+    private void OnEnemyKilled( Enemy p_enemy )
+    {
+        m_elePointsGainedPerRound[ p_enemy.info.elementType ] += p_enemy.info.elementPointValue;
+
+        UpdateText();
+    }
+
+    private void UpdateText()
+    {
+        m_fireCount.text = m_elePointsGainedPerRound[ ElementType.Fire ].ToString000();
+        m_waterCount.text = m_elePointsGainedPerRound[ ElementType.Water ].ToString000();
+        m_windCount.text = m_elePointsGainedPerRound[ ElementType.Air ].ToString000();
+        m_dirtCount.text = m_elePointsGainedPerRound[ ElementType.Dirt ].ToString000();
     }
 
     private void OnHealthLost()
+    {
+        UpdateHealthGlobs();
+    }
+
+    private void UpdateHealthGlobs()
     {
         for ( int i = 0; i < m_healthglobs.Length; i++ )
             m_healthglobs[ i ].SetActive( i <= m_player.lifes );
@@ -79,10 +106,12 @@ public class UIDefending : MonoBehaviour
 
     private void Reset()
     {
-        for ( int i = 0; i < m_healthglobs.Length; i++ )
-            m_healthglobs[ i ].SetActive( true );
+        UpdateHealthGlobs();
 
-        m_enemiesKilled = new int[ 4 ] { 0, 0, 0, 0 };
+        foreach ( ElementType _type in EnumUtility.GetValues<ElementType>() )
+            m_elePointsGainedPerRound[ _type ] = 0;
+
+        UpdateText();
     }
     #endregion
 }
