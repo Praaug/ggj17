@@ -4,7 +4,8 @@ using System.Collections;
 
 public class Helper : Editor
 {
-    public void SetMass()
+    [MenuItem( "GGJ/Set Mass" )]
+    public static void SetMass()
     {
         foreach ( var _go in Selection.gameObjects )
         {
