@@ -93,7 +93,7 @@ GameObject:
   - component: {fileID: 114690437827547586}
   - component: {fileID: 114181096318095900}
   m_Layer: 8
-  m_Name: Enemy_Fire_Big
+  m_Name: Enemy_Fire_giant
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -248,7 +248,7 @@ Transform:
   m_GameObject: {fileID: 1245377934738654}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.3360362, y: 0.00000029802322, z: -1.6655507}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
+  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
   m_Children:
   - {fileID: 4470039973687536}
   - {fileID: 4715526991001444}
@@ -521,7 +521,7 @@ MonoBehaviour:
   m_animator: {fileID: 95270717487436808}
   m_cc: {fileID: 143090442815577918}
   m_controller: {fileID: 114315270806778976}
-  m_movementSpeed: 1
+  m_movementSpeed: 0.75
 --- !u!114 &114929247372140504
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -533,9 +533,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8371182b7f337cb42bcd05d2d981c56f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_health: 40
+  m_health: 70
   m_type: 0
-  m_elementPointValue: 2
+  m_elementPointValue: 3
 --- !u!136 &136008868156208708
 CapsuleCollider:
   m_ObjectHideFlags: 1

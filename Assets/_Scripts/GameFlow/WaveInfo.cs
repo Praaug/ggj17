@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 
 [System.Serializable]
 public class WaveInfo
@@ -96,7 +97,8 @@ public class WaveInfo
 
         while ( _restCount > 0 )
         {
-            EnemyInfo _newItem = p_prefabs.RandomItem( info => info.elementPointValue <= _restCount );
+            EnemyInfo _newItem = p_prefabs.Where( info => info.elementPointValue <= _restCount ).Max( info => info.elementPointValue );
+
             if ( _newItem == null )
                 break;
 

@@ -94,7 +94,7 @@ public partial class Player
         m_enemyStrenghDict.Add( ElementType.Dirt, MIN_DAMAGE );
 
         waveInfo = new WaveInfo( this );
-        waveInfo.m_amplitudes[ 0 ][ ElementType.Fire ] = 1;
+        waveInfo.m_amplitudes[ 0 ][ ElementType.Fire ] = 10;
         waveInfo.m_amplitudes[ 0 ][ ElementType.Water ] = 1;
         waveInfo.m_amplitudes[ 0 ][ ElementType.Air ] = 1;
         waveInfo.m_amplitudes[ 0 ][ ElementType.Dirt ] = 1;
