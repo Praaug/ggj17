@@ -1,17 +1,53 @@
-[16:10:39; 00000] LOG STARTED!
+[16:03:19; 00000] LOG STARTED!
    at UnityEngine.GameObject.AddComponent(System.Type componentType) in C:\buildslave\unity\build\artifacts\generated\common\runtime\GameObjectBindings.gen.cs:line 352
    at UnityEngine.GameObject.AddComponent() in C:\buildslave\unity\build\artifacts\generated\common\runtime\GameObjectBindings.gen.cs:line 357
-   at Dbg.get_Instance() in D:\_Projects\_GGJ177\Unity\Assets\_Scripts\Misc\Dbg.cs:line 35
-   at Dbg.Log(UnityEngine.Object p_object, System.String message, StackTraceLogType p_type) in D:\_Projects\_GGJ177\Unity\Assets\_Scripts\Misc\Dbg.cs:line 52
-   at Dbg.Log(System.String message, System.Object[] args) in D:\_Projects\_GGJ177\Unity\Assets\_Scripts\Misc\Dbg.cs:line 76
-   at GameInfo.Internal_CurrentGamePhaseChange() in D:\_Projects\_GGJ177\Unity\Assets\_Scripts\GameFlow\GameInfo.cs:line 161
-   at GameInfo.set_currentGamePhase(GamePhase value) in D:\_Projects\_GGJ177\Unity\Assets\_Scripts\GameFlow\GameInfo.cs:line 61
-   at GameInfo.Start() in D:\_Projects\_GGJ177\Unity\Assets\_Scripts\GameFlow\GameInfo.cs:line 139
+   at Dbg.get_Instance() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Misc\Dbg.cs:line 35
+   at Dbg.Log(UnityEngine.Object p_object, System.String message, StackTraceLogType p_type) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Misc\Dbg.cs:line 52
+   at Dbg.Log(System.String message, System.Object[] args) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Misc\Dbg.cs:line 76
+   at GameInfo.Internal_CurrentGamePhaseChange() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\GameFlow\GameInfo.cs:line 137
+   at GameInfo.set_currentGamePhase(GamePhase value) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\GameFlow\GameInfo.cs:line 37
+   at GameInfo.Start() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\GameFlow\GameInfo.cs:line 115
 
-[16:10:39; 00000] GAME PHASE CHANGED TO PreGame
-   at Dbg.Log(UnityEngine.Object p_object, System.String message, StackTraceLogType p_type) in D:\_Projects\_GGJ177\Unity\Assets\_Scripts\Misc\Dbg.cs:line 53
-   at Dbg.Log(System.String message, System.Object[] args) in D:\_Projects\_GGJ177\Unity\Assets\_Scripts\Misc\Dbg.cs:line 76
-   at GameInfo.Internal_CurrentGamePhaseChange() in D:\_Projects\_GGJ177\Unity\Assets\_Scripts\GameFlow\GameInfo.cs:line 161
-   at GameInfo.set_currentGamePhase(GamePhase value) in D:\_Projects\_GGJ177\Unity\Assets\_Scripts\GameFlow\GameInfo.cs:line 61
-   at GameInfo.Start() in D:\_Projects\_GGJ177\Unity\Assets\_Scripts\GameFlow\GameInfo.cs:line 139
+[16:03:19; 00000] GAME PHASE CHANGED TO PreGame
+   at Dbg.Log(UnityEngine.Object p_object, System.String message, StackTraceLogType p_type) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Misc\Dbg.cs:line 53
+   at Dbg.Log(System.String message, System.Object[] args) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Misc\Dbg.cs:line 76
+   at GameInfo.Internal_CurrentGamePhaseChange() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\GameFlow\GameInfo.cs:line 137
+   at GameInfo.set_currentGamePhase(GamePhase value) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\GameFlow\GameInfo.cs:line 37
+   at GameInfo.Start() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\GameFlow\GameInfo.cs:line 115
+
+[16:03:20; 00061] On Start Clicked
+   at UIMenu.OnStartClick() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\UI\UIMenu.cs:line 32
+   at UnityEngine.Events.InvokableCall.Invoke(System.Object[] args) in C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:line 153
+   at UnityEngine.Events.InvokableCallList.Invoke(System.Object[] parameters) in C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:line 634
+   at UnityEngine.Events.UnityEventBase.Invoke(System.Object[] parameters) in C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:line 769
+   at UnityEngine.Events.UnityEvent.Invoke() in C:\buildslave\unity\build\Runtime\Export\UnityEvent_0.cs:line 53
+   at UnityEngine.UI.Button.Press() in C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\UI\Core\Button.cs:line 35
+   at UnityEngine.UI.Button.OnPointerClick(UnityEngine.EventSystems.PointerEventData eventData) in C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\UI\Core\Button.cs:line 44
+   at UnityEngine.EventSystems.ExecuteEvents.Execute(IPointerClickHandler handler, UnityEngine.EventSystems.BaseEventData eventData) in C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:line 52
+   at UnityEngine.EventSystems.ExecuteEvents.Execute(UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.EventFunction`1 functor) in C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:line 269
+   at UnityEngine.EventSystems.StandaloneInputModule.ProcessMousePress(UnityEngine.EventSystems.MouseButtonEventData data) in C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:line 531
+   at UnityEngine.EventSystems.StandaloneInputModule.ProcessMouseEvent(Int32 id) in C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:line 430
+   at UnityEngine.EventSystems.StandaloneInputModule.ProcessMouseEvent() in C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:line 410
+   at UnityEngine.EventSystems.StandaloneInputModule.Process() in C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:line 184
+   at UnityEngine.EventSystems.EventSystem.Update() in C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\EventSystem.cs:line 287
+
+[16:03:20; 00061] GAME PHASE CHANGED TO Fight
+   at GameInfo.Internal_CurrentGamePhaseChange() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\GameFlow\GameInfo.cs:line 137
+   at GameInfo.set_currentGamePhase(GamePhase value) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\GameFlow\GameInfo.cs:line 37
+   at GameInfo.InitPhase(GamePhase p_phase) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\GameFlow\GameInfo.cs:line 203
+   at GameInfo.StartGame() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\GameFlow\GameInfo.cs:line 187
+   at UIMenu.OnStartClick() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\UI\UIMenu.cs:line 34
+   at UnityEngine.Events.InvokableCall.Invoke(System.Object[] args) in C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:line 153
+   at UnityEngine.Events.InvokableCallList.Invoke(System.Object[] parameters) in C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:line 634
+   at UnityEngine.Events.UnityEventBase.Invoke(System.Object[] parameters) in C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:line 769
+   at UnityEngine.Events.UnityEvent.Invoke() in C:\buildslave\unity\build\Runtime\Export\UnityEvent_0.cs:line 53
+   at UnityEngine.UI.Button.Press() in C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\UI\Core\Button.cs:line 35
+   at UnityEngine.UI.Button.OnPointerClick(UnityEngine.EventSystems.PointerEventData eventData) in C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\UI\Core\Button.cs:line 44
+   at UnityEngine.EventSystems.ExecuteEvents.Execute(IPointerClickHandler handler, UnityEngine.EventSystems.BaseEventData eventData) in C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:line 52
+   at UnityEngine.EventSystems.ExecuteEvents.Execute(UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.EventFunction`1 functor) in C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\ExecuteEvents.cs:line 269
+   at UnityEngine.EventSystems.StandaloneInputModule.ProcessMousePress(UnityEngine.EventSystems.MouseButtonEventData data) in C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:line 531
+   at UnityEngine.EventSystems.StandaloneInputModule.ProcessMouseEvent(Int32 id) in C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:line 430
+   at UnityEngine.EventSystems.StandaloneInputModule.ProcessMouseEvent() in C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:line 410
+   at UnityEngine.EventSystems.StandaloneInputModule.Process() in C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:line 184
+   at UnityEngine.EventSystems.EventSystem.Update() in C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\EventSystem.cs:line 287
 

@@ -54,6 +54,24 @@ public class WaveInfo
         return _totalAmp;
     }
 
+    public Dictionary<ElementType, List<EnemyInfo>>[] CalculateSpawns()
+    {
+        Dictionary<ElementType, List<EnemyInfo>>[] _result = new Dictionary<ElementType, List<EnemyInfo>>[ 3 ];
+
+        for ( int i = 0; i < _result.Length; i++ )
+        {
+            _result[ i ] = new Dictionary<ElementType, List<EnemyInfo>>();
+            foreach ( ElementType _elementType in EnumUtility.GetValues<ElementType>() )
+                _result[ i ].Add( _elementType, new List<EnemyInfo>() );
+        }
+
+        for ( int i = 0; i < _result.Length; i++ )
+            foreach ( ElementType _elementType in EnumUtility.GetValues<ElementType>() )
+                _result[ i ][ _elementType ] = CalculateElement( m_amplitudes[ i ][ _elementType ], GameInfo.instance.elementPrefabDict[ _elementType ] );
+
+        return _result;
+    }
+
     public List<EnemyInfo> CalculatePrefabs()
     {
         List<EnemyInfo> _resultList = new List<EnemyInfo>();
