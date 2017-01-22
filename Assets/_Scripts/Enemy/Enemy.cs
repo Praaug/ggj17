@@ -19,11 +19,6 @@ public partial class Enemy
     /// Event that is fired when the enemy is killed
     /// </summary>
     public event System.Action OnInflictDamage;
-
-    /// <summary>
-    /// Event that is fired when the enemy is killed, with detailed Infos
-    /// </summary>
-    public static event System.Action<int, ElementType, int> OnKillDetailed;
     #endregion
 
     #region Properties

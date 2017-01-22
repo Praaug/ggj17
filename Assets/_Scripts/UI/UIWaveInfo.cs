@@ -28,8 +28,6 @@ public class UIWaveInfo : MonoBehaviour
     [SerializeField]
     private int m_elePoints = 0;
     [SerializeField]
-    private int m_otherPlayerStrengh = 0;
-    [SerializeField]
     private GameObject[] m_selector = null;
 
     private Player m_player = null;
@@ -56,8 +54,6 @@ public class UIWaveInfo : MonoBehaviour
     {
         if ( m_player == null )
             return;
-
-        m_otherPlayerStrengh = Player.MIN_DAMAGE + (int)m_player.otherPlayer.elementBuffDict[ m_type ];
 
         Vector2[] _points = m_wave.Points;
         for ( int i = 0; i < _points.Length; i++ )

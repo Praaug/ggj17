@@ -23,7 +23,6 @@ public class EnemySpawnPlane : MonoBehaviour
     /// Player that determines the spawns of this enemy spawn plane
     /// </summary>
     private Player m_owningPlayer;
-    private Player m_damagedPlayer;
 
     private List<Enemy> m_enemySpawnedList = new List<Enemy>();
     private bool[] m_allEnemiesSpawned = new bool[ 3 ];
@@ -33,7 +32,6 @@ public class EnemySpawnPlane : MonoBehaviour
     public void AssignPlayer( Player p_owningPlayer, Player p_damagedPlayer )
     {
         m_owningPlayer = p_owningPlayer;
-        m_damagedPlayer = p_damagedPlayer;
     }
 
     /// <summary>
