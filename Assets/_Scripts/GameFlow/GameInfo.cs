@@ -83,8 +83,6 @@ public partial class GameInfo : MonoBehaviour
     private GameObject m_player2Prefab = null;
     [SerializeField, Category( "References" )]
     private Transform m_player2Spawn = null;
-    [SerializeField, Category( "References" )]
-    private Endscreen m_endscreen = null;
 
     [SerializeField, Category( "Enemy" )]
     private EnemyInfo[] m_enemyPrefabFire = new EnemyInfo[ 0 ];
@@ -99,8 +97,6 @@ public partial class GameInfo : MonoBehaviour
     private float m_damageIncPerStep = 0.0f;
     [SerializeField, Category( "Stats" )]
     private int m_killsPerStep = 0;
-    [SerializeField, Category( "Stats" )]
-    private float m_waveBuildTimer = 0.0f;
 
     private bool m_player1WaveFinished = false;
     private bool m_player2WaveFinished = false;

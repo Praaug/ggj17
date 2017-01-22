@@ -5,10 +5,6 @@ public class EnemyKillPlane : MonoBehaviour
 {
     #region Fields
     /// <summary>
-    /// The player that owns this lane
-    /// </summary>
-    private Player m_owningPlayer;
-    /// <summary>
     /// Player that is punished when the mobs passes the kill plane
     /// </summary>
     private Player m_damagedPlayer;
@@ -17,7 +13,6 @@ public class EnemyKillPlane : MonoBehaviour
     #region Methods
     public void AssignPlayer( Player p_owningPlayer, Player p_damagedPlayer )
     {
-        m_owningPlayer = p_owningPlayer;
         m_damagedPlayer = p_damagedPlayer;
     }
 
