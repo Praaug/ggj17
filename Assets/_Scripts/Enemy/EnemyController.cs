@@ -5,11 +5,15 @@ public class EnemyController : MonoBehaviour
 {
     #region Properties
     public Enemy enemy { get; private set; }
+    public Transform healthbarTransform { get { return m_healthbarTransform; } }
     #endregion
 
     #region Fields
     [SerializeField, Category( "References" )]
     private RagdollController m_ragdollController = null;
+    [SerializeField, Category( "References" )]
+    private Transform m_healthbarTransform = null;
+    private Healthbar m_healthbar;
 
     #endregion
 
@@ -26,12 +30,23 @@ public class EnemyController : MonoBehaviour
         }
 
         enemy.OnKill += Enemy_OnKill;
+        enemy.OnInflictDamage += Enemy_OnInflictDamage;
+
+        m_healthbar = GameInfo.instance.CreateHealthbar( enemy );
+    }
+
+    private void Enemy_OnInflictDamage()
+    {
+        m_healthbar.SetSlider( enemy.health / enemy.info.maxHealth );
     }
 
     private void OnDestroy()
     {
         if ( enemy != null )
+        {
             enemy.OnKill -= Enemy_OnKill;
+            enemy.OnInflictDamage -= Enemy_OnInflictDamage;
+        }
     }
 
     private void Enemy_OnKill()
@@ -39,6 +54,9 @@ public class EnemyController : MonoBehaviour
         // Trigger Ragdoll
         if ( m_ragdollController != null )
             m_ragdollController.TriggerRagdoll();
+
+        if ( m_healthbar != null )
+            Destroy( m_healthbar.gameObject );
     }
 
     // Update is called once per frame

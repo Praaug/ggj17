@@ -33,7 +33,6 @@ public partial class Player
     public int lifes { get; private set; }
     public WaveInfo waveInfo { get; private set; }
 
-
     /// <summary>
     /// Dictionary that holds the income of the player per element
     /// </summary>
@@ -193,11 +192,19 @@ public partial class Player
     public const int MAX_HEALTH = 10;
     public const int MIN_DAMAGE = 100;
 
+    /// <summary>
+    /// Event that is fired after the player have been created
+    /// </summary>
+    public static event System.Action OnPlayerCreation;
+
     public static List<Player> allPlayer { get; private set; }
 
     public static List<Player> CreatePlayer()
     {
         allPlayer = new List<Player>() { new Player( InputSource.Player1 ), new Player( InputSource.Player2 ) };
+
+        if ( OnPlayerCreation != null )
+            OnPlayerCreation();
 
         return allPlayer;
     }

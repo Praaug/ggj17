@@ -41,7 +41,7 @@ public class UIDefending : MonoBehaviour
         {
             _go.SetActive( false );
         }
-        GameInfo.instance.OnStartGame += GameInfo_OnStartGame;
+        Player.OnPlayerCreation += Player_OnPlayerCreation;
         gameObject.SetActive( false );
         GameInfo.instance.OnCurrentGamePhaseChange += Instance_OnCurrentGamePhaseChange;
     }
@@ -50,12 +50,10 @@ public class UIDefending : MonoBehaviour
     {
         gameObject.SetActive( GameInfo.instance.currentGamePhase == GameInfo.GamePhase.Fight );
         foreach ( var _go in m_objectsToActivate )
-        {
             _go.SetActive( GameInfo.instance.currentGamePhase == GameInfo.GamePhase.Fight );
-        }
     }
 
-    private void GameInfo_OnStartGame()
+    private void Player_OnPlayerCreation()
     {
         Init( m_isPlayer1 ? Player.allPlayer[ 0 ] : Player.allPlayer[ 1 ] );
     }
@@ -68,8 +66,6 @@ public class UIDefending : MonoBehaviour
         m_player.OnEnemyKilled += OnEnemyKilled;
 
         GameInfo.instance.OnCurrentGamePhaseChange += GameInfo_OnCurrentGamePhaseChange1;
-
-        UpdateHealthGlobs();
     }
 
     private void GameInfo_OnCurrentGamePhaseChange1()

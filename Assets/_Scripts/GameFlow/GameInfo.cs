@@ -39,6 +39,10 @@ public partial class GameInfo : MonoBehaviour
 
     #region Fields
     [SerializeField, Category( "References" )]
+    private RectTransform m_healthbarParent = null;
+    [SerializeField, Category( "References" )]
+    private Healthbar m_healthbarPrefab = null;
+    [SerializeField, Category( "References" )]
     private EnemySpawnPlane[] m_spawnPlanes = new EnemySpawnPlane[ 0 ];
     [SerializeField, Category( "References" )]
     private EnemyKillPlane[] m_killPlanes = new EnemyKillPlane[ 0 ];
@@ -265,6 +269,14 @@ public partial class GameInfo : MonoBehaviour
         yield return new WaitForSeconds( 200.0f );
 
         InitPhase( GamePhase.Fight );
+    }
+
+    public Healthbar CreateHealthbar( Enemy p_enemy )
+    {
+        Healthbar _healthbar = Instantiate( m_healthbarPrefab, m_healthbarParent );
+
+        _healthbar.Init( p_enemy );
+        return _healthbar;
     }
     #endregion
 }
