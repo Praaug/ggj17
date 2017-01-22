@@ -440,7 +440,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1156346281
+--- !u!224 &1051123793 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 224024071203829174, guid: 2d4c805a445b8ec4f88e5b4c52a3c16a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1184663841}
+--- !u!1001 &1184663841
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -916,6 +921,17 @@ Prefab:
       propertyPath: m_player2Spawn
       value: 
       objectReference: {fileID: 2132110663}
+    - target: {fileID: 114605256416263058, guid: 702616b1254d36a45a034db7b373b464,
+        type: 2}
+      propertyPath: m_healthbarPrefab
+      value: 
+      objectReference: {fileID: 114284775523046648, guid: cda3c7b39f3e0504094c7808a1612de8,
+        type: 2}
+    - target: {fileID: 114605256416263058, guid: 702616b1254d36a45a034db7b373b464,
+        type: 2}
+      propertyPath: m_healthbarParent
+      value: 
+      objectReference: {fileID: 1051123793}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 702616b1254d36a45a034db7b373b464, type: 2}
   m_IsPrefabParent: 0
