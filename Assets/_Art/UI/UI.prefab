@@ -2625,7 +2625,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1699902245960826
 GameObject:
   m_ObjectHideFlags: 1
@@ -3230,7 +3230,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1887587179407296
 GameObject:
   m_ObjectHideFlags: 1
@@ -3808,11 +3808,18 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
-  m_points: []
-  LineThickness: 2
+  m_points:
+  - {x: 0, y: 0}
+  - {x: 0.1666, y: 0}
+  - {x: 0.3332, y: 0}
+  - {x: 0.4998, y: 0}
+  - {x: 0.6664, y: 0}
+  - {x: 0.833, y: 0}
+  - {x: 1, y: 0}
+  LineThickness: 1
   UseMargins: 0
   Margin: {x: 0, y: 0}
-  relativeSize: 0
+  relativeSize: 1
   LineList: 0
   LineCaps: 0
   LineJoins: 0
@@ -4088,7 +4095,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 26
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -4210,7 +4217,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 26
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -4324,7 +4331,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 25
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -4417,7 +4424,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 25
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -4621,7 +4628,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 26
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -4714,7 +4721,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 26
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -5391,8 +5398,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41d89a278447d2e4199ec46c6a17b375, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_waveInfos: []
+  m_waveInfos:
+  - {fileID: 114848434238165530}
+  - {fileID: 114341721840236198}
+  - {fileID: 114509484518040456}
+  - {fileID: 114383296234700312}
   m_isPlayer1: 0
+  m_objectsToActivate: []
 --- !u!114 &114279981150323832
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5838,7 +5850,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 25
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -5944,11 +5956,18 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
-  m_points: []
-  LineThickness: 2
+  m_points:
+  - {x: 0, y: 0}
+  - {x: 0.1666, y: 0}
+  - {x: 0.3332, y: 0}
+  - {x: 0.4998, y: 0}
+  - {x: 0.6664, y: 0}
+  - {x: 0.833, y: 0}
+  - {x: 1, y: 0}
+  LineThickness: 1
   UseMargins: 0
   Margin: {x: 0, y: 0}
-  relativeSize: 0
+  relativeSize: 1
   LineList: 0
   LineCaps: 0
   LineJoins: 0
@@ -6124,11 +6143,18 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
-  m_points: []
-  LineThickness: 2
+  m_points:
+  - {x: 0, y: 0}
+  - {x: 0.1666, y: 0}
+  - {x: 0.3332, y: 0}
+  - {x: 0.4998, y: 0}
+  - {x: 0.6664, y: 0}
+  - {x: 0.833, y: 0}
+  - {x: 1, y: 0}
+  LineThickness: 1
   UseMargins: 0
   Margin: {x: 0, y: 0}
-  relativeSize: 0
+  relativeSize: 1
   LineList: 0
   LineCaps: 0
   LineJoins: 0
@@ -6226,7 +6252,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 26
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -6370,11 +6396,18 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
-  m_points: []
-  LineThickness: 2
+  m_points:
+  - {x: 0, y: 0}
+  - {x: 0.166, y: 0}
+  - {x: 0.332, y: 0}
+  - {x: 0.498, y: 0}
+  - {x: 0.664, y: 0}
+  - {x: 0.83, y: 0}
+  - {x: 1, y: 0}
+  LineThickness: 1
   UseMargins: 0
   Margin: {x: 0, y: 0}
-  relativeSize: 0
+  relativeSize: 1
   LineList: 0
   LineCaps: 0
   LineJoins: 0
@@ -6401,7 +6434,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 25
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -6594,7 +6627,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 25
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -6779,8 +6812,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41d89a278447d2e4199ec46c6a17b375, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_waveInfos: []
+  m_waveInfos:
+  - {fileID: 114547379544665174}
+  - {fileID: 114826027551503112}
+  - {fileID: 114978673566316692}
+  - {fileID: 114355032205067342}
   m_isPlayer1: 1
+  m_objectsToActivate:
+  - {fileID: 1930970100963708}
+  - {fileID: 1786654809508318}
 --- !u!114 &114547379544665174
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6962,7 +7002,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 26
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -7150,7 +7190,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 25
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -7333,7 +7373,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 26
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -7566,11 +7606,18 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
-  m_points: []
-  LineThickness: 2
+  m_points:
+  - {x: 0, y: 0}
+  - {x: 0.1666, y: 0}
+  - {x: 0.3332, y: 0}
+  - {x: 0.4998, y: 0}
+  - {x: 0.6664, y: 0}
+  - {x: 0.833, y: 0}
+  - {x: 1, y: 0}
+  LineThickness: 1
   UseMargins: 0
   Margin: {x: 0, y: 0}
-  relativeSize: 0
+  relativeSize: 1
   LineList: 0
   LineCaps: 0
   LineJoins: 0
@@ -7710,11 +7757,18 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
-  m_points: []
-  LineThickness: 2
+  m_points:
+  - {x: 0, y: 0}
+  - {x: 0.1666, y: 0}
+  - {x: 0.3332, y: 0}
+  - {x: 0.4998, y: 0}
+  - {x: 0.6664, y: 0}
+  - {x: 0.833, y: 0}
+  - {x: 1, y: 0}
+  LineThickness: 1
   UseMargins: 0
   Margin: {x: 0, y: 0}
-  relativeSize: 0
+  relativeSize: 1
   LineList: 0
   LineCaps: 0
   LineJoins: 0
@@ -7985,11 +8039,18 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
-  m_points: []
-  LineThickness: 2
+  m_points:
+  - {x: 0, y: 0}
+  - {x: 0.1666, y: 0}
+  - {x: 0.3332, y: 0}
+  - {x: 0.4998, y: 0}
+  - {x: 0.6664, y: 0}
+  - {x: 0.833, y: 0}
+  - {x: 1, y: 0}
+  LineThickness: 1
   UseMargins: 0
   Margin: {x: 0, y: 0}
-  relativeSize: 0
+  relativeSize: 1
   LineList: 0
   LineCaps: 0
   LineJoins: 0
@@ -8088,6 +8149,8 @@ MonoBehaviour:
   m_windCount: {fileID: 114364924370475834}
   m_dirtCount: {fileID: 114852994985763330}
   m_isPlayer1: 1
+  m_objectsToActivate:
+  - {fileID: 1718215216761980}
 --- !u!114 &114810267601111254
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -8321,7 +8384,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 25
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -8758,7 +8821,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 26
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2
@@ -9232,6 +9295,7 @@ MonoBehaviour:
   m_windCount: {fileID: 114901452113540968}
   m_dirtCount: {fileID: 114802546851731288}
   m_isPlayer1: 0
+  m_objectsToActivate: []
 --- !u!114 &114954892810335630
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -9389,11 +9453,18 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
-  m_points: []
-  LineThickness: 2
+  m_points:
+  - {x: 0, y: 0}
+  - {x: 0.1666, y: 0}
+  - {x: 0.3332, y: 0}
+  - {x: 0.4998, y: 0}
+  - {x: 0.6664, y: 0}
+  - {x: 0.833, y: 0}
+  - {x: 1, y: 0}
+  LineThickness: 1
   UseMargins: 0
   Margin: {x: 0, y: 0}
-  relativeSize: 0
+  relativeSize: 1
   LineList: 0
   LineCaps: 0
   LineJoins: 0
@@ -9504,7 +9575,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 25
+    m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 2

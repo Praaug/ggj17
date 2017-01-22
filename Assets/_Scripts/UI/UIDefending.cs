@@ -22,11 +22,18 @@ public class UIDefending : MonoBehaviour
     private bool m_isPlayer1 = false;
 
     private int[] m_enemiesKilled = new int[ 4 ] { 0, 0, 0, 0 };
+
+    [SerializeField]
+    private GameObject[] m_objectsToActivate = null;
     #endregion
 
     #region Methods
     private void Start()
     {
+        foreach ( var _go in m_objectsToActivate )
+        {
+            _go.SetActive( false );
+        }
         GameInfo.instance.OnStartGame += GameInfo_OnStartGame;
         gameObject.SetActive( false );
         GameInfo.instance.OnCurrentGamePhaseChange += Instance_OnCurrentGamePhaseChange;
@@ -35,6 +42,10 @@ public class UIDefending : MonoBehaviour
     private void Instance_OnCurrentGamePhaseChange()
     {
         gameObject.SetActive( GameInfo.instance.currentGamePhase == GameInfo.GamePhase.Fight );
+        foreach ( var _go in m_objectsToActivate )
+        {
+            _go.SetActive( GameInfo.instance.currentGamePhase == GameInfo.GamePhase.Fight );
+        }
     }
 
     private void GameInfo_OnStartGame()

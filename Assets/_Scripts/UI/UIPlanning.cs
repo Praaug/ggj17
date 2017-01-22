@@ -10,6 +10,8 @@ public class UIPlanning : MonoBehaviour
     private UIWaveInfo[] m_waveInfos = null;
     [SerializeField, Category( "Selection" )]
     private bool m_isPlayer1 = false;
+    [SerializeField, Category( "References" )]
+    private GameObject[] m_objectsToActivate = null;
 
     private Player m_player = null;
     private UIWaveInfo m_currentWaveInfo = null;
@@ -27,12 +29,20 @@ public class UIPlanning : MonoBehaviour
     {
         GameInfo.instance.OnStartGame += GameInfo_OnStartGame;
         GameInfo.instance.OnCurrentGamePhaseChange += GameInfo_OnCurrentGamePhaseChange;
+        foreach ( var _go in m_objectsToActivate )
+        {
+            _go.SetActive( false );
+        }
         gameObject.SetActive( false );
     }
 
     private void GameInfo_OnCurrentGamePhaseChange()
     {
         gameObject.SetActive( GameInfo.instance.currentGamePhase == GameInfo.GamePhase.WaveBuilding );
+        foreach ( var _go in m_objectsToActivate )
+        {
+            _go.SetActive( GameInfo.instance.currentGamePhase == GameInfo.GamePhase.WaveBuilding );
+        }
     }
 
     private void GameInfo_OnStartGame()
