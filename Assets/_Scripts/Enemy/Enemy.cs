@@ -14,6 +14,12 @@ public partial class Enemy
     /// Event that is fired when the enemy is killed. The parameter contains the enemy itself
     /// </summary>
     public event System.Action<Enemy> OnKillThis;
+
+    /// <summary>
+    /// Event that is fired when the enemy is killed
+    /// </summary>
+    public event System.Action OnInflictDamage;
+
     /// <summary>
     /// Event that is fired when the enemy is killed, with detailed Infos
     /// </summary>
@@ -69,6 +75,9 @@ public partial class Enemy
     public void InflictDamage( Player p_player, float p_amount )
     {
         health = Mathf.Max( 0, health - p_amount );
+
+        if ( OnInflictDamage != null )
+            OnInflictDamage();
 
         if ( health <= 0 )
             Kill( p_player );
