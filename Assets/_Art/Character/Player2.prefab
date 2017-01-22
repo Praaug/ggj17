@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 54790020407276466}
   - component: {fileID: 65925937542175552}
   - component: {fileID: 114380869572811568}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: Arm_R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4077167441082314}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: Arm_L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
