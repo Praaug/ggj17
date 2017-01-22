@@ -116,6 +116,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_slider: {fileID: 114820734056392490}
+  m_fillImage: {fileID: 114084066620892728}
+  m_fireColor: {r: 0.8308824, g: 0.3340383, b: 0.01221887, a: 1}
+  m_waterColor: {r: 0.2561635, g: 0.4047921, b: 0.75735295, a: 1}
+  m_airColor: {r: 0.625, g: 0.8137932, b: 1, a: 1}
+  m_dirtColor: {r: 0.8352942, g: 0.8941177, b: 0.48627454, a: 1}
 --- !u!114 &114305919787741594
 MonoBehaviour:
   m_ObjectHideFlags: 1

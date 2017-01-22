@@ -47,9 +47,6 @@ public class EnemyController : MonoBehaviour
             enemy.OnKill -= Enemy_OnKill;
             enemy.OnInflictDamage -= Enemy_OnInflictDamage;
         }
-
-        if ( m_healthbar != null )
-            Destroy( m_healthbar.gameObject );
     }
 
     private void Enemy_OnKill()
@@ -57,6 +54,9 @@ public class EnemyController : MonoBehaviour
         // Trigger Ragdoll
         if ( m_ragdollController != null )
             m_ragdollController.TriggerRagdoll();
+
+        if ( m_healthbar != null )
+            Destroy( m_healthbar.gameObject );
     }
 
     // Update is called once per frame
