@@ -72,10 +72,13 @@ MonoBehaviour:
   - {fileID: 114929247372140504, guid: 8a5249c675c5e7341a08113af62996d9, type: 2}
   m_enemyPrefabAir:
   - {fileID: 114929247372140504, guid: a40170f26c1715a4892b5cdeb39d6275, type: 2}
+  - {fileID: 114929247372140504, guid: 358f5cde6e465f44cb901beb6b238818, type: 2}
   m_enemyPrefabWater:
   - {fileID: 114929247372140504, guid: 7f5a2c3ee6571014d8bb147051e452b1, type: 2}
+  - {fileID: 114929247372140504, guid: 51c6eba88d232054a93c1ebbb4d5cfe3, type: 2}
   m_enemyPrefabDirt:
   - {fileID: 114929247372140504, guid: ca8da665b061e0146b2f312ffd5a4b3d, type: 2}
+  - {fileID: 114929247372140504, guid: 4d5e510ceed29884ca65aaa349a5157b, type: 2}
   m_damageIncPerStep: 0
   m_killsPerStep: 0
   m_waveBuildTimer: 0
