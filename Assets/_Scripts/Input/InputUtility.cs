@@ -71,6 +71,8 @@ public class InputUtility : MonoBehaviour
     [SerializeField, Category( "KeyBindings - Player 1" )]
     private KeyCode m_menuLeft2 = KeyCode.Space;
 
+    private Dictionary<InputButton, Dictionary<InputSource, bool>> buttonDownDict;
+
     #endregion
 
     #region Methods
@@ -83,11 +85,41 @@ public class InputUtility : MonoBehaviour
         }
 
         s_instance = this;
+
+        buttonDownDict = new Dictionary<InputButton, Dictionary<InputSource, bool>>();
+        foreach ( InputButton _button in System.Enum.GetValues( typeof( InputButton ) ) )
+        {
+            buttonDownDict.Add( _button, new Dictionary<InputSource, bool>() );
+
+            foreach ( InputSource _inputSource in System.Enum.GetValues( typeof( InputSource ) ) )
+                buttonDownDict[ _button ].Add( _inputSource, false );
+        }
+
+        StartCoroutine( Coroutine_LateFixedUpdate() );
     }
 
     private void Update()
     {
+        foreach ( InputButton _button in System.Enum.GetValues( typeof( InputButton ) ) )
+            foreach ( InputSource _inputSource in System.Enum.GetValues( typeof( InputSource ) ) )
+                buttonDownDict[ _button ][ _inputSource ] |= GetButtonDown( _button, _inputSource );
+    }
 
+    private IEnumerator Coroutine_LateFixedUpdate()
+    {
+        while ( true )
+        {
+            yield return new WaitForFixedUpdate();
+
+            foreach ( InputButton _button in System.Enum.GetValues( typeof( InputButton ) ) )
+                foreach ( InputSource _inputSource in System.Enum.GetValues( typeof( InputSource ) ) )
+                    buttonDownDict[ _button ][ _inputSource ] = false;
+        }
+    }
+
+    public static bool GetFixedButtonDown( InputButton p_button, InputSource p_inputSource )
+    {
+        return s_instance.buttonDownDict[ p_button ][ p_inputSource ];
     }
 
     public static bool GetButtonDown( InputButton p_button, InputSource p_inputSource )

@@ -45,7 +45,11 @@ public partial class GameInfo : MonoBehaviour
     [SerializeField, Category( "References" )]
     private GameObject m_player1Prefab = null;
     [SerializeField, Category( "References" )]
+    private Transform m_player1Spawn = null;
+    [SerializeField, Category( "References" )]
     private GameObject m_player2Prefab = null;
+    [SerializeField, Category( "References" )]
+    private Transform m_player2Spawn = null;
 
     [SerializeField, Category( "Enemy" )]
     private EnemyInfo[] m_enemyPrefabFire = new EnemyInfo[ 0 ];
@@ -182,7 +186,7 @@ public partial class GameInfo : MonoBehaviour
         m_player1Ready = false;
         m_player2Ready = false;
 
-        Player.CreateAvatars( m_player1Prefab, m_player2Prefab );
+        Player.CreateAvatars( m_player1Prefab, m_player1Spawn, m_player2Prefab, m_player2Spawn );
 
         m_player1WaveFinished = false;
         m_player2WaveFinished = false;

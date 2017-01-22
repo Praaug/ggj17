@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if ( InputUtility.GetButtonDown( InputButton.Attack, player.inputSource ) )
+        if ( InputUtility.GetFixedButtonDown( InputButton.Attack, player.inputSource ) )
         {
             if ( !GGJMath.TimeCheck( m_lastAttackTimestamp, Time.time, m_attacksPerSec ) )
             {

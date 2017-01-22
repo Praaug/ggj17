@@ -197,14 +197,14 @@ public partial class Player
         return allPlayer;
     }
 
-    public static void CreateAvatars( GameObject p_player1Prefab, GameObject p_player2Prefab )
+    public static void CreateAvatars( GameObject p_player1Prefab, Transform p_player1Spawn, GameObject p_player2Prefab, Transform p_player2Spawn )
     {
         // Create player avatar
-        GameObject _player1Instance = Object.Instantiate( p_player1Prefab );
+        GameObject _player1Instance = Object.Instantiate( p_player1Prefab, p_player1Spawn.position, p_player1Spawn.rotation );
         allPlayer[ 0 ].AssignAvatar( _player1Instance );
 
         // Create player avatar
-        GameObject _player2Instance = Object.Instantiate( p_player2Prefab );
+        GameObject _player2Instance = Object.Instantiate( p_player2Prefab, p_player2Spawn.position, p_player2Spawn.rotation );
         allPlayer[ 1 ].AssignAvatar( _player2Instance );
     }
 

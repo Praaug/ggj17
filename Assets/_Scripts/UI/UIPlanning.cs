@@ -52,13 +52,13 @@ public class UIPlanning : MonoBehaviour
         if ( GameInfo.instance.currentGamePhase != GameInfo.GamePhase.WaveBuilding )
             return;
 
-        if ( InputUtility.GetButtonDown( InputButton.MenuRight, m_player.inputSource ) )
+        if ( InputUtility.GetFixedButtonDown( InputButton.MenuRight, m_player.inputSource ) )
             IncreaseSelector();
-        if ( InputUtility.GetButtonDown( InputButton.MenuLeft, m_player.inputSource ) )
+        if ( InputUtility.GetFixedButtonDown( InputButton.MenuLeft, m_player.inputSource ) )
             DecreaseSelector();
-        if ( InputUtility.GetButtonDown( InputButton.MenuUp, m_player.inputSource ) )
+        if ( InputUtility.GetFixedButtonDown( InputButton.MenuUp, m_player.inputSource ) )
             IncreaseStat();
-        if ( InputUtility.GetButtonDown( InputButton.MenuDown, m_player.inputSource ) )
+        if ( InputUtility.GetFixedButtonDown( InputButton.MenuDown, m_player.inputSource ) )
             DecreaseStat();
         //if ( Input.GetKeyDown( KeyCode.D ) )
         //    IncreaseSelector();
