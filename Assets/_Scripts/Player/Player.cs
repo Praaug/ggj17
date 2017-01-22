@@ -20,6 +20,10 @@ public partial class Player
     /// Event that if fired when the player has lost all lifes
     /// </summary>
     public event System.Action OnKill;
+    /// <summary>
+    /// Event that if fired when the player has lost all lifes
+    /// </summary>
+    public event System.Action<Player> OnKillThis;
 
     public event System.Action<Enemy> OnEnemyKilled;
     #endregion
@@ -90,7 +94,7 @@ public partial class Player
         m_enemyStrenghDict.Add( ElementType.Dirt, MIN_DAMAGE );
 
         waveInfo = new WaveInfo( this );
-        waveInfo.m_amplitudes[ 0 ][ ElementType.Fire ] = 1;
+        waveInfo.m_amplitudes[ 0 ][ ElementType.Fire ] = 10;
         waveInfo.m_amplitudes[ 0 ][ ElementType.Water ] = 1;
         waveInfo.m_amplitudes[ 0 ][ ElementType.Air ] = 1;
         waveInfo.m_amplitudes[ 0 ][ ElementType.Dirt ] = 1;
@@ -106,7 +110,8 @@ public partial class Player
 
     public void DestroyAvatar()
     {
-        Object.Destroy( gameObject );
+        if ( gameObject != null )
+            Object.Destroy( gameObject );
     }
 
     public void ReduceLife( int p_amount )
@@ -181,7 +186,8 @@ public partial class Player
         if ( OnKill != null )
             OnKill();
 
-        Dbg.LogError( "Player with input source {0} DIED!", inputSource );
+        if ( OnKillThis != null )
+            OnKillThis( this );
     }
     #endregion
 }
@@ -224,6 +230,12 @@ public partial class Player
     {
         foreach ( Player _player in allPlayer )
             _player.DestroyAvatar();
+    }
+
+    public static void DestroyPlayer()
+    {
+        DestroyAvatars();
+        allPlayer.Clear();
     }
 
     public static Player GetPlayer( GameObject p_gameObject )

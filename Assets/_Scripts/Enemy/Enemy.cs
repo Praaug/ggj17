@@ -108,6 +108,14 @@ public partial class Enemy
         return _enemy;
     }
 
+    public static void DestroyEnemies()
+    {
+        foreach ( Enemy _enemy in allEnemies )
+            Object.Destroy( _enemy.gameObject );
+
+        allEnemies.Clear();
+    }
+
     public static bool IsEnemy( Component p_component, out Enemy p_enemy )
     {
         p_enemy = allEnemies.FirstOrDefault( enemy => enemy.gameObject == p_component.gameObject );

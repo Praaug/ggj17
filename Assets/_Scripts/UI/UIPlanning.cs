@@ -28,6 +28,7 @@ public class UIPlanning : MonoBehaviour
     private void Start()
     {
         GameInfo.instance.OnStartGame += GameInfo_OnStartGame;
+        //GameInfo.instance.OnEndGame += GameInfo_OnEndGame;
         GameInfo.instance.OnCurrentGamePhaseChange += GameInfo_OnCurrentGamePhaseChange;
         foreach ( var _go in m_objectsToActivate )
         {
@@ -44,6 +45,16 @@ public class UIPlanning : MonoBehaviour
             _go.SetActive( GameInfo.instance.currentGamePhase == GameInfo.GamePhase.WaveBuilding );
         }
     }
+
+    //private void GameInfo_OnStartGame()
+    //{
+    //    gameObject.SetActive( false );
+    //    foreach ( var _go in m_objectsToActivate )
+    //    {
+    //        _go.SetActive( false );
+    //    }
+    //}
+
 
     private void GameInfo_OnStartGame()
     {

@@ -535,7 +535,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_health: 20
   m_type: 3
-  m_elementPointValue: 1
+  m_elementPointValue: 2
 --- !u!136 &136060602042893830
 CapsuleCollider:
   m_ObjectHideFlags: 1
