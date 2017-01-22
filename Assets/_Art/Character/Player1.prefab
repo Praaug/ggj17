@@ -421,7 +421,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_animator: {fileID: 95281494104152054}
   m_cc: {fileID: 143990660960209314}
-  m_movementSpeed: 5
+  m_movementSpeed: 7
   m_rotationSpeed: 360
 --- !u!137 &137767246921845644
 SkinnedMeshRenderer:

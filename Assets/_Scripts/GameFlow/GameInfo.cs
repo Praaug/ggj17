@@ -179,6 +179,7 @@ public partial class GameInfo : MonoBehaviour
         winner = null;
 
         // Create the player avatars and objects
+        Player.DestroyPlayer();
         Player.CreatePlayer();
 
         Player.allPlayer[ 0 ].OnKillThis += Player_OnKillThis;
@@ -214,6 +215,7 @@ public partial class GameInfo : MonoBehaviour
 
     private void EndGame( Player p_player )
     {
+        Enemy.DestroyEnemies();
         winner = p_player.otherPlayer;
         currentGamePhase = GamePhase.PostGame;
     }

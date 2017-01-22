@@ -198,6 +198,11 @@ public partial class Player
     public const int MAX_HEALTH = 10;
     public const int MIN_DAMAGE = 100;
 
+    static Player()
+    {
+        allPlayer = new List<Player>();
+    }
+
     /// <summary>
     /// Event that is fired after the player have been created
     /// </summary>
