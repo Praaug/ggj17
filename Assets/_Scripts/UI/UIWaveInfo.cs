@@ -31,7 +31,6 @@ public class UIWaveInfo : MonoBehaviour
 
     private Player m_player = null;
     private int m_currentIndex = -1;
-    private float m_maxAmplitudeHeight = 0.0f;
     #endregion
 
 
@@ -46,21 +45,12 @@ public class UIWaveInfo : MonoBehaviour
         m_wave.Points[ PART_03_INDEX ] = new Vector2( PART_03_X, 0.0f );
     }
 
-    private void OnEnable()
-    {
-        if ( m_player == null )
-            return;
-
-        m_elePoints = m_player.elementPointsDict[ m_type ];
-        m_otherPlayerStrengh = Player.MIN_DAMAGE + (int)m_player.otherPlayer.elementBuffDict[ m_type ];
-        m_maxAmplitudeHeight = m_waveInfo.MaximumPossibleAmplitude();
-    }
-
     public void Init( Player p_player )
     {
         m_player = p_player;
         m_waveInfo = m_player.waveInfo;
-        OnEnable();
+        m_elePoints = m_player.elementPointsDict[ m_type ];
+        m_otherPlayerStrengh = Player.MIN_DAMAGE + (int)m_player.otherPlayer.elementBuffDict[ m_type ];
     }
 
     /// <summary>
@@ -124,13 +114,14 @@ public class UIWaveInfo : MonoBehaviour
             m_waveInfo.IncrementElementCount( m_type, m_currentIndex );
 
             m_wave.Points[ GetIndex() ] = new Vector2( GetXValue(), m_waveInfo.GetAmplitudeCount( m_type, m_currentIndex ) );
+
         }
     }
 
     public void DecrementStat()
     {
         m_waveInfo.DecrementElementCount( m_type, m_currentIndex );
-        m_wave.Points[ GetIndex() ] = new Vector2( GetXValue(), GetAmplitudeHeight() );
+        m_wave.Points[ GetIndex() ] = new Vector2( GetXValue(), m_waveInfo.GetAmplitudeCount( m_type, m_currentIndex ) );
     }
 
     private int GetIndex()
@@ -141,9 +132,9 @@ public class UIWaveInfo : MonoBehaviour
     {
         return m_currentIndex == 0 ? PART_01_X : m_currentIndex == 1 ? PART_02_X : PART_03_X;
     }
-    private float GetAmplitudeHeight()
+    private float GetAmplitudeHight()
     {
-        return m_waveInfo.GetAmplitudeCount( m_type, m_currentIndex ) / m_maxAmplitudeHeight;
+        return 0.0f;
     }
     #endregion
 }
