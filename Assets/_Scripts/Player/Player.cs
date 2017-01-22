@@ -33,7 +33,6 @@ public partial class Player
     public int lifes { get; private set; }
     public WaveInfo waveInfo { get; private set; }
 
-
     /// <summary>
     /// Dictionary that holds the income of the player per element
     /// </summary>
