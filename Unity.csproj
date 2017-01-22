@@ -116,6 +116,7 @@
     <Compile Include="Assets\_Scripts\Player\PlayerController.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerMotor.cs" />
     <Compile Include="Assets\_Scripts\Player\PlayerWeaponDamageTrigger.cs" />
+    <Compile Include="Assets\_Scripts\Sound\SoundManager.cs" />
     <Compile Include="Assets\_Scripts\UI\CursorManager.cs" />
     <Compile Include="Assets\_Scripts\UI\GameUI.cs" />
     <Compile Include="Assets\_Scripts\UI\Healthbar.cs" />
