@@ -20,6 +20,8 @@ public partial class Player
     /// Event that if fired when the player has lost all lifes
     /// </summary>
     public event System.Action OnKill;
+
+    public event System.Action<ElementType> OnEnemyKilled;
     #endregion
 
     #region Properties
@@ -145,6 +147,9 @@ public partial class Player
 
         // Increase counter for kill of this enemy type
         elementBuffDict[ p_enemy.info.elementType ]++;
+
+        if ( OnEnemyKilled != null )
+            OnEnemyKilled( _elementType );
     }
 
     public void AddElementPoints( ElementType p_type, int p_amount )

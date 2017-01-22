@@ -50,6 +50,7 @@ public class UIWaveInfo : MonoBehaviour
         m_player = p_player;
         m_waveInfo = m_player.waveInfo;
         m_elePoints = m_player.elementPointsDict[ m_type ];
+        m_otherPlayerStrengh = Player.MIN_DAMAGE + (int)m_player.otherPlayer.elementBuffDict[ m_type ];
     }
 
     /// <summary>

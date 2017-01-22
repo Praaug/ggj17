@@ -20,6 +20,8 @@ public class UIDefending : MonoBehaviour
 
     [SerializeField, Category( "Selection" )]
     private bool m_isPlayer1 = false;
+
+    private int[] m_enemiesKilled = new int[ 4 ] { 0, 0, 0, 0 };
     #endregion
 
     #region Methods
@@ -43,20 +45,19 @@ public class UIDefending : MonoBehaviour
     private void Init( Player p_player )
     {
         m_player = p_player;
-    }
-
-    private void InitWave()
-    {
         Reset();
-        OnEnemyCountChange();
+        m_player.OnLifeChanged += OnHealthLost;
+        m_player.OnEnemyKilled += OnEnemyKilled;
     }
 
-    private void OnEnemyCountChange()
+    private void OnEnemyKilled( ElementType p_type )
     {
-        m_fireCount.text = ( (int)( m_player.elementBuffDict[ ElementType.Fire ] ) ).ToString000();
-        m_waterCount.text = ( (int)( m_player.elementBuffDict[ ElementType.Water ] ) ).ToString000();
-        m_windCount.text = ( (int)( m_player.elementBuffDict[ ElementType.Air ] ) ).ToString000();
-        m_dirtCount.text = ( (int)( m_player.elementBuffDict[ ElementType.Dirt ] ) ).ToString000();
+        m_enemiesKilled[ (int)p_type ]++;
+
+        m_fireCount.text = m_enemiesKilled[ (int)ElementType.Fire ].ToString000();
+        m_fireCount.text = m_enemiesKilled[ (int)ElementType.Water ].ToString000();
+        m_fireCount.text = m_enemiesKilled[ (int)ElementType.Air ].ToString000();
+        m_fireCount.text = m_enemiesKilled[ (int)ElementType.Dirt ].ToString000();
     }
 
     private void OnHealthLost()
@@ -70,8 +71,7 @@ public class UIDefending : MonoBehaviour
         for ( int i = 0; i < m_healthglobs.Length; i++ )
             m_healthglobs[ i ].SetActive( true );
 
-        for ( int i = 0; i < m_healthglobs.Length; i++ )
-            m_healthglobs[ i ].SetActive( true );
+        m_enemiesKilled = new int[ 4 ] { 0, 0, 0, 0 };
     }
     #endregion
 }
