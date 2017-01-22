@@ -41,10 +41,12 @@ public class EnemyMotor : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if ( enemy.isDead )
+            return;
+
         Vector3 _deltaMovement = Vector3.zero;
 
-        if ( !enemy.isDead )
-            _deltaMovement += UpdateMovement();
+        _deltaMovement += UpdateMovement();
 
         _deltaMovement += UpdateGravitiy();
 

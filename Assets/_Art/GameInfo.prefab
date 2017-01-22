@@ -59,8 +59,10 @@ MonoBehaviour:
   - {fileID: 0}
   m_player1Prefab: {fileID: 1407493350686444, guid: 80405b2ddc942c342a6a02ad3267e62b,
     type: 2}
+  m_player1Spawn: {fileID: 0}
   m_player2Prefab: {fileID: 1407493350686444, guid: 605408b11a5fe304c91db2895795f89e,
     type: 2}
+  m_player2Spawn: {fileID: 0}
   m_enemyPrefabFire:
   - {fileID: 114929247372140504, guid: abdb2cf26f3d98b4184cd02ee6632419, type: 2}
   m_enemyPrefabAir:
@@ -71,3 +73,4 @@ MonoBehaviour:
   - {fileID: 114929247372140504, guid: ca8da665b061e0146b2f312ffd5a4b3d, type: 2}
   m_damageIncPerStep: 0
   m_killsPerStep: 0
+  m_waveBuildTimer: 0
