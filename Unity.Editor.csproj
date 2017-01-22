@@ -134,6 +134,7 @@
     <Compile Include="Assets\_Scripts\CategoryExtension\Editor\MinAttributeDrawer.cs" />
     <Compile Include="Assets\_Scripts\CategoryExtension\Editor\MonoBehaviourEditor.cs" />
     <Compile Include="Assets\_Scripts\CategoryExtension\Editor\ReadOnlyDrawer.cs" />
+    <Compile Include="Assets\_Scripts\Editor\NewMonoBehaviour.cs" />
     <Compile Include="Assets\unity-ui-extensions\Scripts\Accordion\Editor\AccordionElementEditor.cs" />
     <Compile Include="Assets\unity-ui-extensions\Scripts\Editor\CanvasGroupActivator.cs" />
     <Compile Include="Assets\unity-ui-extensions\Scripts\Editor\CompressionTests.cs" />
