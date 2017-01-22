@@ -105,6 +105,28 @@ public class WaveInfo
         return PointsNeededForLevelUp( m_amplitudes[ p_frequencyIndex ][ p_elementType ] );
     }
 
+    public int MaximumPossibleAmplitude()
+    {
+        int _tmpMax = 0;
+
+        foreach ( ElementType _elementType in EnumUtility.GetValues<ElementType>() )
+        {
+            int _tmpAmplitude = 0; // Amplitude inside 
+            int _tmpPointsUsed = 0;
+
+            while ( PointsNeededForLevelUp( _tmpAmplitude ) <= m_player.elementPointsDict[ _elementType ] - _tmpPointsUsed )
+            {
+                _tmpPointsUsed += PointsNeededForLevelUp( _tmpAmplitude );
+                _tmpAmplitude++;
+            }
+
+            if ( _tmpAmplitude > _tmpMax )
+                _tmpMax = _tmpAmplitude;
+        }
+
+        return _tmpMax;
+    }
+
     private int PointsNeededForLevelUp( int p_level )
     {
         return Mathf.FloorToInt( Mathf.Pow( 1.4f, p_level ) );

@@ -87,11 +87,11 @@ public class InputUtility : MonoBehaviour
         s_instance = this;
 
         buttonDownDict = new Dictionary<InputButton, Dictionary<InputSource, bool>>();
-        foreach ( InputButton _button in System.Enum.GetValues( typeof( InputButton ) ) )
+        foreach ( InputButton _button in EnumUtility.GetValues<InputButton>() )
         {
             buttonDownDict.Add( _button, new Dictionary<InputSource, bool>() );
 
-            foreach ( InputSource _inputSource in System.Enum.GetValues( typeof( InputSource ) ) )
+            foreach ( InputSource _inputSource in EnumUtility.GetValues<InputSource>() )
                 buttonDownDict[ _button ].Add( _inputSource, false );
         }
 
@@ -100,8 +100,8 @@ public class InputUtility : MonoBehaviour
 
     private void Update()
     {
-        foreach ( InputButton _button in System.Enum.GetValues( typeof( InputButton ) ) )
-            foreach ( InputSource _inputSource in System.Enum.GetValues( typeof( InputSource ) ) )
+        foreach ( InputButton _button in EnumUtility.GetValues<InputButton>() )
+            foreach ( InputSource _inputSource in EnumUtility.GetValues<InputSource>() )
                 buttonDownDict[ _button ][ _inputSource ] |= GetButtonDown( _button, _inputSource );
     }
 
@@ -111,8 +111,8 @@ public class InputUtility : MonoBehaviour
         {
             yield return new WaitForFixedUpdate();
 
-            foreach ( InputButton _button in System.Enum.GetValues( typeof( InputButton ) ) )
-                foreach ( InputSource _inputSource in System.Enum.GetValues( typeof( InputSource ) ) )
+            foreach ( InputButton _button in EnumUtility.GetValues<InputButton>() )
+                foreach ( InputSource _inputSource in EnumUtility.GetValues<InputSource>() )
                     buttonDownDict[ _button ][ _inputSource ] = false;
         }
     }
