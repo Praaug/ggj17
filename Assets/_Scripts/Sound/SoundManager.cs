@@ -7,7 +7,7 @@ public class SoundManager : MonoBehaviour
     [SerializeField]
     private int m_livesDownThreshhold = 4;
     [SerializeField]
-    private AudioSource[] m_killSources = null;
+    private AudioSource[] m_killSources = new AudioSource[ 0 ];
     [SerializeField]
     private AudioSource m_lowHealthSource = null;
     [SerializeField]

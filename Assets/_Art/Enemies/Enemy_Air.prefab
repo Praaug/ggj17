@@ -521,7 +521,7 @@ MonoBehaviour:
   m_animator: {fileID: 95270717487436808}
   m_cc: {fileID: 143090442815577918}
   m_controller: {fileID: 114315270806778976}
-  m_movementSpeed: 3
+  m_movementSpeed: 4.25
 --- !u!114 &114929247372140504
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -533,7 +533,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8371182b7f337cb42bcd05d2d981c56f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_health: 15
+  m_health: 10
   m_type: 2
   m_elementPointValue: 1
 --- !u!136 &136164276086132320

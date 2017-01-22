@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 
 [System.Serializable]
 public class WaveInfo
@@ -54,6 +55,24 @@ public class WaveInfo
         return _totalAmp;
     }
 
+    public Dictionary<ElementType, List<EnemyInfo>>[] CalculateSpawns()
+    {
+        Dictionary<ElementType, List<EnemyInfo>>[] _result = new Dictionary<ElementType, List<EnemyInfo>>[ 3 ];
+
+        for ( int i = 0; i < _result.Length; i++ )
+        {
+            _result[ i ] = new Dictionary<ElementType, List<EnemyInfo>>();
+            foreach ( ElementType _elementType in EnumUtility.GetValues<ElementType>() )
+                _result[ i ].Add( _elementType, new List<EnemyInfo>() );
+        }
+
+        for ( int i = 0; i < _result.Length; i++ )
+            foreach ( ElementType _elementType in EnumUtility.GetValues<ElementType>() )
+                _result[ i ][ _elementType ] = CalculateElement( m_amplitudes[ i ][ _elementType ], GameInfo.instance.elementPrefabDict[ _elementType ] );
+
+        return _result;
+    }
+
     public List<EnemyInfo> CalculatePrefabs()
     {
         List<EnemyInfo> _resultList = new List<EnemyInfo>();
@@ -78,7 +97,8 @@ public class WaveInfo
 
         while ( _restCount > 0 )
         {
-            EnemyInfo _newItem = p_prefabs.RandomItem( info => info.elementPointValue <= _restCount );
+            EnemyInfo _newItem = p_prefabs.Where( info => info.elementPointValue <= _restCount ).Max( info => info.elementPointValue );
+
             if ( _newItem == null )
                 break;
 

@@ -380,7 +380,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7930b13d31f30c642869158a56fdd1f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_spawnRate: 3
+  m_spawnRate: 4
   m_randomBias: 1
 --- !u!114 &114320280951783038
 MonoBehaviour:
@@ -394,7 +394,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_animator: {fileID: 95281494104152054}
-  m_attacksPerSec: 1
+  m_attacksPerSec: 0.8
 --- !u!114 &114380869572811568
 MonoBehaviour:
   m_ObjectHideFlags: 1
