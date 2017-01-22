@@ -12,6 +12,12 @@ public class UIPlanning : MonoBehaviour
     private bool m_isPlayer1 = false;
     [SerializeField, Category( "References" )]
     private GameObject[] m_objectsToActivate = null;
+    [SerializeField, Category( "References" )]
+    private Image m_ready = null;
+    [SerializeField, Category( "Color" )]
+    private Color m_NotReadyColor = Color.white;
+    [SerializeField, Category( "Color" )]
+    private Color m_readyColor = Color.white;
 
     private Player m_player = null;
     private UIWaveInfo m_currentUIWaveInfo = null;
@@ -37,6 +43,11 @@ public class UIPlanning : MonoBehaviour
         gameObject.SetActive( false );
     }
 
+    private void OnEnable()
+    {
+        m_ready.color = m_NotReadyColor;
+    }
+
     private void GameInfo_OnCurrentGamePhaseChange()
     {
         gameObject.SetActive( GameInfo.instance.currentGamePhase == GameInfo.GamePhase.WaveBuilding );
@@ -45,16 +56,6 @@ public class UIPlanning : MonoBehaviour
             _go.SetActive( GameInfo.instance.currentGamePhase == GameInfo.GamePhase.WaveBuilding );
         }
     }
-
-    //private void GameInfo_OnStartGame()
-    //{
-    //    gameObject.SetActive( false );
-    //    foreach ( var _go in m_objectsToActivate )
-    //    {
-    //        _go.SetActive( false );
-    //    }
-    //}
-
 
     private void GameInfo_OnStartGame()
     {
@@ -81,6 +82,8 @@ public class UIPlanning : MonoBehaviour
             IncreaseStat();
         if ( InputUtility.GetFixedButtonDown( InputButton.MenuDown, m_player.inputSource ) )
             DecreaseStat();
+        if ( InputUtility.GetFixedButtonDown( InputButton.Attack, m_player.inputSource ) )
+            SetReady();
         //if ( Input.GetKeyDown( KeyCode.D ) )
         //    IncreaseSelector();
         //if ( Input.GetKeyDown( KeyCode.A ) )
@@ -114,6 +117,19 @@ public class UIPlanning : MonoBehaviour
     private void DecreaseStat()
     {
         m_currentUIWaveInfo.DecrementStat();
+    }
+    private void SetReady()
+    {
+        if ( m_isPlayer1 )
+        {
+            GameInfo.instance.player1Ready = true;
+            m_ready.color = m_readyColor;
+        }
+        else
+        {
+            GameInfo.instance.player2Ready = true;
+            m_ready.color = m_readyColor;
+        }
     }
     #endregion
 }

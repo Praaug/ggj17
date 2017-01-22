@@ -25,6 +25,30 @@ public partial class GameInfo : MonoBehaviour
     public Dictionary<ElementType, EnemyInfo[]> elementPrefabDict { get; private set; }
     public float damageIncPerStep { get { return m_damageIncPerStep; } }
     public int killsPerStep { get { return m_killsPerStep; } }
+    public bool player1Ready
+    {
+        get
+        {
+            return m_player1Ready;
+        }
+        set
+        {
+            m_player1Ready = value;
+            CheckPlayerReady();
+        }
+    }
+    public bool player2Ready
+    {
+        get
+        {
+            return m_player2Ready;
+        }
+        set
+        {
+            m_player2Ready = value;
+            CheckPlayerReady();
+        }
+    }
     [Debug]
     public GamePhase currentGamePhase
     {
@@ -254,22 +278,28 @@ public partial class GameInfo : MonoBehaviour
         if ( GUILayout.Button( "Restart Game" ) )
             RestartGame();
 
-        if ( currentGamePhase == GamePhase.WaveBuilding )
-        {
-            if ( !m_player1Ready && GUILayout.Button( "Player 1 ready" ) )
-                m_player1Ready = true;
+        //if ( currentGamePhase == GamePhase.WaveBuilding )
+        //{
+        //    if ( !m_player1Ready && GUILayout.Button( "Player 1 ready" ) )
+        //        m_player1Ready = true;
+        //
+        //    if ( !m_player2Ready && GUILayout.Button( "Player 2 ready" ) )
+        //        m_player2Ready = true;
+        //
+        //    if ( m_player1Ready && m_player2Ready )
+        //        InitPhase( GamePhase.Fight );
+        //}
+    }
 
-            if ( !m_player2Ready && GUILayout.Button( "Player 2 ready" ) )
-                m_player2Ready = true;
-
-            if ( m_player1Ready && m_player2Ready )
-                InitPhase( GamePhase.Fight );
-        }
+    private void CheckPlayerReady()
+    {
+        if ( m_player1Ready && m_player2Ready )
+            InitPhase( GamePhase.Fight );
     }
 
     private IEnumerator Coroutine_TimerWaveBuilding()
     {
-        yield return new WaitForSeconds( 200.0f );
+        yield return new WaitForSeconds( 40.0f );
 
         InitPhase( GamePhase.Fight );
     }

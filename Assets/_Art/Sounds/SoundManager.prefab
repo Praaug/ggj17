@@ -822,7 +822,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_livesDownThreshhold: 4
-  m_killSources: []
+  m_killSources:
+  - {fileID: 82648430080352168}
+  - {fileID: 82466320897056522}
+  - {fileID: 82310902020785086}
+  - {fileID: 82843904870804628}
   m_lowHealthSource: {fileID: 82682909183721988}
   m_defendingSource: {fileID: 82844598327852592}
   m_planningSource: {fileID: 82414701963693308}
