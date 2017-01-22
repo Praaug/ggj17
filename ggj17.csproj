@@ -105,8 +105,10 @@
     <Compile Include="Assets\_Scripts\Input\InputUtility.cs" />
     <Compile Include="Assets\_Scripts\Misc\BlenderAssetProcessor.cs" />
     <Compile Include="Assets\_Scripts\Misc\Dbg.cs" />
+    <Compile Include="Assets\_Scripts\Misc\EnumUtility.cs" />
     <Compile Include="Assets\_Scripts\Misc\ExtensionMethods.cs" />
     <Compile Include="Assets\_Scripts\Misc\GGJUtil.cs" />
+    <Compile Include="Assets\_Scripts\Misc\GeneralTestScript.cs" />
     <Compile Include="Assets\_Scripts\Misc\LKMath.cs" />
     <Compile Include="Assets\_Scripts\Misc\Random.cs" />
     <Compile Include="Assets\_Scripts\Player\Player.cs" />
