@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.UI.Extensions;
+using UnityEngine.UI;
 
 public class UIWaveInfo : MonoBehaviour
 {
@@ -17,6 +18,8 @@ public class UIWaveInfo : MonoBehaviour
 
     #region Fields
     [SerializeField]
+    private Text m_elePointsAvailableText = null;
+    [SerializeField]
     private ElementType m_type = ElementType.Fire;
     [SerializeField]
     private UILineRenderer m_wave = null;
@@ -25,12 +28,11 @@ public class UIWaveInfo : MonoBehaviour
     [SerializeField]
     private int m_otherPlayerStrengh = 0;
     [SerializeField]
-    private WaveInfo m_waveInfo = null;
-    [SerializeField]
     private GameObject[] m_selector = null;
 
     private Player m_player = null;
     private int m_currentIndex = -1;
+    private float m_maxAmplitudeHeight = 0.0f;
     #endregion
 
 
@@ -40,17 +42,43 @@ public class UIWaveInfo : MonoBehaviour
         foreach ( GameObject _go in m_selector )
             _go.SetActive( false );
 
-        m_wave.Points[ PART_01_INDEX ] = new Vector2( PART_01_X, 0.0f );
-        m_wave.Points[ PART_02_INDEX ] = new Vector2( PART_02_X, 0.0f );
-        m_wave.Points[ PART_03_INDEX ] = new Vector2( PART_03_X, 0.0f );
+        Vector2[] _points = m_wave.Points;
+        _points[ PART_01_INDEX ] = new Vector2( PART_01_X, 0.0f );
+        _points[ PART_02_INDEX ] = new Vector2( PART_02_X, 0.0f );
+        _points[ PART_03_INDEX ] = new Vector2( PART_03_X, 0.0f );
+        m_wave.Points = _points;
+        m_wave.SetAllDirty();
+    }
+
+    private void OnEnable()
+    {
+        if ( m_player == null )
+            return;
+
+        m_otherPlayerStrengh = Player.MIN_DAMAGE + (int)m_player.otherPlayer.elementBuffDict[ m_type ];
+
+        Vector2[] _points = m_wave.Points;
+        for ( int i = 0; i < _points.Length; i++ )
+            _points[ i ] = new Vector2( _points[ i ].x, 0.0f );
+        m_wave.Points = _points;
+
+        m_maxAmplitudeHeight = Mathf.Max( m_player.waveInfo.MaximumPossibleAmplitude(), m_player.otherPlayer.waveInfo.MaximumPossibleAmplitude() );
     }
 
     public void Init( Player p_player )
     {
         m_player = p_player;
-        m_waveInfo = m_player.waveInfo;
+        m_player.OnElementPointsChange += Player_OnElementPointsChange;
+        OnEnable();
+    }
+
+    private void Player_OnElementPointsChange( ElementType p_type )
+    {
+        if ( m_type != p_type )
+            return;
+
         m_elePoints = m_player.elementPointsDict[ m_type ];
-        m_otherPlayerStrengh = Player.MIN_DAMAGE + (int)m_player.otherPlayer.elementBuffDict[ m_type ];
+        m_elePointsAvailableText.text = m_elePoints.ToString000();
     }
 
     /// <summary>
@@ -107,21 +135,25 @@ public class UIWaveInfo : MonoBehaviour
 
     public void IncrementStat()
     {
-        int _pointsNeeded = m_waveInfo.PointsNeededForLevelUp( m_type, m_currentIndex );
-        if ( m_elePoints > _pointsNeeded )
+        int _pointsNeeded = m_player.waveInfo.PointsNeededForLevelUp( m_type, m_currentIndex );
+        if ( m_elePoints >= _pointsNeeded )
         {
-            m_player.RemoveElementPoints( m_type, _pointsNeeded );
-            m_waveInfo.IncrementElementCount( m_type, m_currentIndex );
+            m_player.waveInfo.IncrementElementCount( m_type, m_currentIndex );
 
-            m_wave.Points[ GetIndex() ] = new Vector2( GetXValue(), m_waveInfo.GetAmplitudeCount( m_type, m_currentIndex ) );
-
+            Vector2[] _points = m_wave.Points;
+            _points[ GetIndex() ] = new Vector2( GetXValue(), GetAmplitudeHeight() );
+            m_wave.Points = _points;
         }
     }
 
     public void DecrementStat()
     {
-        m_waveInfo.DecrementElementCount( m_type, m_currentIndex );
-        m_wave.Points[ GetIndex() ] = new Vector2( GetXValue(), m_waveInfo.GetAmplitudeCount( m_type, m_currentIndex ) );
+        if ( m_player.waveInfo.DecrementElementCount( m_type, m_currentIndex ) )
+        {
+            Vector2[] _points = m_wave.Points;
+            _points[ GetIndex() ] = new Vector2( GetXValue(), GetAmplitudeHeight() );
+            m_wave.Points = _points;
+        }
     }
 
     private int GetIndex()
@@ -132,9 +164,9 @@ public class UIWaveInfo : MonoBehaviour
     {
         return m_currentIndex == 0 ? PART_01_X : m_currentIndex == 1 ? PART_02_X : PART_03_X;
     }
-    private float GetAmplitudeHight()
+    private float GetAmplitudeHeight()
     {
-        return 0.0f;
+        return m_player.waveInfo.GetAmplitudeCount( m_type, m_currentIndex ) / m_maxAmplitudeHeight;
     }
     #endregion
 }

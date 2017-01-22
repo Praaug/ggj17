@@ -134,14 +134,18 @@ public class WaveInfo
 
     public void IncrementElementCount( ElementType p_type, int p_frequencyIndex )
     {
-        m_player.RemoveElementPoints( ElementType.Fire, PointsNeededForLevelUp( m_amplitudes[ p_frequencyIndex ][ p_type ] ) );
+        m_player.RemoveElementPoints( p_type, PointsNeededForLevelUp( m_amplitudes[ p_frequencyIndex ][ p_type ] ) );
         m_amplitudes[ p_frequencyIndex ][ p_type ]++;
     }
 
-    public void DecrementElementCount( ElementType p_type, int p_frequencyIndex )
+    public bool DecrementElementCount( ElementType p_type, int p_frequencyIndex )
     {
+        if ( m_amplitudes[ p_frequencyIndex ][ p_type ] == 0 )
+            return false;
+
         m_amplitudes[ p_frequencyIndex ][ p_type ]--;
         m_player.AddElementPoints( p_type, PointsNeededForLevelUp( m_amplitudes[ p_frequencyIndex ][ p_type ] ) );
+        return true;
     }
     #endregion
 }
