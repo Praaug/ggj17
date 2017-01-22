@@ -1,4 +1,4 @@
-[14:29:45; 00000] LOG STARTED!
+[14:34:37; 00000] LOG STARTED!
    at UnityEngine.GameObject.AddComponent(System.Type componentType) in C:\buildslave\unity\build\artifacts\generated\common\runtime\GameObjectBindings.gen.cs:line 352
    at UnityEngine.GameObject.AddComponent() in C:\buildslave\unity\build\artifacts\generated\common\runtime\GameObjectBindings.gen.cs:line 357
    at Dbg.get_Instance() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Misc\Dbg.cs:line 35
@@ -8,14 +8,14 @@
    at GameInfo.set_currentGamePhase(GamePhase value) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\GameFlow\GameInfo.cs:line 32
    at GameInfo.Awake() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\GameFlow\GameInfo.cs:line 99
 
-[14:29:45; 00000] GAME PHASE CHANGED TO PreGame
+[14:34:37; 00000] GAME PHASE CHANGED TO PreGame
    at Dbg.Log(UnityEngine.Object p_object, System.String message, StackTraceLogType p_type) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Misc\Dbg.cs:line 53
    at Dbg.Log(System.String message, System.Object[] args) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Misc\Dbg.cs:line 76
    at GameInfo.Internal_CurrentGamePhaseChange() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\GameFlow\GameInfo.cs:line 127
    at GameInfo.set_currentGamePhase(GamePhase value) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\GameFlow\GameInfo.cs:line 32
    at GameInfo.Awake() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\GameFlow\GameInfo.cs:line 99
 
-[14:29:46; 00055] On Start Clicked
+[14:34:38; 00053] On Start Clicked
    at UIMenu.OnStartClick() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\UI\UIMenu.cs:line 22
    at UnityEngine.Events.InvokableCall.Invoke(System.Object[] args) in C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:line 153
    at UnityEngine.Events.InvokableCallList.Invoke(System.Object[] parameters) in C:\buildslave\unity\build\Runtime\Export\UnityEvent.cs:line 634
@@ -31,7 +31,7 @@
    at UnityEngine.EventSystems.StandaloneInputModule.Process() in C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:line 184
    at UnityEngine.EventSystems.EventSystem.Update() in C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\EventSystem.cs:line 287
 
-[14:29:46; 00055] GAME PHASE CHANGED TO Fight
+[14:34:38; 00053] GAME PHASE CHANGED TO Fight
    at GameInfo.Internal_CurrentGamePhaseChange() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\GameFlow\GameInfo.cs:line 127
    at GameInfo.set_currentGamePhase(GamePhase value) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\GameFlow\GameInfo.cs:line 32
    at GameInfo.InitPhase(GamePhase p_phase) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\GameFlow\GameInfo.cs:line 177
@@ -50,4 +50,80 @@
    at UnityEngine.EventSystems.StandaloneInputModule.ProcessMouseEvent() in C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:line 410
    at UnityEngine.EventSystems.StandaloneInputModule.Process() in C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\InputModules\StandaloneInputModule.cs:line 184
    at UnityEngine.EventSystems.EventSystem.Update() in C:\buildslave\unity\build\Extensions\guisystem\UnityEngine.UI\EventSystem\EventSystem.cs:line 287
+
+[14:34:40; 00179] Enemy killed on wave EnemyStartPlane_Left (UnityEngine.GameObject). List count 0
+   at EnemySpawnPlane.Enemy_OnKillThis(.Enemy p_enemy) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\EnemySpawnPlane.cs:line 99
+   at Enemy.Kill(.Player p_player) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\Enemy.cs:line 66
+   at Enemy.InflictDamage(.Player p_player, Single p_amount) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\Enemy.cs:line 83
+   at CombatManager.PerformAttack(.Player p_attackingPlayer, .Enemy p_targetEnemy, .CombatHit p_hitInfo) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Combat\CombatManager.cs:line 9
+   at PlayerWeaponDamageTrigger.OnTriggerStay(UnityEngine.Collider p_collider) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Player\PlayerWeaponDamageTrigger.cs:line 64
+
+[14:34:43; 00343] Enemy killed on wave EnemyStartPlane_Right (UnityEngine.GameObject). List count 1
+   at EnemySpawnPlane.Enemy_OnKillThis(.Enemy p_enemy) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\EnemySpawnPlane.cs:line 99
+   at Enemy.Kill(.Player p_player) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\Enemy.cs:line 66
+   at EnemyKillPlane.OnTriggerEnter(UnityEngine.Collider p_collider) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\EnemyKillPlane.cs:line 31
+
+[14:34:44; 00393] Enemy killed on wave EnemyStartPlane_Left (UnityEngine.GameObject). List count 0
+   at EnemySpawnPlane.Enemy_OnKillThis(.Enemy p_enemy) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\EnemySpawnPlane.cs:line 99
+   at Enemy.Kill(.Player p_player) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\Enemy.cs:line 66
+   at Enemy.InflictDamage(.Player p_player, Single p_amount) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\Enemy.cs:line 83
+   at CombatManager.PerformAttack(.Player p_attackingPlayer, .Enemy p_targetEnemy, .CombatHit p_hitInfo) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Combat\CombatManager.cs:line 9
+   at PlayerWeaponDamageTrigger.OnTriggerStay(UnityEngine.Collider p_collider) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Player\PlayerWeaponDamageTrigger.cs:line 64
+
+[14:34:45; 00495] Enemy killed on wave EnemyStartPlane_Right (UnityEngine.GameObject). List count 1
+   at EnemySpawnPlane.Enemy_OnKillThis(.Enemy p_enemy) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\EnemySpawnPlane.cs:line 99
+   at Enemy.Kill(.Player p_player) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\Enemy.cs:line 66
+   at EnemyKillPlane.OnTriggerEnter(UnityEngine.Collider p_collider) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\EnemyKillPlane.cs:line 31
+
+[14:34:48; 00622] Enemy killed on wave EnemyStartPlane_Left (UnityEngine.GameObject). List count 0
+   at EnemySpawnPlane.Enemy_OnKillThis(.Enemy p_enemy) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\EnemySpawnPlane.cs:line 99
+   at Enemy.Kill(.Player p_player) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\Enemy.cs:line 66
+   at Enemy.InflictDamage(.Player p_player, Single p_amount) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\Enemy.cs:line 83
+   at CombatManager.PerformAttack(.Player p_attackingPlayer, .Enemy p_targetEnemy, .CombatHit p_hitInfo) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Combat\CombatManager.cs:line 9
+   at PlayerWeaponDamageTrigger.OnTriggerStay(UnityEngine.Collider p_collider) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Player\PlayerWeaponDamageTrigger.cs:line 64
+
+[14:34:48; 00649] ALL ENEMIES ARE SPAWNED ON EnemyStartPlane_Left
+   at EnemySpawnPlane+<Coroutine_Spawn>c__Iterator0.MoveNext() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\EnemySpawnPlane.cs:line 90
+   at UnityEngine.SetupCoroutine.InvokeMoveNext(IEnumerator enumerator, IntPtr returnValueAddress) in C:\buildslave\unity\build\Runtime\Export\Coroutines.cs:line 17
+
+[14:34:49; 00692] Enemy killed on wave EnemyStartPlane_Right (UnityEngine.GameObject). List count 0
+   at EnemySpawnPlane.Enemy_OnKillThis(.Enemy p_enemy) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\EnemySpawnPlane.cs:line 99
+   at Enemy.Kill(.Player p_player) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\Enemy.cs:line 66
+   at EnemyKillPlane.OnTriggerEnter(UnityEngine.Collider p_collider) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\EnemyKillPlane.cs:line 31
+
+[14:34:50; 00761] ALL ENEMIES ARE SPAWNED ON EnemyStartPlane_Right
+   at EnemySpawnPlane+<Coroutine_Spawn>c__Iterator0.MoveNext() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\EnemySpawnPlane.cs:line 90
+   at UnityEngine.SetupCoroutine.InvokeMoveNext(IEnumerator enumerator, IntPtr returnValueAddress) in C:\buildslave\unity\build\Runtime\Export\Coroutines.cs:line 17
+
+[14:34:50; 00766] Enemy killed on wave EnemyStartPlane_Left (UnityEngine.GameObject). List count 0
+   at EnemySpawnPlane.Enemy_OnKillThis(.Enemy p_enemy) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\EnemySpawnPlane.cs:line 99
+   at Enemy.Kill(.Player p_player) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\Enemy.cs:line 66
+   at Enemy.InflictDamage(.Player p_player, Single p_amount) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\Enemy.cs:line 83
+   at CombatManager.PerformAttack(.Player p_attackingPlayer, .Enemy p_targetEnemy, .CombatHit p_hitInfo) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Combat\CombatManager.cs:line 9
+   at PlayerWeaponDamageTrigger.OnTriggerStay(UnityEngine.Collider p_collider) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Player\PlayerWeaponDamageTrigger.cs:line 64
+
+[14:34:50; 00766] ON WAVE DONE CALLED
+   at EnemySpawnPlane.Enemy_OnKillThis(.Enemy p_enemy) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\EnemySpawnPlane.cs:line 103
+   at Enemy.Kill(.Player p_player) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\Enemy.cs:line 66
+   at Enemy.InflictDamage(.Player p_player, Single p_amount) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\Enemy.cs:line 83
+   at CombatManager.PerformAttack(.Player p_attackingPlayer, .Enemy p_targetEnemy, .CombatHit p_hitInfo) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Combat\CombatManager.cs:line 9
+   at PlayerWeaponDamageTrigger.OnTriggerStay(UnityEngine.Collider p_collider) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Player\PlayerWeaponDamageTrigger.cs:line 64
+
+[14:34:55; 01051] Enemy killed on wave EnemyStartPlane_Right (UnityEngine.GameObject). List count 0
+   at EnemySpawnPlane.Enemy_OnKillThis(.Enemy p_enemy) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\EnemySpawnPlane.cs:line 99
+   at Enemy.Kill(.Player p_player) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\Enemy.cs:line 66
+   at EnemyKillPlane.OnTriggerEnter(UnityEngine.Collider p_collider) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\EnemyKillPlane.cs:line 31
+
+[14:34:55; 01051] ON WAVE DONE CALLED
+   at EnemySpawnPlane.Enemy_OnKillThis(.Enemy p_enemy) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\EnemySpawnPlane.cs:line 103
+   at Enemy.Kill(.Player p_player) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\Enemy.cs:line 66
+   at EnemyKillPlane.OnTriggerEnter(UnityEngine.Collider p_collider) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\EnemyKillPlane.cs:line 31
+
+[14:34:55; 01051] GAME PHASE CHANGED TO WaveBuilding
+   at GameInfo.Internal_CurrentGamePhaseChange() in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\GameFlow\GameInfo.cs:line 127
+   at GameInfo.set_currentGamePhase(GamePhase value) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\GameFlow\GameInfo.cs:line 32
+   at GameInfo.SpawnPlane_OnWaveDone(.EnemySpawnPlane p_spawnPlane) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\GameFlow\GameInfo.cs:line 116
+   at EnemySpawnPlane.Enemy_OnKillThis(.Enemy p_enemy) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\EnemySpawnPlane.cs:line 105
+   at Enemy.Kill(.Player p_player) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\Enemy.cs:line 66
+   at EnemyKillPlane.OnTriggerEnter(UnityEngine.Collider p_collider) in C:\Users\gta3\Documents\ggj17\Assets\_Scripts\Enemy\EnemyKillPlane.cs:line 31
 
