@@ -3795,7 +3795,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
+  m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -3808,18 +3808,11 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
-  m_points:
-  - {x: 0, y: 0}
-  - {x: 0.1666, y: 0.8}
-  - {x: 0.3332, y: 0}
-  - {x: 0.4998, y: 0.2}
-  - {x: 0.6664, y: 0}
-  - {x: 0.833, y: 0.5}
-  - {x: 1, y: 0}
-  LineThickness: 1
+  m_points: []
+  LineThickness: 2
   UseMargins: 0
   Margin: {x: 0, y: 0}
-  relativeSize: 1
+  relativeSize: 0
   LineList: 0
   LineCaps: 0
   LineJoins: 0
@@ -4535,8 +4528,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.21991704, g: 0.5514706, b: 0.08920846, a: 1}
-  m_RaycastTarget: 0
+  m_Color: {r: 0.07724911, g: 0.3455882, b: 0.010164369, a: 1}
+  m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -4826,8 +4819,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.21991704, g: 0.5514706, b: 0.08920846, a: 1}
-  m_RaycastTarget: 0
+  m_Color: {r: 0.07724911, g: 0.3455882, b: 0.010164369, a: 1}
+  m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -4951,8 +4944,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.21991704, g: 0.5514706, b: 0.08920846, a: 1}
-  m_RaycastTarget: 0
+  m_Color: {r: 0.07724911, g: 0.3455882, b: 0.010164369, a: 1}
+  m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -5398,11 +5391,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41d89a278447d2e4199ec46c6a17b375, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_waveInfos:
-  - {fileID: 114848434238165530}
-  - {fileID: 114341721840236198}
-  - {fileID: 114509484518040456}
-  - {fileID: 114383296234700312}
+  m_waveInfos: []
   m_isPlayer1: 0
 --- !u!114 &114279981150323832
 MonoBehaviour:
@@ -5571,8 +5560,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.21991704, g: 0.5514706, b: 0.08920846, a: 1}
-  m_RaycastTarget: 0
+  m_Color: {r: 0.07724911, g: 0.3455882, b: 0.010164369, a: 1}
+  m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -5741,7 +5730,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4bde51fe221abb499d6cd871a4e7f1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_type: 0
+  m_type: 1
   m_wave: {fileID: 114797916260285966}
   m_elePoints: 0
   m_otherPlayerStrengh: 0
@@ -5942,7 +5931,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
+  m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -5955,18 +5944,11 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
-  m_points:
-  - {x: 0, y: 0}
-  - {x: 0.1666, y: 0.8}
-  - {x: 0.3332, y: 0}
-  - {x: 0.4998, y: 0.2}
-  - {x: 0.6664, y: 0}
-  - {x: 0.833, y: 0.5}
-  - {x: 1, y: 0}
-  LineThickness: 1
+  m_points: []
+  LineThickness: 2
   UseMargins: 0
   Margin: {x: 0, y: 0}
-  relativeSize: 1
+  relativeSize: 0
   LineList: 0
   LineCaps: 0
   LineJoins: 0
@@ -6010,7 +5992,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4bde51fe221abb499d6cd871a4e7f1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_type: 0
+  m_type: 3
   m_wave: {fileID: 114016914261847834}
   m_elePoints: 0
   m_otherPlayerStrengh: 0
@@ -6098,8 +6080,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.21991704, g: 0.5514706, b: 0.08920846, a: 1}
-  m_RaycastTarget: 0
+  m_Color: {r: 0.07724911, g: 0.3455882, b: 0.010164369, a: 1}
+  m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -6129,7 +6111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
+  m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -6142,18 +6124,11 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
-  m_points:
-  - {x: 0, y: 0}
-  - {x: 0.1666, y: 0.8}
-  - {x: 0.3332, y: 0}
-  - {x: 0.4998, y: 0.2}
-  - {x: 0.6664, y: 0}
-  - {x: 0.833, y: 0.5}
-  - {x: 1, y: 0}
-  LineThickness: 1
+  m_points: []
+  LineThickness: 2
   UseMargins: 0
   Margin: {x: 0, y: 0}
-  relativeSize: 1
+  relativeSize: 0
   LineList: 0
   LineCaps: 0
   LineJoins: 0
@@ -6171,8 +6146,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.21991704, g: 0.5514706, b: 0.08920846, a: 1}
-  m_RaycastTarget: 0
+  m_Color: {r: 0.07724911, g: 0.3455882, b: 0.010164369, a: 1}
+  m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -6382,7 +6357,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
+  m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -6395,18 +6370,11 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
-  m_points:
-  - {x: 0, y: 0}
-  - {x: 0.1666, y: 0.8}
-  - {x: 0.3332, y: 0}
-  - {x: 0.4998, y: 0.2}
-  - {x: 0.6664, y: 0}
-  - {x: 0.833, y: 0.5}
-  - {x: 1, y: 0}
-  LineThickness: 1
+  m_points: []
+  LineThickness: 2
   UseMargins: 0
   Margin: {x: 0, y: 0}
-  relativeSize: 1
+  relativeSize: 0
   LineList: 0
   LineCaps: 0
   LineJoins: 0
@@ -6457,8 +6425,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.21991704, g: 0.5514706, b: 0.08920846, a: 1}
-  m_RaycastTarget: 0
+  m_Color: {r: 0.07724911, g: 0.3455882, b: 0.010164369, a: 1}
+  m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -6555,8 +6523,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.21991704, g: 0.5514706, b: 0.08920846, a: 1}
-  m_RaycastTarget: 0
+  m_Color: {r: 0.07724911, g: 0.3455882, b: 0.010164369, a: 1}
+  m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -6597,7 +6565,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4bde51fe221abb499d6cd871a4e7f1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_type: 0
+  m_type: 2
   m_wave: {fileID: 114402478154786666}
   m_elePoints: 0
   m_otherPlayerStrengh: 0
@@ -6811,11 +6779,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41d89a278447d2e4199ec46c6a17b375, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_waveInfos:
-  - {fileID: 114547379544665174}
-  - {fileID: 114826027551503112}
-  - {fileID: 114978673566316692}
-  - {fileID: 114355032205067342}
+  m_waveInfos: []
   m_isPlayer1: 1
 --- !u!114 &114547379544665174
 MonoBehaviour:
@@ -7049,8 +7013,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.21991704, g: 0.5514706, b: 0.08920846, a: 1}
-  m_RaycastTarget: 0
+  m_Color: {r: 0.07724911, g: 0.3455882, b: 0.010164369, a: 1}
+  m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -7106,8 +7070,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.21991704, g: 0.5514706, b: 0.08920846, a: 1}
-  m_RaycastTarget: 0
+  m_Color: {r: 0.07724911, g: 0.3455882, b: 0.010164369, a: 1}
+  m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -7303,8 +7267,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.21991704, g: 0.5514706, b: 0.08920846, a: 1}
-  m_RaycastTarget: 0
+  m_Color: {r: 0.07724911, g: 0.3455882, b: 0.010164369, a: 1}
+  m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -7420,8 +7384,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.21991704, g: 0.5514706, b: 0.08920846, a: 1}
-  m_RaycastTarget: 0
+  m_Color: {r: 0.07724911, g: 0.3455882, b: 0.010164369, a: 1}
+  m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -7477,8 +7441,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.21991704, g: 0.5514706, b: 0.08920846, a: 1}
-  m_RaycastTarget: 0
+  m_Color: {r: 0.07724911, g: 0.3455882, b: 0.010164369, a: 1}
+  m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -7589,7 +7553,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
+  m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -7602,18 +7566,11 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
-  m_points:
-  - {x: 0, y: 0}
-  - {x: 0.1666, y: 0.8}
-  - {x: 0.3332, y: 0}
-  - {x: 0.4998, y: 0.2}
-  - {x: 0.6664, y: 0}
-  - {x: 0.833, y: 0.5}
-  - {x: 1, y: 0}
-  LineThickness: 1
+  m_points: []
+  LineThickness: 2
   UseMargins: 0
   Margin: {x: 0, y: 0}
-  relativeSize: 1
+  relativeSize: 0
   LineList: 0
   LineCaps: 0
   LineJoins: 0
@@ -7740,7 +7697,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
+  m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -7753,18 +7710,11 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
-  m_points:
-  - {x: 0, y: 0}
-  - {x: 0.1666, y: 0.8}
-  - {x: 0.3332, y: 0}
-  - {x: 0.4998, y: 0.2}
-  - {x: 0.6664, y: 0}
-  - {x: 0.833, y: 0.5}
-  - {x: 1, y: 0}
-  LineThickness: 1
+  m_points: []
+  LineThickness: 2
   UseMargins: 0
   Margin: {x: 0, y: 0}
-  relativeSize: 1
+  relativeSize: 0
   LineList: 0
   LineCaps: 0
   LineJoins: 0
@@ -7937,8 +7887,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.21991704, g: 0.5514706, b: 0.08920846, a: 1}
-  m_RaycastTarget: 0
+  m_Color: {r: 0.07724911, g: 0.3455882, b: 0.010164369, a: 1}
+  m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -8022,7 +7972,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
+  m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -8035,18 +7985,11 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
-  m_points:
-  - {x: 0, y: 0}
-  - {x: 0.1666, y: 0.8}
-  - {x: 0.3332, y: 0}
-  - {x: 0.4998, y: 0.2}
-  - {x: 0.6664, y: 0}
-  - {x: 0.833, y: 0.5}
-  - {x: 1, y: 0}
-  LineThickness: 1
+  m_points: []
+  LineThickness: 2
   UseMargins: 0
   Margin: {x: 0, y: 0}
-  relativeSize: 1
+  relativeSize: 0
   LineList: 0
   LineCaps: 0
   LineJoins: 0
@@ -8263,8 +8206,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.21991704, g: 0.5514706, b: 0.08920846, a: 1}
-  m_RaycastTarget: 0
+  m_Color: {r: 0.07724911, g: 0.3455882, b: 0.010164369, a: 1}
+  m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -8293,8 +8236,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.21991704, g: 0.5514706, b: 0.08920846, a: 1}
-  m_RaycastTarget: 0
+  m_Color: {r: 0.07724911, g: 0.3455882, b: 0.010164369, a: 1}
+  m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -8322,7 +8265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4bde51fe221abb499d6cd871a4e7f1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_type: 0
+  m_type: 1
   m_wave: {fileID: 114709185669050902}
   m_elePoints: 0
   m_otherPlayerStrengh: 0
@@ -8722,8 +8665,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.21991704, g: 0.5514706, b: 0.08920846, a: 1}
-  m_RaycastTarget: 0
+  m_Color: {r: 0.07724911, g: 0.3455882, b: 0.010164369, a: 1}
+  m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -8866,8 +8809,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.21991704, g: 0.5514706, b: 0.08920846, a: 1}
-  m_RaycastTarget: 0
+  m_Color: {r: 0.07724911, g: 0.3455882, b: 0.010164369, a: 1}
+  m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -9176,8 +9119,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.21991704, g: 0.5514706, b: 0.08920846, a: 1}
-  m_RaycastTarget: 0
+  m_Color: {r: 0.07724911, g: 0.3455882, b: 0.010164369, a: 1}
+  m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -9412,7 +9355,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4bde51fe221abb499d6cd871a4e7f1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_type: 0
+  m_type: 2
   m_wave: {fileID: 114979109143183442}
   m_elePoints: 0
   m_otherPlayerStrengh: 0
@@ -9433,7 +9376,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 0
+  m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -9446,18 +9389,11 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
-  m_points:
-  - {x: 0, y: 0}
-  - {x: 0.1666, y: 0.8}
-  - {x: 0.3332, y: 0}
-  - {x: 0.4998, y: 0.2}
-  - {x: 0.6664, y: 0}
-  - {x: 0.833, y: 0.5}
-  - {x: 1, y: 0}
-  LineThickness: 1
+  m_points: []
+  LineThickness: 2
   UseMargins: 0
   Margin: {x: 0, y: 0}
-  relativeSize: 1
+  relativeSize: 0
   LineList: 0
   LineCaps: 0
   LineJoins: 0
@@ -9475,8 +9411,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.21991704, g: 0.5514706, b: 0.08920846, a: 1}
-  m_RaycastTarget: 0
+  m_Color: {r: 0.07724911, g: 0.3455882, b: 0.010164369, a: 1}
+  m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -12092,9 +12028,9 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224101213077896028}
+  - {fileID: 224469157629065044}
   - {fileID: 224634069130285830}
   - {fileID: 224779608649335694}
-  - {fileID: 224469157629065044}
   m_Father: {fileID: 224009280522398068}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12771,7 +12707,7 @@ RectTransform:
   m_Children:
   - {fileID: 224184230641909298}
   m_Father: {fileID: 224274189079817316}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.50604594, y: 0}
   m_AnchorMax: {x: 1.0060459, y: 1}
@@ -13471,7 +13407,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 224274189079817316}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -13937,7 +13873,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 224274189079817316}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

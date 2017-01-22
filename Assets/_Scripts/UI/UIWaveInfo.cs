@@ -112,12 +112,29 @@ public class UIWaveInfo : MonoBehaviour
         {
             m_player.RemoveElementPoints( m_type, _pointsNeeded );
             m_waveInfo.IncrementElementCount( m_type, m_currentIndex );
+
+            m_wave.Points[ GetIndex() ] = new Vector2( GetXValue(), m_waveInfo.GetAmplitudeCount( m_type, m_currentIndex ) );
+
         }
     }
 
     public void DecrementStat()
     {
         m_waveInfo.DecrementElementCount( m_type, m_currentIndex );
+        m_wave.Points[ GetIndex() ] = new Vector2( GetXValue(), m_waveInfo.GetAmplitudeCount( m_type, m_currentIndex ) );
+    }
+
+    private int GetIndex()
+    {
+        return m_currentIndex == 0 ? PART_01_INDEX : m_currentIndex == 1 ? PART_02_INDEX : PART_03_INDEX;
+    }
+    private float GetXValue()
+    {
+        return m_currentIndex == 0 ? PART_01_X : m_currentIndex == 1 ? PART_02_X : PART_03_X;
+    }
+    private float GetAmplitudeHight()
+    {
+        return 0.0f;
     }
     #endregion
 }
