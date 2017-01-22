@@ -373,36 +373,6 @@ Prefab:
       propertyPath: m_Name
       value: EnemyKillPlane_Right
       objectReference: {fileID: 0}
-    - target: {fileID: 23770667031782356, guid: 23e5eef29e11be143be36aab42b0d835,
-        type: 2}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: 2100000, guid: a9f66150e51529d43b1d9afddab31874, type: 2}
-    - target: {fileID: 65201682609662518, guid: 23e5eef29e11be143be36aab42b0d835,
-        type: 2}
-      propertyPath: m_Size.x
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 65201682609662518, guid: 23e5eef29e11be143be36aab42b0d835,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 65201682609662518, guid: 23e5eef29e11be143be36aab42b0d835,
-        type: 2}
-      propertyPath: m_Size.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 65201682609662518, guid: 23e5eef29e11be143be36aab42b0d835,
-        type: 2}
-      propertyPath: m_Center.y
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 23770667031782356, guid: 23e5eef29e11be143be36aab42b0d835,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 76efbe8ebe5599948b0af4fb582f2549, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 23e5eef29e11be143be36aab42b0d835, type: 2}
   m_IsPrefabParent: 0
@@ -594,16 +564,6 @@ Prefab:
       propertyPath: m_Name
       value: EnemyKillPlane_Left
       objectReference: {fileID: 0}
-    - target: {fileID: 23770667031782356, guid: 23e5eef29e11be143be36aab42b0d835,
-        type: 2}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: 2100000, guid: a9f66150e51529d43b1d9afddab31874, type: 2}
-    - target: {fileID: 23770667031782356, guid: 23e5eef29e11be143be36aab42b0d835,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 76efbe8ebe5599948b0af4fb582f2549, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 23e5eef29e11be143be36aab42b0d835, type: 2}
   m_IsPrefabParent: 0
@@ -1039,21 +999,6 @@ Prefab:
     - target: {fileID: 1034838181705008, guid: 03841513948725f49950af206e9dd847, type: 2}
       propertyPath: m_Name
       value: EnemyStartPlane_Left
-      objectReference: {fileID: 0}
-    - target: {fileID: 23990322435886038, guid: 03841513948725f49950af206e9dd847,
-        type: 2}
-      propertyPath: m_Materials.Array.data[1]
-      value: 
-      objectReference: {fileID: 2100000, guid: a9f66150e51529d43b1d9afddab31874, type: 2}
-    - target: {fileID: 23990322435886038, guid: 03841513948725f49950af206e9dd847,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 434444728b606ec42bc8b8266bbfdcc8, type: 2}
-    - target: {fileID: 114767931361755372, guid: 03841513948725f49950af206e9dd847,
-        type: 2}
-      propertyPath: m_height
-      value: 3.01
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 03841513948725f49950af206e9dd847, type: 2}
