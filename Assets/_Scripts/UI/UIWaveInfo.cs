@@ -20,6 +20,8 @@ public class UIWaveInfo : MonoBehaviour
     [SerializeField]
     private Text m_elePointsAvailableText = null;
     [SerializeField]
+    private Text m_eleBonusDamageText = null;
+    [SerializeField]
     private ElementType m_type = ElementType.Fire;
     [SerializeField]
     private UILineRenderer m_wave = null;
@@ -61,6 +63,8 @@ public class UIWaveInfo : MonoBehaviour
         for ( int i = 0; i < _points.Length; i++ )
             _points[ i ] = new Vector2( _points[ i ].x, 0.0f );
         m_wave.Points = _points;
+
+        m_eleBonusDamageText.text = ( (int)m_player.elementBuffDict[ m_type ] ).ToString0000();
 
         m_maxAmplitudeHeight = Mathf.Max( m_player.waveInfo.MaximumPossibleAmplitude(), m_player.otherPlayer.waveInfo.MaximumPossibleAmplitude() );
     }
