@@ -26,7 +26,7 @@ public class EnemySpawnPlane : MonoBehaviour
     private Player m_damagedPlayer;
 
     private List<Enemy> m_enemySpawnedList = new List<Enemy>();
-    private bool m_allEnemiesSpawned = false;
+    private bool[] m_allEnemiesSpawned = new bool[ 3 ];
     #endregion
 
     #region Methods
@@ -43,7 +43,9 @@ public class EnemySpawnPlane : MonoBehaviour
     {
         // Clear spawn list
         m_enemySpawnedList.Clear();
-        m_allEnemiesSpawned = false;
+
+        for ( int i = 0; i < m_allEnemiesSpawned.Length; i++ )
+            m_allEnemiesSpawned[ i ] = false;
 
         WaveInfo _waveInfo = m_owningPlayer.waveInfo;
 
@@ -53,7 +55,19 @@ public class EnemySpawnPlane : MonoBehaviour
         m_owningPlayer.RegisterSpendElementPoints( ElementType.Water, _waveInfo.GetTotalAmplitude( ElementType.Water ) );
 
         PlayerConfig _config = m_owningPlayer.config;
-        StartCoroutine( Coroutine_Spawn( _waveInfo.CalculatePrefabs(), _config.spawnRate, _config.randomBias ) );
+
+        var _calcSpawns = _waveInfo.CalculateSpawns();
+        for ( int i = 0; i < _calcSpawns.Length; i++ )
+        {
+            List<EnemyInfo> _mashUp = new List<EnemyInfo>();
+
+            foreach ( ElementType _elementType in EnumUtility.GetValues<ElementType>() )
+                _mashUp.AddRange( _calcSpawns[ i ][ _elementType ] );
+
+            _mashUp.Shuffle();
+
+            StartCoroutine( Coroutine_Spawn( _mashUp, i, _config.spawnRate, _config.randomBias ) );
+        }
 
         // Clear wave data
         _waveInfo.ClearElementCount();
@@ -66,10 +80,13 @@ public class EnemySpawnPlane : MonoBehaviour
         m_enemySpawnedList.Clear();
     }
 
-    private IEnumerator Coroutine_Spawn( List<EnemyInfo> p_spawnPrefabs, float p_baseTick, float p_randomBias )
+    private IEnumerator Coroutine_Spawn( List<EnemyInfo> p_spawnPrefabs, int p_frequencyIndex, float p_baseTick, float p_randomBias )
     {
         for ( int i = 0; i < p_spawnPrefabs.Count; i++ )
         {
+            if ( i < p_spawnPrefabs.Count - 1 )
+                yield return new WaitForSeconds( Randomx.Bias( p_randomBias ) + p_baseTick );
+
             // Instantiate entity
             GameObject _prefab = p_spawnPrefabs[ i ].gameObject;
             Vector3 _spawnPoint = transform.position + Randomx.Box( m_width, m_height, m_depth );
@@ -81,12 +98,9 @@ public class EnemySpawnPlane : MonoBehaviour
             m_enemySpawnedList.Add( _enemy );
             // Subscribe kill event
             _enemy.OnKillThis += Enemy_OnKillThis;
-
-            if ( i < p_spawnPrefabs.Count - 1 )
-                yield return new WaitForSeconds( Randomx.Bias( p_randomBias ) + p_baseTick );
         }
 
-        m_allEnemiesSpawned = true;
+        m_allEnemiesSpawned[ p_frequencyIndex ] = true;
     }
 
     private void Enemy_OnKillThis( Enemy p_enemy )
@@ -95,7 +109,17 @@ public class EnemySpawnPlane : MonoBehaviour
 
         m_enemySpawnedList.Remove( p_enemy );
 
-        if ( m_allEnemiesSpawned && m_enemySpawnedList.Count == 0 )
+        bool _allFrequenciesReady = true;
+        for ( int i = 0; i < m_allEnemiesSpawned.Length; i++ )
+        {
+            if ( !m_allEnemiesSpawned[ i ] )
+            {
+                _allFrequenciesReady = false;
+                break;
+            }
+        }
+
+        if ( _allFrequenciesReady && m_enemySpawnedList.Count == 0 )
         {
             if ( OnWaveDoneThis != null )
                 OnWaveDoneThis( this );
